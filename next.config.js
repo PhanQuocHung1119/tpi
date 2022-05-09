@@ -1,6 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+const path = require("path");
+
+const securityHeaders = [
+  {
+    key: "Cache-Control",
+    value: "public, s-maxage=600, stale-while-revalidate=6000",
+  },
+];
+
+module.exports = {
+  reactStrictMode: false,
   trailingSlash: true,
   experimental: {
     // Enables the styled-components SWC transform
@@ -12,6 +20,30 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-};
+  publicRuntimeConfig: {
+    // Will be available on both server and client
+    apiEndpoint: process.env.REACT_APP_API_ENDPOINT,
+    rootDomains: process.env.REACT_APP_ROOT_DOMAIN,
+    apiUploadImage: process.env.REACT_APP_API_UPLOAD_IMG,
+    gtmId: process.env.REACT_APP_GTM_ID,
+  },
+  images: {
+    domains: [
+      "vinhcara.com",
+      "api.quan1229.com",
+      "mediafile.quan1229.com",
+      "mediafile.vinhcara.com",
+    ],
+    formats: ["image/webp"],
+  },
 
-module.exports = nextConfig;
+  async headers() {
+    return [
+      {
+        // Apply these headers to all routes in your application.
+        source: "/(.*)",
+        headers: securityHeaders,
+      },
+    ];
+  },
+};
