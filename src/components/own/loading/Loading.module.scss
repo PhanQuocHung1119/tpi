@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  background: url(~assets/icons/Clock.svg) no-repeat center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}

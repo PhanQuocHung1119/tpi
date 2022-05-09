@@ -1,0 +1,22 @@
+.custom-tabs {
+  border-bottom: 1px solid #ebebf0;
+  justify-content: space-evenly;
+}
+
+.tab-item {
+  color: #1c1c28;
+
+  &:hover {
+    border-color: transparent !important;
+    color: #1c1c28 !important;
+  }
+  &.active {
+    font-weight: 700;
+    border-color: transparent transparent #1c1c28 !important;
+    border-bottom-width: 3px;
+  }
+}
+
+.tab-content {
+  width: 100%;
+}

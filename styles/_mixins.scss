@@ -1,0 +1,87 @@
+$default-size: 14px;
+@mixin flex-container($align-items, $justify-content) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+$breakpoints: (
+  screen-xl: 1440px,
+  screen-l: 1024px,
+  screen-m: 768px,
+  screen-s: 640px,
+  screen-xs: 480px,
+  screen-xxs: 320px,
+);
+
+@mixin responsive-size($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    @media only screen and (max-width: $breakpoint-value) {
+      @content;
+    }
+  }
+}
+
+@mixin setting-image-rendering {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+@mixin setting-user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+@mixin setting-scale($x: 1, $y: 1) {
+  -webkit-transform: scale($x, $y);
+  -moz-transform: scale($x, $y);
+  -ms-transform: scale($x, $y);
+  -o-transform: scale($x, $y);
+  transform: scale($x, $y);
+}
+@mixin setting-transition(
+  $property: all,
+  $duration: 0s,
+  $timing: ease-out,
+  $delay: 0s
+) {
+  -webkit-transition: $property $duration $timing $delay;
+  -moz-transition: $property $duration $timing $delay;
+  -ms-transition: $property $duration $timing $delay;
+  -o-transition: $property $duration $timing $delay;
+  transition: $property $duration $timing $delay;
+}
+@mixin setting-font(
+  $family,
+  $style: normal,
+  $weight: normal,
+  $size: $default-size,
+  $height: none
+) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin show-underline($width: 80%, $duration: 0.3s) {
+  &::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: $primary-main-color;
+    transition: width $duration ease-out;
+  }
+  &:hover::before {
+    width: $width;
+  }
+}

@@ -1,0 +1,13 @@
+.form-select.custom {
+  border-width: 0px 0px 1px 0px;
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: unset;
+  }
+}
+
+.form-check-input:checked {
+  background-color: #007770;
+  border-color: #007770;
+}
