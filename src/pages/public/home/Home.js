@@ -6,6 +6,7 @@ import { LeaderIndustrial } from './LeaderIndustrial';
 import { Testimonial } from './Testimonial';
 import { OurProject } from './OurProject';
 import { News } from './News';
+import { Question } from './Question';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Testimonial />
       <OurProject />
       <News />
+      <Question />
     </>
   );
 };
