@@ -23,7 +23,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 24px;
+    height: 36px;
     width: max-content;
     margin: 0 42px;
     &__item {
@@ -31,12 +31,16 @@
       align-items: center;
       justify-content: center;
       width: 150px;
-      height: 24px;
+      height: 36px;
       cursor: pointer;
       margin-right: 16px;
       color: #ffffff;
       &:nth-last-of-type(1) {
         margin-right: 0px;
+      }
+      &:hover {
+        background: #009e4a;
+        border-radius: 6px;
       }
     }
   }
