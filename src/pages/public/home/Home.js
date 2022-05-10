@@ -4,6 +4,8 @@ import { TrustedBy } from './TrustedBy';
 import { TeamMember } from './TeamMember';
 import { LeaderIndustrial } from './LeaderIndustrial';
 import { Testimonial } from './Testimonial';
+import { OurProject } from './OurProject';
+import { News } from './News';
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <TeamMember />
       <LeaderIndustrial />
       <Testimonial />
+      <OurProject />
+      <News />
     </>
   );
 };

@@ -1,0 +1,40 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 383px;
+  height: max-content;
+  margin: 0 auto;
+  .image {
+    width: 384px;
+    height: 202px;
+  }
+  .title {
+    height: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #06703a;
+    margin: 49px 0 19px 32px;
+  }
+  .desc {
+    max-width: 320px;
+    max-height: 126px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+    margin-left: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    color: #000000;
+  }
+  & > :nth-last-of-type(1) {
+    margin-left: 32px;
+  }
+}
