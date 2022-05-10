@@ -1,7 +1,11 @@
+import { Introduce } from './Introduce';
+import { BestServices } from './BestServices';
+
 const Home = () => {
   return (
     <>
-      <div>DAY LA HOMEPAGE!!!</div>
+      <Introduce />
+      <BestServices />
     </>
   );
 };
