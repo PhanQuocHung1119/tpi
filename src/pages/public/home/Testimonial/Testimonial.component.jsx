@@ -1,0 +1,64 @@
+import React, { useMemo } from 'react';
+import Slider from 'react-slick';
+import styles from './Testimonial.module.scss';
+import Image from 'next/image';
+import { ClientComment } from './ClientComment';
+import avatar_1 from '@assets/client-comment/avatar-1.png';
+import avatar_2 from '@assets/client-comment/avatar-2.png';
+import avatar_3 from '@assets/client-comment/avatar-3.png';
+
+const clientComment = [
+  { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_1 },
+  { name: 'Justus Menke', title: 'CEO Eronaman', avatar: avatar_2 },
+  { name: 'Britain Eriksen', title: 'CEO Universal', avatar: avatar_3 },
+  { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_1 },
+  { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_2 },
+  { name: 'Justus Menke', title: 'CEO Eronaman', avatar: avatar_3 },
+  { name: 'Britain Eriksen', title: 'CEO Universal', avatar: avatar_1 },
+  { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_2 },
+];
+const Testimonial = () => {
+  const settings = useMemo(
+    () => ({
+      className: styles['setting-slider'],
+      dotsClass: styles['setting-dots'],
+      variableWidth: true,
+      dots: false,
+      arrows: false,
+      swipeToSlide: true,
+      touchMove: true,
+      swipe: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+    }),
+    []
+  );
+  return (
+    <>
+      <div className={styles['container']}>
+        <div className={styles['title']}>Testimonial</div>
+        <div className={styles['desc']}>
+          Hear what our previous clients had to say about our services!
+        </div>
+
+        <Slider {...settings}>
+          {Array.isArray(clientComment) &&
+            clientComment?.map((item, index) => {
+              return (
+                <ClientComment
+                  name={item.name}
+                  title={item.title}
+                  avatar={item.avatar}
+                  key={index}
+                />
+              );
+            })}
+        </Slider>
+      </div>
+    </>
+  );
+};
+export default React.memo(Testimonial);

@@ -3,6 +3,7 @@ import { BestServices } from './BestServices';
 import { TrustedBy } from './TrustedBy';
 import { TeamMember } from './TeamMember';
 import { LeaderIndustrial } from './LeaderIndustrial';
+import { Testimonial } from './Testimonial';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <TrustedBy />
       <TeamMember />
       <LeaderIndustrial />
+      <Testimonial />
     </>
   );
 };
