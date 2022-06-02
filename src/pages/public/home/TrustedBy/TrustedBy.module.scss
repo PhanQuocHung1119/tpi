@@ -13,11 +13,16 @@
   margin: 200px auto 0px;
   border-top: 1px solid #e3e6e9;
   border-bottom: 1px solid #e3e6e9;
+  @include responsive-size(screen-l) {
+    margin-top: 60px;
+    max-height: max-content;
+    height: max-content;
+  }
 
   .title {
     text-align: center;
     width: 100%;
-    height: 40px;
+    min-height: 40px;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -35,7 +40,7 @@
       justify-content: space-evenly;
       max-width: 1192px;
       width: 100%;
-      height: 230px;
+      min-height: 230px;
     }
     display: block;
     position: relative;
@@ -43,5 +48,8 @@
     width: 142px;
     height: 95px;
     margin-top: 40px;
+    @include responsive-size(screen-l) {
+      margin: 10px;
+    }
   }
 }

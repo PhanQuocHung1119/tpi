@@ -4,17 +4,25 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   max-width: 1440px;
   width: 100%;
-  max-height: 584px;
-  height: 100%;
-  background-color: #2c1c5a;
   margin: 200px auto 0;
+
+  @include responsive-size(screen-m) {
+    margin-top: 60px;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+  }
+
   .image {
-    width: 720px;
-    height: 584px;
+    height: auto;
+    width: 50%;
+    @include responsive-size(screen-m) {
+      width: 100%;
+    }
   }
   .content {
     position: relative;
@@ -22,44 +30,90 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 720px;
-    height: 468px;
+    max-width: 720px;
+    width: 50%;
+    max-height: 584px;
+    height: 40vw;
+
     padding-left: 84px;
+    background-color: #2c1c5a;
+    @include responsive-size(screen-l) {
+      padding-left: 20px;
+    }
+    @include responsive-size(screen-m) {
+      padding: 0 24px;
+      width: 100%;
+      height: max-content;
+      max-width: none;
+    }
     &__title {
-      width: 476px;
-      height: 120px;
+      width: 100%;
+      height: max-content;
       font-style: normal;
       font-weight: 400;
       font-size: 48px;
       line-height: 120%;
       color: #53b748;
+      @include responsive-size(screen-l) {
+        font-size: 35px;
+      }
+      @include responsive-size(screen-m) {
+        text-align: center;
+        margin-top: 24px;
+      }
     }
     &__desc {
-      width: 466px;
-      height: 44px;
+      width: 100%;
+      min-height: 44px;
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
       line-height: 130%;
       color: #ffffff;
       margin-top: 40px;
+
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @media only screen and (max-width: 1200px) {
+        margin-top: 24px;
+      }
+      @include responsive-size(screen-m) {
+        -webkit-line-clamp: 4;
+      }
     }
     &__sub-desc {
-      width: 547px;
-      height: 144px;
+      width: 100%;
+      height: max-content;
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
       line-height: 300%;
       color: #ffffff;
       margin-top: 40px;
+      @media only screen and (max-width: 1200px) {
+        margin-top: 24px;
+        line-height: 130%;
+      }
+      & > div {
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        @include responsive-size(screen-m) {
+          -webkit-line-clamp: 3;
+        }
+      }
     }
     &__button {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 180px;
-      height: 40px;
+      min-height: 40px;
       background: #009e4a;
       border-radius: 5px;
       color: #ffffff;
@@ -70,10 +124,14 @@
       cursor: pointer;
       user-select: none;
       margin-top: 40px;
+      margin-bottom: 24px;
       .icon-arrow {
         width: 22px;
         height: 16px;
         margin-left: 32px;
+      }
+      @media only screen and (max-width: 1200px) {
+        margin: 24px 0 24px;
       }
     }
   }

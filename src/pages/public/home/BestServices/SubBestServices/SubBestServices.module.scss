@@ -5,16 +5,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 279px;
+  max-width: 279px;
+  width: 100%;
   height: 204px;
+
+  @include responsive-size(screen-m) {
+    margin: 24px auto;
+    max-width: 375px;
+  }
+
   .content {
     position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 279px;
+    max-width: 279px;
+    width: 100%;
     height: 204px;
+    @include responsive-size(screen-m) {
+      max-width: 375px;
+    }
     & > div {
       margin-bottom: 24px;
     }

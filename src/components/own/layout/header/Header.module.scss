@@ -25,6 +25,7 @@
     visibility: visible;
     opacity: 1;
     z-index: 1000;
+    margin: 0 24px;
 
     @include responsive-size(screen-m) {
       flex-direction: column;
@@ -32,6 +33,7 @@
       justify-content: flex-start;
       width: 80%;
       height: 100vh;
+      margin: 0;
       background-color: $White;
       position: absolute;
       left: 0;
@@ -113,7 +115,7 @@
         justify-content: center;
         max-width: 150px;
         width: 100%;
-        height: 36px;
+        min-height: 36px;
         cursor: pointer;
         margin-right: 16px;
         color: $White;

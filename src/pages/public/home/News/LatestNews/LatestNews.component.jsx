@@ -8,7 +8,6 @@ const LatestNews = () => {
   return (
     <>
       <div className={styles['container']}>
-        <div className={styles['title']}>Latest news</div>
         <div className={styles['content']}>
           <div className={styles['content-left']}>
             <div className={styles['content-left__title']}>BEST PRACTICES</div>

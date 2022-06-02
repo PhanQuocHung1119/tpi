@@ -10,6 +10,12 @@
   justify-content: center;
   width: 383px;
   height: 258px;
+  @include responsive-size(screen-xs) {
+    max-width: 264px;
+    & > div {
+      max-width: 230px;
+    }
+  }
   cursor: pointer;
   background: #ffffff;
   border: 1px solid #ededed;
