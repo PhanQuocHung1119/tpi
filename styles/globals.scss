@@ -4,15 +4,11 @@
 @import './bootstrap/accordion.scss';
 @import '/styles/mixins';
 
-// a:hover {
-//   color: #007770;
-// }
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Quicksand';
+  font-family: 'Lato';
   font-size: 14px;
   height: 100%;
   --maxWidth: 1440px;
