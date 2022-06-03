@@ -1,0 +1,52 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+  max-width: 1282px;
+  margin-top: 120px;
+  .title {
+    text-align: center;
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 16px;
+    @include setting-font('Lato', normal, 700, 20px, 120%);
+  }
+  .content-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+
+    .arrow-left,
+    .arrow-right {
+      width: 12px;
+      height: 19px;
+      cursor: pointer;
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .arrow-left {
+      left: 0;
+    }
+    .arrow-right {
+      right: 0;
+    }
+    .content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1170px;
+      height: max-content;
+    }
+  }
+}

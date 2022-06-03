@@ -1,0 +1,68 @@
+@import '/styles/main';
+
+.breadcrumb {
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  background-color: #fff;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  @include responsive-size(screen-m) {
+    margin-top: 50px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include setting-font('Lato', normal, 400, 16px, 22px);
+
+    color: #555770;
+    list-style-type: none;
+    padding: 0;
+    margin: 16px auto 16px 40px;
+    @include responsive-size(screen-s) {
+      margin: 16px auto 16px 8px;
+    }
+  }
+  &__link {
+    &:not(:first-child) {
+      &::before {
+        content: '/';
+        margin: 0 5px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        /* identical to box height, or 20px */
+
+        /* Dark / Dark 2 */
+
+        color: #555770;
+      }
+    }
+    a {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+
+      /* Dark / Dark 2 */
+
+      color: #555770;
+    }
+  }
+}
+
+.icon-home {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}

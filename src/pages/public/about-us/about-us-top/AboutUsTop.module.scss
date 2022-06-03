@@ -1,0 +1,22 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  max-height: 507px;
+  width: 100%;
+  height: 100%;
+  .content {
+    &-left {
+      width: 100%;
+      max-width: 580px;
+      height: max-content;
+    }
+    &-right {
+      width: 590px;
+      height: 100%;
+    }
+  }
+}

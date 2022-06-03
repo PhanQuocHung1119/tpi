@@ -1,0 +1,37 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  .icon-number {
+    width: 77px;
+    height: 77px;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 60px;
+    color: $Dark-Green-100;
+    margin: 16px 0;
+    @include setting-font('Lato', normal, 400, 32px, 120%);
+  }
+  .desc {
+    color: $text-color;
+
+    width: 100%;
+    height: max-content;
+    @include setting-font('Lato', normal, 500, 14px, 200%);
+    display: inline-flex;
+    text-overflow: ellipsis;
+    // -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: pre-line;
+  }
+}
