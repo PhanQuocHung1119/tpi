@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=optional');
 body {
   margin: 0;
-  font-family: Quicksand;
+  font-family: Lato;
   color: #000000;
-  font-weight: 300;
+  font-weight: 400;
 }

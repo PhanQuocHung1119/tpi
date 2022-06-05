@@ -18,22 +18,24 @@ const SubNewsBlock = ({ image, time, title, desc }) => {
             quality={100}
           />
         </div>
-        <div className={styles['time']}>
-          <div className={styles['time__image']}>
-            <Image
-              src={birth}
-              alt=''
-              width={29}
-              height={29}
-              layout='responsive'
-              objectFit='contain'
-              quality={100}
-            />
+        <div className={styles['content-wrapper']}>
+          <div className={styles['time']}>
+            <div className={styles['time__image']}>
+              <Image
+                src={birth}
+                alt=''
+                width={29}
+                height={29}
+                layout='responsive'
+                objectFit='contain'
+                quality={100}
+              />
+            </div>
+            {time}
           </div>
-          {time}
+          <div className={styles['title']}>{title}</div>
+          <div className={styles['desc']}>{desc}</div>
         </div>
-        <div className={styles['title']}>{title}</div>
-        <div className={styles['desc']}>{desc}</div>
       </div>
     </>
   );

@@ -120,6 +120,8 @@
         margin-right: 16px;
         color: $White;
         text-align: center;
+        @include setting-font('Lato', normal, 700, 14px, 120%);
+
         @include responsive-size(screen-m) {
           width: 100%;
           max-width: none;
@@ -127,7 +129,7 @@
           color: $text-color;
           justify-content: flex-start;
           margin-right: auto;
-          @include setting-font('Lato', normal, 700, 16px, 120%);
+          font-size: 16px;
         }
         &:nth-last-of-type(1) {
           margin-right: 0px;
