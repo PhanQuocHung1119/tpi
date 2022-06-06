@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './NumberGeneralInfo.module.scss';
-import Image from 'next/image';
 import { NumberIcon } from 'components/own/number-icon';
 
 const NumberGeneralInfo = ({ number, title, desc }) => {

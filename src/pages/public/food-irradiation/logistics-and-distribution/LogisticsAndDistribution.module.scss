@@ -1,0 +1,32 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 974px;
+  height: max-content;
+  @include responsive-size(screen-l) {
+    padding: 0 10px;
+  }
+  @include responsive-size(screen-m) {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .content {
+    max-width: 482px;
+    width: 100%;
+    height: max-content;
+    margin-right: 10px;
+    margin-bottom: 32px;
+    @include responsive-size(screen-m) {
+      margin-right: 0;
+      max-width: none;
+    }
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 249px;
+  max-height: 67px;
+  width: 100%;
+  height: 100%;
+  .content {
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      min-width: 32px;
+      min-height: 67px;
+      height: 67px;
+      margin-right: 16px;
+      &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        padding: 12px;
+        background: #d5d5d5;
+        border-radius: 100px;
+        @include setting-font('Overpass', normal, 400, 16px, 19px);
+        color: $White;
+        &.active {
+          background: $Grass-100;
+        }
+      }
+      &__line {
+        border: 0px solid $Grass-100;
+        height: 0px;
+        &.active {
+          border: 2px solid $Grass-100;
+          height: 35px;
+        }
+      }
+    }
+    &-right {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      max-width: 201px;
+      width: 100%;
+      height: 100%;
+      &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        width: 100%;
+        height: 19px;
+      }
+      &__desc {
+        width: 100%;
+        height: 18px;
+        font-weight: 500;
+        line-height: 130%;
+        color: #888888;
+      }
+    }
+  }
+}

@@ -18,6 +18,9 @@
     min-height: 60px;
     margin-bottom: 16px;
     @include setting-font('Overpass', normal, 700, 20px, 120%);
+    @include responsive-size(screen-m) {
+      min-height: auto;
+    }
   }
   .content-wrapper {
     position: relative;

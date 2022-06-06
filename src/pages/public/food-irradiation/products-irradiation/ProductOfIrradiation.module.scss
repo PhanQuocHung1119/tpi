@@ -1,0 +1,45 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1170px;
+  height: max-content;
+  margin-top: 120px;
+  @include responsive-size(screen-m) {
+    padding: 0 10px;
+    margin-top: 48px;
+  }
+  .title {
+    min-height: 48px;
+    width: 100%;
+    text-align: center;
+    @include setting-font('Overpass', normal, 400, 32px, 120%);
+    color: $Dark-Green-100;
+    margin-bottom: 48px;
+
+    @include responsive-size(screen-xs) {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 8px;
+    width: 100%;
+    height: 100%;
+    grid-auto-flow: dense;
+    grid-gap: 8px;
+    overflow: visible;
+    @include responsive-size(screen-m) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include responsive-size(screen-xs) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
