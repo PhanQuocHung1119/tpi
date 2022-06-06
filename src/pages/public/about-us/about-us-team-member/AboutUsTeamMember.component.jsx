@@ -5,9 +5,6 @@ import mem1 from '@assets/team-member/team-member-img-1.png';
 import mem2 from '@assets/team-member/team-member-img-2.png';
 import number_1_1 from '@assets/number/number-1-1.png';
 import { NumberIcon } from 'components/own/number-icon';
-import num1 from '@assets/about-us/num1.png';
-import num2 from '@assets/about-us/num2.png';
-import num3 from '@assets/about-us/num3.png';
 import { NumberAndDesc } from 'components/own/number-and-desc';
 
 const desc1 =
@@ -48,9 +45,9 @@ const AboutUsTeamMember = () => {
           </div>
           <div className={styles['member-content__title']}>Đội ngũ nhân sự</div>
           <div className={styles['member-content__content']}>
-            <NumberAndDesc number={num1} desc={desc1} />
-            <NumberAndDesc number={num2} desc={desc2} />
-            <NumberAndDesc number={num3} desc={desc3} />
+            <NumberAndDesc number={1} desc={desc1} />
+            <NumberAndDesc number={2} desc={desc2} />
+            <NumberAndDesc number={3} desc={desc3} />
           </div>
         </div>
       </div>

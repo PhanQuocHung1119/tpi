@@ -1,0 +1,50 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1170px;
+  height: max-content;
+  margin-top: 32px;
+  @include responsive-size(screen-xs) {
+    margin-top: 8px;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 48px;
+    color: $Dark-Green-100;
+    padding-left: 10px;
+    @include setting-font('Overpass', normal, 400, 32px, 120%);
+    @include responsive-size(screen-xs) {
+      font-size: 24px;
+      min-height: 32px;
+    }
+  }
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 60px;
+    grid-auto-flow: dense;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    margin-top: 60px;
+    @include responsive-size(screen-m) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 32px;
+      row-gap: 32px;
+    }
+    @include responsive-size(screen-xs) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 16px;
+      row-gap: 24px;
+    }
+  }
+}

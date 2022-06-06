@@ -12,11 +12,21 @@
     justify-content: space-evenly;
     margin-bottom: 16px;
   }
-  &__num-img {
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 88px;
     min-width: 81px;
     min-height: 121px;
     margin-right: 10px;
+    color: rgba(137, 137, 137, 0.3);
+    opacity: 0.8;
+    @include setting-font('Overpass', normal, 400, 128px, 120%);
+    @include responsive-size(screen-m) {
+      min-height: 115px;
+      height: 115px;
+    }
   }
   &__desc {
     height: max-content;

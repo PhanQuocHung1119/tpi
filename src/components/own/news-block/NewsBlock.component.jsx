@@ -32,6 +32,7 @@ const arrNews = [
     desc: `Cảm ơn "các nàng" đã luôn đồng hành của TPI trong suốt hành trình qua!`,
   },
 ];
+
 const NewsBlock = () => {
   return (
     <>

@@ -9,7 +9,7 @@ const FoodIrradiationSystem = () => {
     <>
       <div className={styles['container']}>
         <div className={styles['title']}>
-          <PioneeringTitle number={1} />
+          <PioneeringTitle number={1} title='Chiếu xạ' />
         </div>
         <div className={styles['desc']}>
           TPI - Nhà máy duy nhất tại Việt Nam ứng dụng đầy đủ 3 công nghệ chiếu
