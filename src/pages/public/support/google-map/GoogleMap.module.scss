@@ -1,0 +1,12 @@
+@import '/styles/main';
+
+.container {
+  max-width: 1440px;
+  max-height: 400px;
+  width: 1440px;
+  height: 100%;
+  margin-top: 64px;
+  @include responsive-size(screen-m) {
+    margin-top: 48px;
+  }
+}

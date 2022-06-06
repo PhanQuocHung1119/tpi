@@ -1,0 +1,102 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 445px;
+  width: 100%;
+  height: max-content;
+  @include responsive-size(screen-m) {
+    padding: 0 10px;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $Grass-100;
+    @include setting-font('Overpass', normal, 700, 20px, 120%);
+  }
+  .desc {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 32px 0;
+    @include responsive-size(screen-m) {
+      margin: 24px 0;
+    }
+  }
+  .form-main {
+    max-width: 445px;
+    width: 100%;
+    height: max-content;
+  }
+  .bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-top: 24px;
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: $Grass-100;
+      width: 100%;
+      margin-bottom: 24px;
+      @include setting-font('Overpass', normal, 700, 20px, 120%);
+    }
+    .sub-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 24px;
+      &__title {
+        @include setting-font('Overpass', normal, 700, 20px, 24px);
+      }
+      &__desc {
+        padding-left: 20px;
+        @include setting-font('Lato', normal, 300, 16px, 130%);
+      }
+    }
+  }
+}
+
+.form-title-important,
+.form-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.form-title-important {
+  &:after {
+    content: '  *';
+    color: $Orange;
+  }
+}
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+  width: 100%;
+  & > div {
+    margin-right: 24px;
+  }
+}

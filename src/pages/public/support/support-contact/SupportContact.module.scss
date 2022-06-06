@@ -1,0 +1,89 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 580px;
+  margin-top: 64px;
+  height: max-content;
+  @include responsive-size(screen-m) {
+    margin-top: 48px;
+  }
+  .title {
+    color: $Dark-Green-100;
+    @include setting-font('Overpass', normal, 400, 64px, 120%);
+    @include responsive-size(screen-m) {
+      font-size: 32px;
+    }
+    @include responsive-size(screen-xs) {
+      font-size: 24px;
+      height: 32px;
+    }
+  }
+  .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1b1c31;
+    margin: 24px 0;
+    @include responsive-size(screen-m) {
+      margin: 16px 0;
+    }
+  }
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+    column-gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    @include responsive-size(screen-m) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 32px;
+    }
+    .sub-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      max-width: 285px;
+      height: 32px;
+      @include responsive-size(screen-m) {
+        max-width: none;
+      }
+      &__title {
+        color: $Black-100;
+      }
+      &__line {
+        max-width: 285px;
+        @include responsive-size(screen-m) {
+          max-width: none;
+        }
+        width: 100%;
+        border: 1px solid $Black-20;
+      }
+    }
+  }
+  .contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 580px;
+    height: 36px;
+    margin-top: 40px;
+    background: $Grass-100;
+    @include setting-font('Overpass', normal, 700, 16px, 120%);
+    color: $White;
+    border-radius: 6px;
+  }
+}
