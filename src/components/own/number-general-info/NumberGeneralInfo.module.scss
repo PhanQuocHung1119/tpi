@@ -29,7 +29,6 @@
     @include setting-font('Lato', normal, 500, 14px, 200%);
     display: inline-flex;
     text-overflow: ellipsis;
-    // -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
     white-space: pre-line;

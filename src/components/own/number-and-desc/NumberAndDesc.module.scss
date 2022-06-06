@@ -7,9 +7,15 @@
   width: 100%;
   max-width: 383px;
   height: max-content;
+  @include responsive-size(screen-m) {
+    max-width: none;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+  }
   &__num-img {
     width: 88px;
-    height: 121px;
+    min-width: 81px;
+    min-height: 121px;
     margin-right: 10px;
   }
   &__desc {
