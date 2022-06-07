@@ -89,8 +89,13 @@
       justify-content: center;
       height: 36px;
       width: 100%;
-
       margin: 0 42px;
+      @include responsive-size(screen-l) {
+        margin: 0 16px;
+      }
+      @media only screen and (max-width: 900px) {
+        margin: 0;
+      }
       @include responsive-size(screen-m) {
         flex-direction: column;
         height: max-content;
@@ -123,8 +128,7 @@
         @include setting-font('JosefinSans', normal, 700, 14px, 120%);
         @include responsive-size(screen-l) {
           margin-right: 8px;
-          max-width: 110px;
-          min-width: 100px;
+          min-width: 115px;
         }
         @include responsive-size(screen-m) {
           width: 100%;
@@ -154,6 +158,7 @@
           justify-content: center;
           position: relative;
           height: max-content;
+          max-width: 150px;
           width: 100%;
           color: $White;
           transform-origin: top;
@@ -164,6 +169,7 @@
           @include responsive-size(screen-m) {
             justify-content: flex-start;
             color: $text-color;
+            max-width: none;
             &:hover {
               transform-origin: top;
               transition: all 0.3s ease-out;
