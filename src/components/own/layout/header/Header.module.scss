@@ -239,6 +239,9 @@
               position: absolute;
               width: 100%;
               height: 200px;
+              @include responsive-size(screen-m) {
+                height: 100px;
+              }
             }
             @include setting-font('Lato', normal, 700, 14px, 120%);
             .sub-item {
