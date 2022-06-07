@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import Image from 'next/image';
-import ToanPhat from '@assets/header/ToanPhat-Icon.png';
+import ToanPhat from '@assets/header/ToanPhat-Icon.svg';
 import social from '@assets/icons/social-icon.png';
 
 const Footer = () => {
