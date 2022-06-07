@@ -16,7 +16,7 @@
     justify-content: center;
     width: 100%;
     color: $Dark-Green-100;
-    @include setting-font('Overpass', normal, 400, 96px, 120%);
+    @include setting-font('JosefinSans', normal, 400, 96px, 120%);
     @include responsive-size(screen-l) {
       font-size: 48px;
     }

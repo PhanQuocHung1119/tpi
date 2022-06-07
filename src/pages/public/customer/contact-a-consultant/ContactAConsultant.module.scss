@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     color: $Grass-100;
-    @include setting-font('Overpass', normal, 700, 20px, 120%);
+    @include setting-font('JosefinSans', normal, 700, 20px, 120%);
   }
   .desc {
     display: flex;
@@ -51,7 +51,7 @@
       color: $Grass-100;
       width: 100%;
       margin-bottom: 24px;
-      @include setting-font('Overpass', normal, 700, 20px, 120%);
+      @include setting-font('JosefinSans', normal, 700, 20px, 120%);
     }
     .sub-content {
       display: flex;
@@ -61,7 +61,7 @@
       width: 100%;
       margin-bottom: 24px;
       &__title {
-        @include setting-font('Overpass', normal, 700, 20px, 24px);
+        @include setting-font('JosefinSans', normal, 700, 20px, 24px);
       }
       &__desc {
         padding-left: 20px;

@@ -22,7 +22,7 @@
     margin-right: 10px;
     color: rgba(137, 137, 137, 0.3);
     opacity: 0.8;
-    @include setting-font('Overpass', normal, 400, 128px, 120%);
+    @include setting-font('JosefinSans', normal, 400, 128px, 120%);
     @include responsive-size(screen-m) {
       min-height: 115px;
       height: 115px;

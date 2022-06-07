@@ -61,7 +61,7 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       cursor: pointer;
-      @include setting-font('Overpass', normal, 700, 20px, 120%);
+      @include setting-font('JosefinSans', normal, 700, 20px, 120%);
       @include responsive-size(screen-m) {
         margin-bottom: 8px;
       }

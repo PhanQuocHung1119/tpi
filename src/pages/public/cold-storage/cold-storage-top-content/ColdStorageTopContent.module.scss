@@ -34,7 +34,7 @@
       width: 100%;
       margin-bottom: 8px;
       color: $Dark-Green-100;
-      @include setting-font('Overpass', normal, 400, 32px, 120%);
+      @include setting-font('JosefinSans', normal, 400, 32px, 120%);
       @include responsive-size(screen-m) {
         display: none;
       }
