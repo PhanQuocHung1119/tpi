@@ -10,7 +10,6 @@ import Link from 'next/link';
 import toan_phat_icon from '@assets/header/ToanPhat-Icon.png';
 import toan_phat_mobile_icon from '@assets/header/ToanPhat-Mobile-Icon.png';
 import language_icon from '@assets/header/language.png';
-import caret_down from '@assets/header/caret-down.png';
 import setting_icon from '@assets/header/Setting-Icon.png';
 
 const dataPopup = {
@@ -109,17 +108,7 @@ const Header = () => {
                 quality={100}
               />
             </div>
-            <div className={styles['language__caret-down']}>
-              <Image
-                src={caret_down}
-                alt=''
-                width={16}
-                height={16}
-                layout='responsive'
-                objectFit='contain'
-                quality={100}
-              />
-            </div>
+            <div className={styles['language__caret-down']}></div>
           </div>
         </div>
         <div className={styles['menu-mobile']}>
@@ -147,8 +136,8 @@ const Header = () => {
             <Image
               src={toan_phat_icon}
               alt=''
-              width={56}
-              height={46}
+              width={43}
+              height={36}
               layout='responsive'
               objectFit='contain'
               quality={100}
