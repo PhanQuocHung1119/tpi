@@ -5,6 +5,7 @@ import styles from './Header.module.scss';
 import Image from 'next/image';
 import { produce } from 'immer';
 import clsx from 'clsx';
+import Link from 'next/link';
 
 import toan_phat_icon from '@assets/header/ToanPhat-Icon.png';
 import toan_phat_mobile_icon from '@assets/header/ToanPhat-Mobile-Icon.png';
@@ -62,17 +63,38 @@ const Header = () => {
             </div>
           </div>
           <div className={styles['menu']}>
-            <div className={styles['menu__item']}>Giới thiệu</div>
+            <Link href={'/about-us' || '#'} passHref>
+              <div className={styles['menu__item']}>Giới thiệu</div>
+            </Link>
             <div className={styles['menu__line']}></div>
-            <div className={styles['menu__item']}>Lĩnh vực tiên phong</div>
+            <div className={styles['menu__item--more']}>
+              <div className={styles['sub-title']}>Lĩnh vực tiên phong</div>
+              <div className={styles['arrow']}></div>
+              <div className={styles['sub-item-wrapper']}>
+                <Link href={'/food-irradiation' || '#'} passHref>
+                  <div className={styles['sub-item']}>Chiếu xạ</div>
+                </Link>
+                <Link href={'/cold-storage' || '#'} passHref>
+                  <div className={styles['sub-item']}>Kho lạnh lưu trữ</div>
+                </Link>
+              </div>
+            </div>
             <div className={styles['menu__line']}></div>
-            <div className={styles['menu__item']}>Mục tiêu phát triển</div>
+            <Link href={'/goals' || '#'} passHref>
+              <div className={styles['menu__item']}>Mục tiêu phát triển</div>
+            </Link>
             <div className={styles['menu__line']}></div>
-            <div className={styles['menu__item']}>Khách hàng</div>
+            <Link href={'/customer' || '#'} passHref>
+              <div className={styles['menu__item']}>Khách hàng</div>
+            </Link>
             <div className={styles['menu__line']}></div>
-            <div className={styles['menu__item']}>Hỗ trợ</div>
+            <Link href={'/support' || '#'} passHref>
+              <div className={styles['menu__item']}>Hỗ trợ</div>
+            </Link>
             <div className={styles['menu__line']}></div>
-            <div className={styles['menu__item']}>Liên hệ</div>
+            <Link href={'/question-and-answer' || '#'} passHref>
+              <div className={styles['menu__item']}>{`Q&A`}</div>
+            </Link>
             <div className={styles['menu__line']}></div>
           </div>
           <div className={styles['language']}>

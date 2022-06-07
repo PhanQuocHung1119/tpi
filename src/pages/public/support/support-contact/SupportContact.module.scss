@@ -82,6 +82,8 @@
     height: 36px;
     margin-top: 40px;
     background: $Grass-100;
+    cursor: pointer;
+    user-select: none;
     @include setting-font('Overpass', normal, 700, 16px, 120%);
     color: $White;
     border-radius: 6px;

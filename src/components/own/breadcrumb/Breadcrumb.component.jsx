@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import home_icon from '@assets/bread-crumb/Home-Icon.png';
 
-const defaultData = [{ path: '/', title: 'Giới thiệu về TPI' }];
+const defaultData = [{ path: '#', title: 'Giới thiệu về TPI' }];
 
 const Breadcrumb = ({ className, data = defaultData }) => {
   return (

@@ -1,0 +1,38 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  max-width: 1170px;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 16px;
+  border: 1px solid $Black-20;
+  .title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: $Grass-100;
+    height: max-content;
+    width: 100%;
+    margin-bottom: 24px;
+    @include setting-font('Overpass', normal, 600, 20px, 120%);
+    &__number {
+    }
+  }
+  .desc {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    width: 100%;
+    height: max-content;
+    white-space: pre-line;
+  }
+}

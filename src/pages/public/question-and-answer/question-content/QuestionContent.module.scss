@@ -1,0 +1,101 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1170px;
+  width: 100%;
+  height: max-content;
+  margin-top: 48px;
+  padding: 0 10px;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: $Dark-Green-100;
+    @include setting-font('Overpass', normal, 400, 96px, 120%);
+    @include responsive-size(screen-l) {
+      font-size: 48px;
+    }
+    @include responsive-size(screen-m) {
+      font-size: 32px;
+    }
+    @include responsive-size(screen-xs) {
+      font-size: 24px;
+    }
+  }
+  .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: 100%;
+    margin: 32px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    @include responsive-size(screen-xs) {
+      margin: 24px 0;
+    }
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    position: relative;
+    margin-top: 120px;
+    @include responsive-size(screen-l) {
+      margin-top: 48px;
+    }
+    @include responsive-size(screen-m) {
+      margin-top: 32px;
+    }
+    &__number {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $White;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+      cursor: pointer;
+      user-select: none;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 130%;
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
+
+    .arrow-left,
+    .arrow-right {
+      border: solid #bfbfbf;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+    .arrow-left {
+      transform: rotate(135deg);
+    }
+    .arrow-right {
+      transform: rotate(-45deg);
+    }
+  }
+}
