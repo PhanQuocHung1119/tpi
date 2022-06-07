@@ -40,7 +40,7 @@
       height: 22px;
       margin: 16px 0;
       color: $text-color-2;
-      @include setting-font('Lato', normal, 500, 14px, 22px);
+      @include setting-font('JosefinSans', normal, 500, 14px, 22px);
       @include responsive-size(screen-m) {
         margin: 8px 0;
       }
@@ -76,7 +76,7 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       margin-bottom: 8px;
-      @include setting-font('Lato', normal, 500, 16px, 130%);
+      @include setting-font('JosefinSans', normal, 500, 16px, 130%);
     }
   }
 }

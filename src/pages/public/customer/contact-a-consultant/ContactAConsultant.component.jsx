@@ -22,7 +22,7 @@ const Button = styled.button`
   max-width: 445px;
   background: #009e4a;
 
-  font-family: Lato;
+  font-family: JosefinSans;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;

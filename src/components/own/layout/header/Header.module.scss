@@ -120,7 +120,7 @@
         margin-right: 16px;
         color: $White;
         text-align: center;
-        @include setting-font('Lato', normal, 700, 14px, 120%);
+        @include setting-font('JosefinSans', normal, 700, 14px, 120%);
         @include responsive-size(screen-l) {
           margin-right: 8px;
         }
@@ -179,7 +179,7 @@
             margin-right: 16px;
             color: $White;
             text-align: center;
-            @include setting-font('Lato', normal, 700, 14px, 120%);
+            @include setting-font('JosefinSans', normal, 700, 14px, 120%);
             @include responsive-size(screen-m) {
               width: 100%;
               max-width: none;
@@ -243,7 +243,7 @@
                 height: 130px;
               }
             }
-            @include setting-font('Lato', normal, 700, 14px, 120%);
+            @include setting-font('JosefinSans', normal, 700, 14px, 120%);
             .sub-item {
               display: flex;
               align-items: center;

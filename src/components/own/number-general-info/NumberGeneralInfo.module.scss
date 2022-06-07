@@ -26,7 +26,7 @@
 
     width: 100%;
     height: max-content;
-    @include setting-font('Lato', normal, 500, 14px, 200%);
+    @include setting-font('JosefinSans', normal, 500, 14px, 200%);
     display: inline-flex;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
