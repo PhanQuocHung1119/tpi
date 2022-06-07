@@ -226,7 +226,7 @@
               width: 100%;
               max-width: none;
               color: $text-color;
-              top: 50%;
+              top: 0;
               align-items: flex-start;
               justify-content: flex-start;
               margin-right: auto;
@@ -240,7 +240,7 @@
               width: 100%;
               height: 200px;
               @include responsive-size(screen-m) {
-                height: 100px;
+                height: 130px;
               }
             }
             @include setting-font('Lato', normal, 700, 14px, 120%);
