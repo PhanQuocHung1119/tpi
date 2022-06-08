@@ -1,15 +1,21 @@
+@import '/styles/main';
+
 .container {
   height: 100vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $Purple-100;
+  background: $Purple-100;
 }
 
-.icon {
-  background: url(~assets/icons/Clock.svg) no-repeat center;
-  background-size: cover;
-  width: 200px;
-  height: 200px;
-  margin: auto;
-}
+// .icon {
+//   background: url(~assets/icons/Clock.svg) no-repeat center;
+//   background-size: cover;
+//   width: 200px;
+//   height: 200px;
+//   margin: auto;
+// }
