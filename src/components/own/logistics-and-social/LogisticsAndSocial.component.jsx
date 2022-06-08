@@ -9,11 +9,7 @@ const LogisticsAndSocial = ({ logisticsAndSocial }) => {
       <div className={styles['container']}>
         {logisticsAndSocial.map((item, index) => (
           <div className={styles['content']} key={index}>
-            <NumberGeneralInfo
-              number={item.number}
-              title={item.title}
-              desc={item.desc}
-            />
+            <NumberGeneralInfo title={item.title} desc={item.desc} />
           </div>
         ))}
       </div>

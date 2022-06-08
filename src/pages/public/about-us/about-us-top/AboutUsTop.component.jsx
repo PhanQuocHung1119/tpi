@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './AboutUsTop.module.scss';
 import Image from 'next/image';
 import { NumberGeneralInfo } from 'components/own/number-general-info';
-import number_1 from '@assets/number/number-1.png';
 import about_us_img from '@assets/about-us/About-Us-Image.png';
 
 const title = `Giới thiệu về TPI`;
@@ -19,7 +18,7 @@ const AboutUsTop = () => {
     <>
       <div className={styles['container']}>
         <div className={styles['content-left']}>
-          <NumberGeneralInfo number={number_1} title={title} desc={desc} />
+          <NumberGeneralInfo title={title} desc={desc} />
         </div>
         <div className={styles['content-right']}>
           <div className={styles['icon-number']}>

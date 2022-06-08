@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './MissionAndVaule.module.scss';
 import Image from 'next/image';
-import num_1_2 from '@assets/number/number-1-2.png';
-import num_1_3 from '@assets/number/number-1-3.png';
 import mission from '@assets/about-us/Mission-and-value.png';
 
 import { NumberGeneralInfo } from 'components/own/number-general-info';
@@ -22,9 +20,9 @@ const MissionAndVaule = () => {
     <>
       <div className={styles['container']}>
         <div className={styles['content-left']}>
-          <NumberGeneralInfo number={num_1_2} title={title1} desc={desc1} />
+          <NumberGeneralInfo title={title1} desc={desc1} />
           <div className={styles['line']}></div>
-          <NumberGeneralInfo number={num_1_3} title={title2} desc={desc2} />
+          <NumberGeneralInfo title={title2} desc={desc2} />
         </div>
 
         <div className={styles['content-right']}>
