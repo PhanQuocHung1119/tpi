@@ -3,8 +3,6 @@ import styles from './AboutUsTeamMember.module.scss';
 import Image from 'next/image';
 import mem1 from '@assets/team-member/team-member-img-1.png';
 import mem2 from '@assets/team-member/team-member-img-2.png';
-import number_1_1 from '@assets/number/number-1-1.png';
-import { NumberIcon } from 'components/own/number-icon';
 import { NumberAndDesc } from 'components/own/number-and-desc';
 
 const desc1 =
@@ -40,9 +38,6 @@ const AboutUsTeamMember = () => {
           </div>
         </div>
         <div className={styles['member-content']}>
-          <div className={styles['member-content__number']}>
-            <NumberIcon number={number_1_1} />
-          </div>
           <div className={styles['member-content__title']}>Đội ngũ nhân sự</div>
           <div className={styles['member-content__content']}>
             <NumberAndDesc number={1} desc={desc1} />

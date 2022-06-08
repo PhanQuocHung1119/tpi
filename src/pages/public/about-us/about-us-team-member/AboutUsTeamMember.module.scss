@@ -36,19 +36,14 @@
     @include responsive-size(screen-m) {
       padding: 0 10px;
     }
-    &__number {
-      display: none;
-      width: 77px;
-      height: 77px;
-      margin-top: 60px;
-      @include responsive-size(screen-m) {
-        margin-top: 16px;
-      }
-    }
     &__title {
       color: $Dark-Green-100;
       margin: 16px 0;
+      margin-top: 60px;
       @include setting-font('Josefin Sans', normal, 400, 32px, 120%);
+      @include responsive-size(screen-m) {
+        margin-top: 16px;
+      }
     }
     &__content {
       display: flex;
