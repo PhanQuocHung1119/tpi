@@ -79,7 +79,10 @@ const Header = () => {
             <div className={styles['menu__line']}></div>
             <div className={styles['menu__item--more']}>
               <div className={styles['sub-title']}>Lĩnh vực tiên phong</div>
-              <div className={styles['arrow']}></div>
+
+              <div className={styles['arrow-wrapper']}>
+                <div className={styles['arrow']}></div>
+              </div>
               <div className={styles['sub-item-wrapper']}>
                 <div
                   className={styles['sub-item']}

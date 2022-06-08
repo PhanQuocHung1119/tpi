@@ -164,6 +164,7 @@
           color: $White;
           transform-origin: top;
           margin-right: 16px;
+          padding: 0 2px;
           @include responsive-size(screen-l) {
             margin-right: 8px;
           }
@@ -198,14 +199,22 @@
               padding-left: 10px;
             }
           }
-          .arrow {
-            border: solid $White;
-            border-width: 0 2px 2px 0;
-            display: inline-block;
-            padding: 3px;
-            transform: rotate(45deg);
-            @include responsive-size(screen-m) {
-              border-color: $text-color-2;
+          .arrow-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 6px;
+            height: 6px;
+            text-align: center;
+            .arrow {
+              border: solid $White;
+              border-width: 0 2px 2px 0;
+              display: inline-block;
+              padding: 3px;
+              transform: rotate(45deg);
+              @include responsive-size(screen-m) {
+                border-color: $text-color-2;
+              }
             }
           }
           .sub-item-wrapper {
