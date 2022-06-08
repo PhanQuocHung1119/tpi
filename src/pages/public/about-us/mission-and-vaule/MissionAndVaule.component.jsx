@@ -8,7 +8,7 @@ import mission from '@assets/about-us/Mission-and-value.png';
 import { NumberGeneralInfo } from 'components/own/number-general-info';
 
 const title1 = `Tầm nhìn sứ mệnh`;
-const title2 = `Giá trị cốt lỗi`;
+const title2 = `Giá trị cốt lõi`;
 
 const desc1 = `Tầm nhìn: TPI trở thành trung tâm logistic với đầy đủ chức năng: vận tải - phân phối - lưu trữ - chiếu xạ tại khu vực đồng bằng sông Cửu Long.
 
