@@ -14,7 +14,7 @@
   }
   .title {
     color: $Dark-Green-100;
-    @include setting-font('JosefinSans', normal, 400, 64px, 120%);
+    @include setting-font('Josefin Sans', normal, 400, 64px, 120%);
     @include responsive-size(screen-m) {
       font-size: 32px;
     }
@@ -84,7 +84,7 @@
     background: $Grass-100;
     cursor: pointer;
     user-select: none;
-    @include setting-font('JosefinSans', normal, 700, 16px, 120%);
+    @include setting-font('Josefin Sans', normal, 700, 16px, 120%);
     color: $White;
     border-radius: 6px;
   }

@@ -47,7 +47,7 @@
     &__title {
       color: $Dark-Green-100;
       margin: 16px 0;
-      @include setting-font('JosefinSans', normal, 400, 32px, 120%);
+      @include setting-font('Josefin Sans', normal, 400, 32px, 120%);
     }
     &__content {
       display: flex;

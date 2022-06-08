@@ -14,7 +14,7 @@
   }
   .title {
     color: $Dark-Green-100;
-    @include setting-font('JosefinSans', normal, 400, 64px, 120%);
+    @include setting-font('Josefin Sans', normal, 400, 64px, 120%);
     margin-bottom: 24px;
     @include responsive-size(screen-m) {
       margin-bottom: 16px;
@@ -63,7 +63,7 @@
         justify-content: flex-start;
         width: 100%;
         margin-bottom: 24px;
-        @include setting-font('JosefinSans', normal, 700, 16px, 120%);
+        @include setting-font('Josefin Sans', normal, 700, 16px, 120%);
         color: $Grass-100;
       }
       &__desc {

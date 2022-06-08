@@ -17,7 +17,7 @@
     width: 100%;
     min-height: 60px;
     margin-bottom: 16px;
-    @include setting-font('JosefinSans', normal, 700, 20px, 120%);
+    @include setting-font('Josefin Sans', normal, 700, 20px, 120%);
     @include responsive-size(screen-m) {
       min-height: auto;
     }

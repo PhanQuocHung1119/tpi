@@ -20,7 +20,7 @@
     min-height: 48px;
     color: $Dark-Green-100;
     padding-left: 10px;
-    @include setting-font('JosefinSans', normal, 400, 32px, 120%);
+    @include setting-font('Josefin Sans', normal, 400, 32px, 120%);
     @include responsive-size(screen-xs) {
       font-size: 24px;
       min-height: 32px;

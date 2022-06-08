@@ -20,7 +20,7 @@
     font-size: 128px;
     line-height: 120%;
     color: rgba(137, 137, 137, 0.3);
-    font-family: 'JosefinSans';
+    font-family: 'Josefin Sans';
     opacity: 0.8;
     margin-right: 10px;
   }
@@ -38,7 +38,7 @@
       max-height: 48px;
       height: 100%;
       margin-bottom: 16px;
-      @include setting-font('JosefinSans', normal, 400, 32px, 120%);
+      @include setting-font('Josefin Sans', normal, 400, 32px, 120%);
     }
     &__line {
       width: 186px;
