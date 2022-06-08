@@ -10,7 +10,6 @@ const securityHeaders = [
 module.exports = {
   reactStrictMode: false,
   trailingSlash: true,
-  optimizeFonts: false,
   generateEtags: false,
   experimental: {
     // Enables the styled-components SWC transform
