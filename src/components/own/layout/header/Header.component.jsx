@@ -45,7 +45,10 @@ const Header = () => {
             [`${styles['wrapper']} ${styles['active']}`]: openMenu.open,
           })}
         >
-          <div className={styles['icon-toan-phat']}>
+          <div
+            className={styles['icon-toan-phat']}
+            onClick={() => redirectToPage(RoutePages.HOME_PAGE)}
+          >
             <div className={styles['icon-toan-phat__icon-desktop']}>
               <Image
                 src={toan_phat_icon}
