@@ -12,7 +12,7 @@ const LayoutHead = ({ SEOInfo }) => (
       content='minimum-scale=1, initial-scale=1, width=device-width'
     />
     <link rel='icon' href='/favicon.ico' />
-    <link href='/fonts/all.min.css' rel='stylesheet' />
+    {/* <link href='/fonts/all.min.css' rel='stylesheet' /> */}
 
     <link rel='preconnect' href='https://fonts.googleapis.com' />
     <link
