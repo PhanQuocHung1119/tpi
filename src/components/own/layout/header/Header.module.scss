@@ -310,6 +310,7 @@
             border-radius: 6px;
             @include responsive-size(screen-m) {
               color: $White;
+              background: $White;
             }
           }
         }
