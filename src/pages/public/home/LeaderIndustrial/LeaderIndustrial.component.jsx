@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './LeaderIndustrial.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 import Image from 'next/image';
 import leader from '@assets/leader-industrial/LeaderIndustrial.png';
 import arrow_right from '@assets/introduce/arrow-right.png';
 
 const LeaderIndustrial = () => {
+  const refContainer = useRef();
+  const refContent = useRef();
+
+  useObserverItem(refContainer, styles);
+  useObserverItem(refContent, styles);
+
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['image']}>
           <Image
             src={leader}
@@ -19,7 +26,7 @@ const LeaderIndustrial = () => {
             quality={100}
           />
         </div>
-        <div className={styles['content']}>
+        <div className={styles['content']} ref={refContent}>
           <div className={styles['content__title']}>
             We are leader in industiral market
           </div>

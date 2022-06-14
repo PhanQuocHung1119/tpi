@@ -1,9 +1,10 @@
 import React, { useRef, useState, useCallback } from 'react';
+import styles from './Header.module.scss';
 import { RoutePages } from '@constants/router';
 import { useRouter } from 'next/router';
-
 import { useClickOutside } from 'components/hook';
-import styles from './Header.module.scss';
+import { handleAnim, useObserverItem } from 'components/hook/useObserverItem';
+
 import Image from 'next/image';
 import { produce } from 'immer';
 import clsx from 'clsx';
@@ -21,12 +22,16 @@ const Header = () => {
   const router = useRouter();
 
   const ref = useRef();
+  const refMenu = useRef();
+
   const [openMenu, setOpenMenu] = useState(dataPopup);
 
   const redirectToPage = useCallback((_link) => {
     router.push(_link);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useObserverItem(refMenu, styles);
 
   useClickOutside(ref, () =>
     setOpenMenu(
@@ -72,7 +77,7 @@ const Header = () => {
               />
             </div>
           </div>
-          <div className={styles['menu']}>
+          <div className={styles['menu']} ref={refMenu}>
             <div
               className={styles['menu__item']}
               onClick={() => redirectToPage(RoutePages.ABOUT_US)}
@@ -147,13 +152,14 @@ const Header = () => {
         <div className={styles['menu-mobile']}>
           <div
             className={styles['menu-mobile__setting-icon']}
-            onClick={() =>
+            onClick={(e) => {
+              handleAnim(refMenu, styles);
               setOpenMenu(
                 produce((data) => {
                   data.open = true;
                 })
-              )
-            }
+              );
+            }}
           >
             <Image
               src={setting_icon}

@@ -10,6 +10,15 @@
   width: 100%;
   margin: 200px auto 0;
 
+  &.active-anim {
+    & > :nth-child(1) {
+      @include anim-move-top(50px, 1.2s);
+    }
+    & > :nth-child(2) {
+      @include anim-move-right(50px, 1.2s);
+    }
+  }
+
   @include responsive-size(screen-m) {
     margin-top: 60px;
     flex-direction: column;
@@ -37,6 +46,20 @@
 
     padding-left: 84px;
     background-color: #2c1c5a;
+    &.active-anim {
+      @for $i from 1 through 4 {
+        & > :nth-child(#{$i}) {
+          @include anim-move-right(50px, 1s, 0.2s * $i);
+        }
+      }
+      & > :nth-child(3) {
+        @for $i from 1 through 3 {
+          & > :nth-child(#{$i}) {
+            @include anim-move-right(30px, 1.5s, 0.2s * $i);
+          }
+        }
+      }
+    }
     @include responsive-size(screen-l) {
       padding-left: 20px;
     }

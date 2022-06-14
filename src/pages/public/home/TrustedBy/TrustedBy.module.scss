@@ -41,6 +41,14 @@
       max-width: 1192px;
       width: 100%;
       min-height: 230px;
+
+      &.active-anim {
+        @for $i from 1 through 12 {
+          & > :nth-child(#{$i}) {
+            @include anim-wave(20px, 0.7s, 0.15s * $i);
+          }
+        }
+      }
     }
     display: block;
     position: relative;

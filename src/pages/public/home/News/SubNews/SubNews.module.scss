@@ -9,6 +9,13 @@
   width: 100%;
   height: max-content;
   margin: 0 5px;
+  &.active-anim {
+    @for $i from 1 through 4 {
+      & > :nth-child(#{$i}) {
+        @include anim-move-right(50px, 1s, 0.2s * $i);
+      }
+    }
+  }
   .image {
     max-width: 384px;
     max-height: 202px;

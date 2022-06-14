@@ -85,3 +85,108 @@ $breakpoints: (
     width: $width;
   }
 }
+
+@mixin anim-move-top($height: 70px, $duration: 0.3s, $delay: 0.3s) {
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  visibility: visible;
+  opacity: 0;
+  -webkit-animation: move_top_anim $duration ease-out $delay 1 normal forwards
+    running;
+  animation: move_top_anim $duration ease-out $delay 1 normal forwards running;
+  @keyframes move_top_anim {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0px, $height, 0);
+      transform: translate3d(0px, $height, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0px, 0);
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+}
+
+@mixin anim-opacity($duration: 0.3s, $delay: 0.3s) {
+  opacity: 0;
+  -webkit-animation: fade_opacity $duration ease-out $delay 1 normal forwards
+    running;
+  animation: fade_opacity $duration ease-out $delay 1 normal forwards running;
+  @keyframes fade_opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin anim-wave($height: 70px, $duration: 0.3s, $delay: 0s) {
+  opacity: 0;
+  -webkit-animation: move_wave $duration ease-in-out $delay 1 normal forwards
+    running;
+  animation: move_wave $duration ease-in-out $delay 1 normal forwards running;
+  @keyframes move_wave {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0px, $height, 0);
+      transform: translate3d(0px, $height, 0);
+    }
+    50% {
+      opacity: 0.5;
+      -webkit-transform: translate3d(0px, -$height, 0);
+      transform: translate3d(0px, -$height, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0px, 0);
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+}
+
+@mixin anim-move-right($right: 70px, $duration: 0.3s, $delay: 0s) {
+  opacity: 0;
+  -webkit-animation: move_right $duration ease-in-out $delay 1 normal forwards
+    running;
+  animation: move_right $duration ease-in-out $delay 1 normal forwards running;
+  @keyframes move_right {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d($right, 0, 0);
+      transform: translate3d($right, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0px, 0, 0);
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+}
+
+@mixin anim-move-circle($height: 70px, $duration: 0.3s, $delay: 0s) {
+  opacity: 0;
+  -webkit-animation: move_circle $duration ease-in-out $delay 1 normal forwards
+    running;
+  animation: move_circle $duration ease-in-out $delay 1 normal forwards running;
+  @keyframes move_circle {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-$height, $height, 0);
+      transform: translate3d(-$height, $height, 0);
+    }
+    50% {
+      opacity: 0.5;
+      -webkit-transform: translate3d($height, -$height, 0);
+      transform: translate3d($height, -$height, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0px, 0, 0);
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+}

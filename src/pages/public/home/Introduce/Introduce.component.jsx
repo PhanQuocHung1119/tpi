@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './Introduce.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 import introduce from '@assets/introduce/introduce-img.png';
 import arrow_right from '@assets/introduce/arrow-right.png';
 
 import Image from 'next/image';
 
 const Introduce = () => {
+  const refContainer = useRef();
+  const refContent = useRef();
+
+  useObserverItem(refContainer, styles);
+  useObserverItem(refContent, styles);
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['introduce-img']}>
           <Image
             src={introduce}
@@ -20,7 +26,7 @@ const Introduce = () => {
             quality={100}
           />
         </div>
-        <div className={styles['content']}>
+        <div className={styles['content']} ref={refContent}>
           <div className={styles['content__title']}>
             Lorem ipsum dolor sit amet, consectetur
           </div>

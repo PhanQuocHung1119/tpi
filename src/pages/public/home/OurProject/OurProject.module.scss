@@ -11,6 +11,13 @@
   height: max-content;
   margin: 200px auto 0;
   text-align: center;
+  &.active-anim {
+    @for $i from 1 through 3 {
+      & > :nth-child(#{$i}) {
+        @include anim-move-top(20px, 0.5s, 0.3s * $i);
+      }
+    }
+  }
   @include responsive-size(screen-l) {
     margin-top: 60px;
   }
@@ -54,7 +61,20 @@
     grid-auto-flow: dense;
     grid-gap: 8px;
     overflow: visible;
-
+    &.active-anim {
+      @for $i from 1 through 6 {
+        & > :nth-child(#{$i}) {
+          @include anim-move-circle(5px * $i, 0.8s, 0.25s * $i);
+        }
+      }
+      @include responsive-size(screen-m) {
+        @for $i from 1 through 6 {
+          & > :nth-child(#{$i}) {
+            @include anim-move-circle(2px * $i, 0.8s, 0.25s * $i);
+          }
+        }
+      }
+    }
     &__image {
       width: auto;
       max-height: 350px;

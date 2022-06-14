@@ -1,8 +1,9 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useRef } from 'react';
 import Slider from 'react-slick';
 import styles from './Testimonial.module.scss';
-import Image from 'next/image';
 import { ClientComment } from './ClientComment';
+import { useObserverItem } from 'components/hook/useObserverItem';
+
 import avatar_1 from '@assets/client-comment/avatar-1.png';
 import avatar_2 from '@assets/client-comment/avatar-2.png';
 import avatar_3 from '@assets/client-comment/avatar-3.png';
@@ -18,6 +19,8 @@ const clientComment = [
   { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_2 },
 ];
 const Testimonial = () => {
+  const refSlider = useRef(null);
+
   const settings = useMemo(
     () => ({
       className: styles['setting-slider'],
@@ -29,13 +32,15 @@ const Testimonial = () => {
       touchMove: true,
       swipe: true,
       infinite: false,
-      speed: 500,
+      speed: 200,
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: true,
     }),
     []
   );
+
+  useObserverItem(refSlider, styles);
   return (
     <>
       <div className={styles['container']}>
@@ -43,20 +48,21 @@ const Testimonial = () => {
         <div className={styles['desc']}>
           Hear what our previous clients had to say about our services!
         </div>
-
-        <Slider {...settings}>
-          {Array.isArray(clientComment) &&
-            clientComment?.map((item, index) => {
-              return (
-                <ClientComment
-                  name={item.name}
-                  title={item.title}
-                  avatar={item.avatar}
-                  key={index}
-                />
-              );
-            })}
-        </Slider>
+        <div className={styles['slider-wrapper']} ref={refSlider}>
+          <Slider {...settings}>
+            {Array.isArray(clientComment) &&
+              clientComment?.map((item, index) => {
+                return (
+                  <ClientComment
+                    name={item.name}
+                    title={item.title}
+                    avatar={item.avatar}
+                    key={index}
+                  />
+                );
+              })}
+          </Slider>
+        </div>
       </div>
     </>
   );

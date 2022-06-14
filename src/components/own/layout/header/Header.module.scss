@@ -90,6 +90,21 @@
       height: 36px;
       width: 100%;
       margin: 0 42px;
+
+      &.active-anim {
+        @for $i from 1 through 11 {
+          & > :nth-child(#{$i}) {
+            @include anim-wave(5px, 0.8s, 0.1s * $i);
+          }
+        }
+        @include responsive-size(screen-m) {
+          @for $i from 1 through 11 {
+            & > :nth-child(#{$i}) {
+              @include anim-move-right(50px, 0.8s, 0.1s * $i);
+            }
+          }
+        }
+      }
       @include responsive-size(screen-l) {
         margin: 0 16px;
       }
@@ -126,6 +141,7 @@
         color: $White;
         text-align: center;
         @include setting-font('Josefin Sans', normal, 700, 14px, 120%);
+
         @include responsive-size(screen-l) {
           margin-right: 8px;
           min-width: 115px;
