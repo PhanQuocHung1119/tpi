@@ -9,6 +9,7 @@
   max-width: 1440px;
   height: max-content;
   margin-top: 120px;
+
   @include responsive-size(screen-m) {
     margin-top: 46px;
   }
@@ -22,6 +23,20 @@
       .member-img {
         width: 715px;
         height: max-content;
+      }
+      &.active-anim {
+        & > :nth-child(1) {
+          @include anim-move-top(50px, 1.2s);
+          @include responsive-size(screen-m) {
+            @include anim-move-top(20px, 1.2s);
+          }
+        }
+        & > :nth-child(2) {
+          @include anim-move-right(50px, 1.2s);
+          @include responsive-size(screen-m) {
+            @include anim-move-right(20px, 1.2s);
+          }
+        }
       }
     }
   }
@@ -52,6 +67,13 @@
       width: 100%;
       max-width: 1170px;
       height: max-content;
+      &.active-anim {
+        @for $i from 1 through 3 {
+          & > :nth-child(#{$i}) {
+            @include anim-move-right(50px, 0.7s, 0.25s * $i);
+          }
+        }
+      }
       @include responsive-size(screen-m) {
         flex-direction: column;
         max-width: none;
