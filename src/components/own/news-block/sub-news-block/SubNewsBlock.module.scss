@@ -12,13 +12,28 @@
   border: 1px solid #ececec;
   border-radius: 30px;
   margin: 0 10px;
+  &.active-anim {
+    & > :nth-child(1) {
+      @include anim-opacity(0.5s, 0s);
+      @include anim-move-circle(-2px, 0.7s, 0s);
+    }
+    & > :nth-child(2) {
+      @include anim-opacity(0.5s, 0s);
+      @for $i from 1 through 3 {
+        & > :nth-child(#{$i}) {
+          @include anim-move-circle(-2px, 0.7s, 0.15s * $i);
+        }
+      }
+    }
+  }
   @include responsive-size(screen-m) {
-    border-radius: 8px;
+    border-radius: 30px;
     max-width: 264px;
   }
   .main-image {
     width: 383px;
     height: 200px;
+    opacity: 0;
     @include responsive-size(screen-m) {
       max-width: 264px;
       max-height: 138px;
@@ -32,6 +47,7 @@
     width: 100%;
     height: 200px;
     padding-left: 20px;
+    opacity: 0;
     .time {
       display: flex;
       align-items: center;

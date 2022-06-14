@@ -31,11 +31,12 @@ const Testimonial = () => {
       swipeToSlide: true,
       touchMove: true,
       swipe: true,
-      infinite: false,
-      speed: 200,
+      speed: 500,
       slidesToShow: 1,
+      touchThreshold: 1000,
       slidesToScroll: 1,
       adaptiveHeight: true,
+      cssEase: 'linear',
     }),
     []
   );

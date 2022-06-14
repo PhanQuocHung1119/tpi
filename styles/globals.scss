@@ -86,10 +86,26 @@ button {
   }
 }
 .slider-arrow__left {
-  left: -48px;
+  // left: -48px;
+  position: relative;
+  cursor: pointer;
+  border: solid #050505;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  margin-left: 6px;
 }
 .slider-arrow__right {
-  right: -48px;
+  // right: -48px;
+  position: relative;
+  cursor: pointer;
+  border: solid #050505;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  margin-left: 6px;
 }
 
 .slick-disabled {

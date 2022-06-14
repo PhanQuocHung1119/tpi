@@ -10,6 +10,7 @@
   justify-content: center;
   width: 383px;
   height: 258px;
+  opacity: 0;
   @include responsive-size(screen-xs) {
     max-width: 264px;
     & > div {

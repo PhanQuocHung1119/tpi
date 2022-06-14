@@ -28,13 +28,13 @@
         & > :nth-child(1) {
           @include anim-move-top(50px, 1.2s);
           @include responsive-size(screen-m) {
-            @include anim-move-top(20px, 1.2s);
+            @include anim-move-top(10px, 1s);
           }
         }
         & > :nth-child(2) {
           @include anim-move-right(50px, 1.2s);
           @include responsive-size(screen-m) {
-            @include anim-move-right(20px, 1.2s);
+            @include anim-move-right(10px, 1s);
           }
         }
       }
@@ -70,7 +70,13 @@
       &.active-anim {
         @for $i from 1 through 3 {
           & > :nth-child(#{$i}) {
-            @include anim-move-right(50px, 0.7s, 0.25s * $i);
+            @include anim-move-top(50px, 0.7s, 0.5s * $i);
+            & > :nth-child(1) {
+              @include anim-move-top(50px, 0.7s, 0.4s * $i);
+            }
+            & > :nth-child(2) {
+              @include anim-move-right(50px, 0.7s, 0.7s * $i);
+            }
           }
         }
       }

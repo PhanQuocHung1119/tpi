@@ -30,32 +30,75 @@
     width: 100%;
     height: max-content;
 
-    .arrow-left,
-    .arrow-right {
-      width: 12px;
-      height: 19px;
-      cursor: pointer;
-      user-select: none;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      @include responsive-size(screen-m) {
-        display: none;
-      }
-    }
-    .arrow-left {
-      left: 0;
-    }
-    .arrow-right {
-      right: 0;
-    }
-    .content {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
+    .slider-wrapper {
       width: 100%;
       max-width: 1170px;
-      height: max-content;
+      height: 100%;
+      &.active-anim {
+        & > :first-child {
+          & > :first-child {
+            & > :first-child {
+              @for $i from 1 through 11 {
+                & > :nth-child(#{$i}) {
+                  & > :first-child {
+                    & > :first-child {
+                      @include anim-move-right(50px, 0.8s, 0.3s * $i);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
+
+.setting-slider {
+  position: relative;
+  width: 100%;
+  & > :first-child {
+    overflow: hidden;
+    @include responsive-size(screen-m) {
+      height: max-content;
+      max-height: max-content;
+    }
+    & > :first-child {
+      @include responsive-size(screen-m) {
+        max-height: max-content;
+      }
+    }
+  }
+  @include responsive-size(screen-m) {
+    height: max-content;
+  }
+
+  & > :first-child {
+    & > :first-child {
+      width: max-content !important;
+    }
+  }
+}
+
+// .slider-arrow {
+//   &__left,
+//   &__right {
+//     width: 12px;
+//     height: 19px;
+//     cursor: pointer;
+//     user-select: none;
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     @include responsive-size(screen-m) {
+//       display: none;
+//     }
+//   }
+//   &__left {
+//     left: 0;
+//   }
+//   &__right {
+//     right: 0;
+//   }
+// }

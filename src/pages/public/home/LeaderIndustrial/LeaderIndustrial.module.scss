@@ -9,8 +9,10 @@
   max-width: 1440px;
   width: 100%;
   margin: 200px auto 0;
-
+  opacity: 0;
   &.active-anim {
+    @include anim-opacity(0.1s, 0s);
+
     & > :nth-child(1) {
       @include anim-move-top(50px, 1.2s);
     }

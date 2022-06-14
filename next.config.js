@@ -29,12 +29,7 @@ module.exports = {
     gtmId: process.env.REACT_APP_GTM_ID,
   },
   images: {
-    domains: [
-      'vinhcara.com',
-      'api.quan1229.com',
-      'mediafile.quan1229.com',
-      'mediafile.vinhcara.com',
-    ],
+    domains: [],
     formats: ['image/webp'],
   },
 

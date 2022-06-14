@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './MissionAndVaule.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 import Image from 'next/image';
 import mission from '@assets/about-us/Mission-and-value.png';
 
@@ -16,9 +17,11 @@ Nỗ lực đầu tư cả về trí tuệ con người cùng với trang thiế
 Coi trọng việc nghiên cứu đáp ứng nhu cầu khách hàng, cũng như các hoạt động tiếp nhận, lắng nghe phản hồi của khách hàng.`;
 
 const MissionAndVaule = () => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['content-left']}>
           <NumberGeneralInfo title={title1} desc={desc1} />
           <div className={styles['line']}></div>

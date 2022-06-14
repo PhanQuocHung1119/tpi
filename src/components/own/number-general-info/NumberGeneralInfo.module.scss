@@ -7,6 +7,14 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  &.active-anim {
+    & > :nth-child(1) {
+      @include anim-move-top(50px, 1.2s);
+    }
+    & > :nth-child(2) {
+      @include anim-move-right(-50px, 1.2s);
+    }
+  }
 
   .title {
     display: flex;

@@ -86,7 +86,7 @@ $breakpoints: (
   }
 }
 
-@mixin anim-move-top($height: 70px, $duration: 0.3s, $delay: 0.3s) {
+@mixin anim-move-top($height: 70px, $duration: 0.3s, $delay: 0s) {
   -webkit-transform-origin: top;
   -ms-transform-origin: top;
   transform-origin: top;

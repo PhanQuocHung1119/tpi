@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './SubNewsBlock.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 import Image from 'next/image';
 import birth from '@assets/icons/birth.png';
 
 const SubNewsBlock = ({ image, time, title, desc }) => {
+  const refContent = useRef(null);
+  useObserverItem(refContent, styles);
+
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContent}>
         <div className={styles['main-image']}>
           <Image
             src={image}
