@@ -81,24 +81,32 @@
   }
 }
 
-// .slider-arrow {
-//   &__left,
-//   &__right {
-//     width: 12px;
-//     height: 19px;
-//     cursor: pointer;
-//     user-select: none;
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     @include responsive-size(screen-m) {
-//       display: none;
-//     }
-//   }
-//   &__left {
-//     left: 0;
-//   }
-//   &__right {
-//     right: 0;
-//   }
-// }
+.slider-arrow {
+  &__left,
+  &__right {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+    border: solid $Black-100;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    @include responsive-size(screen-m) {
+      display: none;
+    }
+  }
+  &__left {
+    left: -20px;
+    transform: rotate(135deg);
+  }
+  &__right {
+    right: -20px;
+    transform: rotate(-45deg);
+  }
+}

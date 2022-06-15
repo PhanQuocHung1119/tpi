@@ -11,7 +11,7 @@
   width: 100%;
   border: 1px solid #ececec;
   border-radius: 30px;
-  margin: 0 10px;
+  margin-right: 10px;
   &.active-anim {
     & > :nth-child(1) {
       @include anim-opacity(0.5s, 0s);

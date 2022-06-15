@@ -4,10 +4,6 @@ import styles from './NewsBlock.module.scss';
 import { SubNewsBlock } from './sub-news-block';
 import { useObserverItem } from 'components/hook/useObserverItem';
 
-import Image from 'next/image';
-import arrow_left from '@assets/icons/arrow-left.png';
-import arrow_right from '@assets/icons/arrow-right.png';
-
 import news1 from '@assets/about-us/News-block-1.png';
 import news2 from '@assets/about-us/News-block-2.png';
 import news3 from '@assets/about-us/News-block-3.png';
@@ -64,9 +60,7 @@ function ArrowLef(props) {
         styles[`slider-arrow__left${currentSlide === 0 ? '--disabled' : ''}`]
       }
       onClick={onClick}
-    >
-      {/* <Image src={arrow_left} alt='' /> */}
-    </div>
+    ></div>
   );
 }
 
@@ -82,9 +76,7 @@ function ArrowRight(props) {
         ]
       }
       onClick={onClick}
-    >
-      {/* <Image src={arrow_right} alt='' /> */}
-    </div>
+    ></div>
   );
 }
 
@@ -105,7 +97,7 @@ const NewsBlock = () => {
       infinite: false,
       speed: 500,
       slidesToShow: 1,
-      touchThreshold: 1000,
+      touchThreshold: 100,
       slidesToScroll: 1,
       adaptiveHeight: true,
       cssEase: 'linear',
