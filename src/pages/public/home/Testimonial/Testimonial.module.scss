@@ -43,7 +43,7 @@
       & > :first-child {
         & > :first-child {
           & > :first-child {
-            @for $i from 1 through 11 {
+            @for $i from 1 through 8 {
               & > :nth-child(#{$i}) {
                 & > :first-child {
                   & > :first-child {
@@ -62,6 +62,8 @@
 .setting-slider {
   position: relative;
   width: 100%;
+  max-width: 1440px;
+
   & > :first-child {
     overflow: visible;
     max-height: calc(288px / 1440px * 100vw);
