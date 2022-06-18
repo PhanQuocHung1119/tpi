@@ -9,6 +9,7 @@
   max-width: 974px;
   max-height: 547px;
   margin-top: 22px;
+  user-select: none;
   .video-image-wrapper {
     position: relative;
     @include flex-container(center, center);

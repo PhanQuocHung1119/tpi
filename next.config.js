@@ -11,6 +11,12 @@ module.exports = {
   reactStrictMode: false,
   trailingSlash: true,
   generateEtags: false,
+  i18n: {
+    // providing the locales supported by your application
+    locales: ['vi', 'en-US'],
+    //  default locale used when the non-locale paths are visited
+    defaultLocale: 'vi',
+  },
   experimental: {
     // Enables the styled-components SWC transform
     styledComponents: true,

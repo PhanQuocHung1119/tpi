@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "locale": "vi",
+      "title": "Sample Title For the First Blog Post in English",
+      "description": "This is the first blog post in English published on the blog",
+      "image": "https://www.datocms-assets.com/54676/1612503497-ferran-feixas-ubflzcoxst8-unsplash.jpg"
+    },
+    {
+      "locale": "en-US",
+      "title": "Sample Title For the Second Blog Post in English",
+      "description": "This is the second blog post in English published on the blog",
+      "image": "https://www.datocms-assets.com/54676/1612503265-manuel-meurisse-eucll-f5ati-unsplash.jpg"
+    }
+  ]
+}

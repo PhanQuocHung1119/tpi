@@ -91,6 +91,9 @@
       width: 100%;
       margin: 0 42px;
 
+      & > :nth-child(n) {
+        opacity: 0;
+      }
       &.active-anim {
         @for $i from 1 through 11 {
           & > :nth-child(#{$i}) {

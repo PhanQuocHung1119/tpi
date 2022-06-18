@@ -33,7 +33,7 @@ const Testimonial = () => {
       swipe: true,
       speed: 500,
       slidesToShow: 1,
-      touchThreshold: 100,
+      touchThreshold: 50,
       slidesToScroll: 1,
       adaptiveHeight: true,
       infinite: false,

@@ -1,13 +1,13 @@
-import { useRouter } from "next/router";
-import styles from "./Layout.module.scss";
+import { useRouter } from 'next/router';
+import styles from './Layout.module.scss';
 
-import LayoutHead from "./LayoutHead.component";
-import { Header } from "./header";
-import { Footer } from "./footer";
+import LayoutHead from './LayoutHead.component';
+import { Header } from './header';
+import { Footer } from './footer';
 
-import { ROOT_DOMAIN } from "@constants/Api.constants";
-import { useCallback, useEffect, useMemo, useState } from "react";
-import produce from "immer";
+import { ROOT_DOMAIN } from '@constants/Api.constants';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import produce from 'immer';
 
 const Layout = ({ children, SEOInfo = {} }) => {
   const location = useRouter();
@@ -16,7 +16,7 @@ const Layout = ({ children, SEOInfo = {} }) => {
   });
 
   const url = useMemo(
-    () => ROOT_DOMAIN + location?.asPath?.replace("/", ""),
+    () => ROOT_DOMAIN + location?.asPath?.replace('/', ''),
     [location?.asPath]
   );
 
@@ -36,8 +36,8 @@ const Layout = ({ children, SEOInfo = {} }) => {
 
       // Vertical scrolling does not work when you start swiping horizontally.
       if (Math.abs(clientX) > minValue) {
-        e.preventDefault();
-        e.returnValue = false;
+        // if (e.cancelable) e.preventDefault();
+        // e.returnValue = false;
         return false;
       }
     },
@@ -45,16 +45,16 @@ const Layout = ({ children, SEOInfo = {} }) => {
   );
 
   useEffect(() => {
-    window.addEventListener("touchstart", touchStart);
-    window.addEventListener("touchmove", preventTouch, { passive: false });
+    window.addEventListener('touchstart', touchStart, { passive: true });
+    window.addEventListener('touchmove', preventTouch, { passive: true });
     return () => {
-      window.removeEventListener("touchstart", touchStart);
-      window.removeEventListener("touchmove", preventTouch, { passive: false });
+      window.removeEventListener('touchstart', touchStart, { passive: true });
+      window.removeEventListener('touchmove', preventTouch, { passive: true });
     };
   }, [preventTouch, touchStart]);
 
   return (
-    <div className={styles.container} id="layout-container">
+    <div className={styles.container} id='layout-container'>
       <LayoutHead SEOInfo={Object.assign(SEOInfo, { url })} />
       <Header />
       {children}
