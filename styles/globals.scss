@@ -68,45 +68,29 @@ button {
   }
 }
 
-.slider-arrow__right,
-.slider-arrow__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  pointer-events: auto;
-  z-index: 5;
-  bottom: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  & > :first-child {
-    pointer-events: none;
-  }
-}
-.slider-arrow__left {
-  // left: -48px;
-  position: relative;
-  cursor: pointer;
-  border: solid #050505;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  margin-left: 6px;
-}
-.slider-arrow__right {
-  // right: -48px;
-  position: relative;
-  cursor: pointer;
-  border: solid #050505;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  margin-left: 6px;
-}
+// .slider-arrow__right,
+// .slider-arrow__left {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   width: 48px;
+//   height: 48px;
+//   cursor: pointer;
+//   pointer-events: auto;
+//   z-index: 5;
+//   bottom: 50%;
+//   background: rgba(255, 255, 255, 0.5);
+//   & > :first-child {
+//     pointer-events: none;
+//   }
+// }
+// .slider-arrow__left {
+//   left: -48px;
+// }
+// .slider-arrow__right {
+//   right: -48px;
+// }
 
 .slick-disabled {
   filter: grayscale(1);

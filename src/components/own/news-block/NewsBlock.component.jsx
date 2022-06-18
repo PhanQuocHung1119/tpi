@@ -100,7 +100,7 @@ const NewsBlock = () => {
       touchThreshold: 100,
       slidesToScroll: 1,
       adaptiveHeight: true,
-      cssEase: 'linear',
+      // cssEase: 'linear',
       nextArrow: <ArrowRight />,
       prevArrow: <ArrowLef />,
     }),

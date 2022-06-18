@@ -9,8 +9,8 @@ import Image from 'next/image';
 import { produce } from 'immer';
 import clsx from 'clsx';
 
-import toan_phat_icon from '@assets/header/ToanPhat-Icon.png';
-import toan_phat_mobile_icon from '@assets/header/ToanPhat-Mobile-Icon.png';
+import toan_phat_icon from '@assets/header/ToanPhat-Icon.svg';
+import toan_phat_mobile_icon from '@assets/header/ToanPhat-Mobile-Icon.svg';
 import language_icon from '@assets/header/language.png';
 import setting_icon from '@assets/header/Setting-Icon.png';
 
