@@ -179,7 +179,7 @@
           height: max-content;
           max-width: 160px;
           width: 100%;
-          min-width: 152px;
+          // min-width: 152px;
           color: $White;
           transform-origin: top;
           margin-right: 16px;
@@ -203,11 +203,11 @@
             justify-content: center;
             flex-direction: column;
             max-width: 150px;
-            width: 100%;
+            width: max-content;
             min-height: 36px;
             cursor: pointer;
             color: $White;
-            margin-right: 4px;
+            margin-right: 8px;
             text-align: center;
             @include setting-font('Josefin Sans', normal, 700, 14px, 120%);
             @include responsive-size(screen-m) {
@@ -226,6 +226,7 @@
             width: 6px;
             height: 6px;
             text-align: center;
+            margin-bottom: 4px;
             .arrow {
               border: solid $White;
               border-width: 0 2px 2px 0;
