@@ -1,6 +1,8 @@
-import React, { useRef, useState, useCallback } from 'react';
+import React, { useRef, useState, useCallback, useMemo } from 'react';
 import styles from './Header.module.scss';
 import { RoutePages } from '@constants/router';
+import { headerMenu } from '@constants/language-option';
+
 import { useRouter } from 'next/router';
 import { useClickOutside } from 'components/hook';
 import { handleAnim, useObserverItem } from 'components/hook/useObserverItem';
@@ -11,7 +13,8 @@ import clsx from 'clsx';
 
 import toan_phat_icon from '@assets/header/ToanPhat-Icon.svg';
 import toan_phat_mobile_icon from '@assets/header/ToanPhat-Mobile-Icon.svg';
-import language_icon from '@assets/header/language.png';
+import flag_us from '@assets/header/flag-us.png';
+import flag_viet_nam from '@assets/header/flag-viet-nam.png';
 import setting_icon from '@assets/header/Setting-Icon.png';
 
 const dataPopup = {
@@ -26,8 +29,27 @@ const Header = () => {
 
   const [openMenu, setOpenMenu] = useState(dataPopup);
 
+  const arrMenu = useMemo(
+    () => {
+      return headerMenu.find((item) => item.locale === router.locale).titles;
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [router.locale, headerMenu]
+  );
+
   const redirectToPage = useCallback((_link) => {
     router.push(_link);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const activeLanguage = useCallback((e) => {
+    let elmnt = e.currentTarget.classList;
+    elmnt.toggle(styles['active']);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const chooseLanguage = useCallback((_language) => {
+    router.push('#', '#', { locale: _language });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -78,66 +100,52 @@ const Header = () => {
             </div>
           </div>
           <div className={styles['menu']} ref={refMenu}>
-            <div
-              className={styles['menu__item']}
-              onClick={() => redirectToPage(RoutePages.ABOUT_US)}
-            >
-              Giới thiệu
-            </div>
-            <div className={styles['menu__line']}></div>
-            <div className={styles['menu__item--more']}>
-              <div className={styles['sub-title']}>Lĩnh vực tiên phong</div>
-
-              <div className={styles['arrow-wrapper']}>
-                <div className={styles['arrow']}></div>
-              </div>
-              <div className={styles['sub-item-wrapper']}>
-                <div
-                  className={styles['sub-item']}
-                  onClick={() => redirectToPage(RoutePages.FOOD_IRRADIATION)}
-                >
-                  Chiếu xạ
-                </div>
-                <div
-                  className={styles['sub-item']}
-                  onClick={() => redirectToPage(RoutePages.COLD_STORAGE)}
-                >
-                  Kho lạnh lưu trữ
-                </div>
-              </div>
-            </div>
-            <div className={styles['menu__line']}></div>
-            <div
-              className={styles['menu__item']}
-              onClick={() => redirectToPage(RoutePages.GOALS)}
-            >
-              Mục tiêu phát triển
-            </div>
-            <div className={styles['menu__line']}></div>
-            <div
-              className={styles['menu__item']}
-              onClick={() => redirectToPage(RoutePages.CUSTOMER)}
-            >
-              Khách hàng
-            </div>
-            <div className={styles['menu__line']}></div>
-            <div
-              className={styles['menu__item']}
-              onClick={() => redirectToPage(RoutePages.SUPPORT)}
-            >
-              Hỗ trợ
-            </div>
-            <div className={styles['menu__line']}></div>
-            <div
-              className={styles['menu__item']}
-              onClick={() => redirectToPage(RoutePages.QUESTION_AND_ANSWER)}
-            >{`Q&A`}</div>
-            <div className={styles['menu__line']}></div>
+            {arrMenu.map((item, index) => (
+              <React.Fragment key={index}>
+                {!item.status ? (
+                  <>
+                    <div
+                      className={styles['menu__item']}
+                      onClick={() => redirectToPage(item.link)}
+                    >
+                      {item.title}
+                    </div>
+                    <div className={styles['menu__line']}></div>
+                  </>
+                ) : item.status === 'wrapper' ? (
+                  <>
+                    <div className={styles['menu__item--more']}>
+                      <div className={styles['sub-title']}>{item.title}</div>
+                      <div className={styles['arrow-wrapper']}>
+                        <div className={styles['arrow']}></div>
+                      </div>
+                      <div className={styles['sub-item-wrapper']}>
+                        {item.sub.map((_item, _index) => (
+                          <div
+                            className={styles['sub-item']}
+                            key={_index}
+                            onClick={() => redirectToPage(_item.link)}
+                          >
+                            {_item.title}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className={styles['menu__line']}></div>
+                  </>
+                ) : (
+                  ''
+                )}
+              </React.Fragment>
+            ))}
           </div>
-          <div className={styles['language']}>
+          <div
+            className={styles['language']}
+            onClick={(e) => activeLanguage(e)}
+          >
             <div className={styles['language__icon']}>
               <Image
-                src={language_icon}
+                src={flag_us}
                 alt=''
                 width={24}
                 height={24}
@@ -147,6 +155,20 @@ const Header = () => {
               />
             </div>
             <div className={styles['language__caret-down']}></div>
+            <div className={styles['language-option']}>
+              <div
+                className={styles['language-option__sub-item']}
+                onClick={() => chooseLanguage('en-US')}
+              >
+                English
+              </div>
+              <div
+                className={styles['language-option__sub-item']}
+                onClick={() => chooseLanguage('vi')}
+              >
+                VietNam
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles['menu-mobile']}>

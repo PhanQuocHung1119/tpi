@@ -37,7 +37,7 @@ const Testimonial = () => {
       slidesToScroll: 1,
       adaptiveHeight: true,
       infinite: false,
-      cssEase: 'linear',
+      // cssEase: 'linear',
     }),
     []
   );
