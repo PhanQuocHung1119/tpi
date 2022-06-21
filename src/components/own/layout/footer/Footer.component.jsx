@@ -26,7 +26,6 @@ const Footer = () => {
                 height={172}
                 layout='responsive'
                 objectFit='contain'
-                placeholder='blur'
                 quality={100}
               />
             </div>
@@ -38,7 +37,6 @@ const Footer = () => {
                 height={20}
                 layout='responsive'
                 objectFit='contain'
-                placeholder='blur'
                 quality={100}
               />
             </div>

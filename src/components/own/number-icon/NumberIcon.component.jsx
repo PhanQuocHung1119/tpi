@@ -14,7 +14,6 @@ const NumberIcon = ({ number = number_1 }) => {
           height={77}
           layout='responsive'
           objectFit='contain'
-          placeholder='blur'
           quality={100}
         />
       </div>

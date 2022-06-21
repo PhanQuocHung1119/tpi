@@ -16,7 +16,6 @@ const SubBestServices = ({ icon, number }) => {
               height={64}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>

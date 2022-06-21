@@ -32,7 +32,6 @@ const AboutUsTop = () => {
               height={513}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>

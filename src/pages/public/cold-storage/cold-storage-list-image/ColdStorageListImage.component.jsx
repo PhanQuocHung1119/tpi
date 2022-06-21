@@ -18,7 +18,6 @@ const ColdStorageListImage = () => {
             height={602}
             layout='responsive'
             objectFit='contain'
-            placeholder='blur'
             quality={100}
           />
         </div>
@@ -31,7 +30,6 @@ const ColdStorageListImage = () => {
               height={283}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>
@@ -43,7 +41,6 @@ const ColdStorageListImage = () => {
               height={283}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>
@@ -55,7 +52,6 @@ const ColdStorageListImage = () => {
               height={283}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>

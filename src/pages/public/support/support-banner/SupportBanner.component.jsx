@@ -13,7 +13,6 @@ const SupportBanner = () => {
           height={400}
           layout='responsive'
           objectFit='contain'
-          placeholder='blur'
           quality={100}
         />
       </div>

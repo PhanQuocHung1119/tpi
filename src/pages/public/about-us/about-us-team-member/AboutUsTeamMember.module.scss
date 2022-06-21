@@ -20,11 +20,14 @@
       justify-content: center;
       width: 100%;
       height: max-content;
+      opacity: 0;
       .member-img {
         width: 715px;
         height: max-content;
       }
       &.active-anim {
+        @include anim-opacity(0.1s, 0s);
+
         & > :nth-child(1) {
           @include anim-move-top(50px, 1.2s);
           @include responsive-size(screen-m) {

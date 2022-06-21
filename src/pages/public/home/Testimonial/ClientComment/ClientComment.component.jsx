@@ -16,7 +16,6 @@ const ClientComment = ({ name, title, avatar }) => {
             height={18}
             layout='responsive'
             objectFit='contain'
-            placeholder='blur'
             quality={100}
           />
         </div>
@@ -36,7 +35,6 @@ const ClientComment = ({ name, title, avatar }) => {
               height={36}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>

@@ -28,7 +28,6 @@ const AboutUsTeamMember = () => {
               height={500}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>
@@ -40,7 +39,6 @@ const AboutUsTeamMember = () => {
               height={500}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>

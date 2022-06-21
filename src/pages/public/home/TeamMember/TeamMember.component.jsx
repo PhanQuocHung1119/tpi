@@ -47,7 +47,6 @@ const TeamMember = () => {
                   height={436}
                   layout='responsive'
                   objectFit='contain'
-                  placeholder='blur'
                   quality={100}
                 />
               </div>

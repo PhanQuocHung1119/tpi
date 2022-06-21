@@ -28,7 +28,6 @@ const LatestNews = () => {
               height={285}
               layout='responsive'
               objectFit='contain'
-              placeholder='blur'
               quality={100}
             />
           </div>

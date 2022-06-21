@@ -14,7 +14,6 @@ const GoalsBanner = () => {
           height={600}
           layout='responsive'
           objectFit='contain'
-          placeholder='blur'
           quality={100}
         />
       </div>

@@ -18,7 +18,6 @@ const SubNews = ({ image }) => {
             height={202}
             layout='responsive'
             objectFit='contain'
-            placeholder='blur'
             quality={100}
           />
         </div>

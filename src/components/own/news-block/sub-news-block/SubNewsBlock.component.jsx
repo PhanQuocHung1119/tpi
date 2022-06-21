@@ -19,7 +19,6 @@ const SubNewsBlock = ({ image, time, title, desc }) => {
             height={200}
             layout='responsive'
             objectFit='contain'
-            placeholder='blur'
             quality={100}
           />
         </div>
@@ -33,7 +32,6 @@ const SubNewsBlock = ({ image, time, title, desc }) => {
                 height={29}
                 layout='responsive'
                 objectFit='contain'
-                placeholder='blur'
                 quality={100}
               />
             </div>

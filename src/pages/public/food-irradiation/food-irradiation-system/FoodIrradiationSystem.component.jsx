@@ -25,7 +25,6 @@ const FoodIrradiationSystem = () => {
                 height={200}
                 layout='responsive'
                 objectFit='contain'
-                placeholder='blur'
                 quality={100}
               />
             </div>
@@ -42,7 +41,6 @@ const FoodIrradiationSystem = () => {
                 height={200}
                 layout='responsive'
                 objectFit='contain'
-                placeholder='blur'
                 quality={100}
               />
             </div>
@@ -60,7 +58,6 @@ const FoodIrradiationSystem = () => {
                 height={200}
                 layout='responsive'
                 objectFit='contain'
-                placeholder='blur'
                 quality={100}
               />
             </div>
