@@ -26,6 +26,7 @@ const SubMethodIrradiation = () => {
               height={353}
               layout='responsive'
               objectFit='contain'
+              placeholder='blur'
               quality={100}
             />
           </div>

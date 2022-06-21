@@ -84,6 +84,7 @@ const Header = () => {
                 height={46}
                 layout='responsive'
                 objectFit='contain'
+                placeholder='blur'
                 quality={100}
               />
             </div>
@@ -95,6 +96,7 @@ const Header = () => {
                 height={46}
                 layout='responsive'
                 objectFit='contain'
+                placeholder='blur'
                 quality={100}
               />
             </div>
@@ -151,6 +153,7 @@ const Header = () => {
                 height={24}
                 layout='responsive'
                 objectFit='contain'
+                placeholder='blur'
                 quality={100}
               />
             </div>
@@ -190,6 +193,7 @@ const Header = () => {
               height={24}
               layout='responsive'
               objectFit='contain'
+              placeholder='blur'
               quality={100}
             />
           </div>
@@ -204,6 +208,7 @@ const Header = () => {
               height={36}
               layout='responsive'
               objectFit='contain'
+              placeholder='blur'
               quality={100}
             />
           </div>

@@ -15,6 +15,7 @@ const StarIcon = ({ name, title }) => {
             height={18}
             layout='responsive'
             objectFit='contain'
+            placeholder='blur'
             quality={100}
           />
         </div>
@@ -26,6 +27,7 @@ const StarIcon = ({ name, title }) => {
             height={18}
             layout='responsive'
             objectFit='contain'
+            placeholder='blur'
             quality={100}
           />
         </div>
@@ -37,6 +39,7 @@ const StarIcon = ({ name, title }) => {
             height={18}
             layout='responsive'
             objectFit='contain'
+            placeholder='blur'
             quality={100}
           />
         </div>
@@ -48,6 +51,7 @@ const StarIcon = ({ name, title }) => {
             height={18}
             layout='responsive'
             objectFit='contain'
+            placeholder='blur'
             quality={100}
           />
         </div>
@@ -59,6 +63,7 @@ const StarIcon = ({ name, title }) => {
             height={18}
             layout='responsive'
             objectFit='contain'
+            placeholder='blur'
             quality={100}
           />
         </div>

@@ -14,6 +14,7 @@ const QuestionAndAnswerBanner = () => {
           height={700}
           layout='responsive'
           objectFit='contain'
+          placeholder='blur'
           quality={100}
         />
       </div>

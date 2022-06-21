@@ -17,6 +17,7 @@ const SubProductIrradiation = ({ image = pro1, desc = 'Trái cây tươi' }) => 
               height={42}
               layout='responsive'
               objectFit='contain'
+              placeholder='blur'
               quality={100}
             />
           </div>

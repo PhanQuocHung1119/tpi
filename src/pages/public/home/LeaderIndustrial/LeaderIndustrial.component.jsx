@@ -23,6 +23,7 @@ const LeaderIndustrial = () => {
             height={584}
             layout='responsive'
             objectFit='contain'
+            placeholder='blur'
             quality={100}
           />
         </div>
@@ -58,6 +59,7 @@ const LeaderIndustrial = () => {
                 height={16}
                 layout='responsive'
                 objectFit='contain'
+                placeholder='blur'
                 quality={100}
               />
             </div>

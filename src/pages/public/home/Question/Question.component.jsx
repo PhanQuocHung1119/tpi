@@ -26,6 +26,7 @@ const Question = () => {
                 height={9}
                 layout='responsive'
                 objectFit='contain'
+                placeholder='blur'
                 quality={100}
               />
             </div>

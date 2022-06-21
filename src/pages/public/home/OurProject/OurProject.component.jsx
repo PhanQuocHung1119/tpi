@@ -43,6 +43,7 @@ const OurProject = () => {
                 height={350}
                 layout='responsive'
                 objectFit='contain'
+                placeholder='blur'
                 quality={100}
               />
             </div>

@@ -22,6 +22,7 @@ const Breadcrumb = ({ className, data = defaultData }) => {
                   height={16}
                   layout='responsive'
                   objectFit='contain'
+                  placeholder='blur'
                   quality={100}
                 />
               </div>
