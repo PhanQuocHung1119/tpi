@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import styles from './Question.module.scss';
 import Image from 'next/image';
 import arrow_right from '@assets/news/right-arrow-green.png';
 
 const Question = () => {
+  const refFirstElmnt = useRef();
+
+  const action = useCallback((e) => {
+    let elmnt = e.currentTarget;
+    let arrElmnt = document.getElementsByClassName(styles['title']);
+    [...arrElmnt].forEach((item) => {
+      if (!item.contains(e.currentTarget)) {
+        if (item.lastElementChild.classList.contains(styles['active']))
+          item.lastElementChild.classList.remove(styles['active']);
+        if (item.nextElementSibling.classList.contains(styles['active']))
+          item.nextElementSibling.classList.remove(styles['active']);
+      }
+    });
+
+    elmnt.lastElementChild.classList.toggle(styles['active']);
+    elmnt.nextElementSibling.classList.toggle(styles['active']);
+  }, []);
+
+  useEffect(() => {
+    refFirstElmnt.current.click();
+  }, [refFirstElmnt]);
   return (
     <>
       <div className={styles['container']}>
@@ -32,12 +53,16 @@ const Question = () => {
           </div>
         </div>
         <div className={styles['question-right']}>
-          <div className={styles['question-right__open']}>
-            <div className={styles['open__title']}>
+          <div className={styles['question-right__sub']}>
+            <div
+              className={styles['title']}
+              onClick={(e) => action(e)}
+              ref={refFirstElmnt}
+            >
               Question goes here?
-              <div className={styles['icon-open']}>-</div>
+              <div className={styles['icon-open']}></div>
             </div>
-            <div className={styles['open__desc']}>
+            <div className={styles['desc']}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
               leo, id gravida eget gravida. Ultrices est sollicitudin risus
               molestie commodo netus nam.Lorem ipsum dolor sit amet, consectetur
@@ -46,19 +71,47 @@ const Question = () => {
             </div>
           </div>
           <div className={styles['bar']}></div>
-          <div className={styles['question-right__close']}>
-            <div className={styles['close__title']}>Question goes here?</div>
-            <div className={styles['icon-open']}>+</div>
+          <div className={styles['question-right__sub']}>
+            <div className={styles['title']} onClick={(e) => action(e)}>
+              Question goes here?
+              <div className={styles['icon-open']}></div>
+            </div>
+            <div className={styles['desc']}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
+              leo, id gravida eget gravida. Ultrices est sollicitudin risus
+              molestie commodo netus nam.Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Mauris ut leo, id gravida eget gravida. Ultrices
+              est sollicitudin risus molestie commodo netus nam.
+            </div>
+          </div>
+
+          <div className={styles['bar']}></div>
+          <div className={styles['question-right__sub']}>
+            <div className={styles['title']} onClick={(e) => action(e)}>
+              Question goes here?
+              <div className={styles['icon-open']}></div>
+            </div>
+            <div className={styles['desc']}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
+              leo, id gravida eget gravida. Ultrices est sollicitudin risus
+              molestie commodo netus nam.Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Mauris ut leo, id gravida eget gravida. Ultrices
+              est sollicitudin risus molestie commodo netus nam.
+            </div>
           </div>
           <div className={styles['bar']}></div>
-          <div className={styles['question-right__close']}>
-            <div className={styles['close__title']}>Question goes here?</div>
-            <div className={styles['icon-open']}>+</div>
-          </div>
-          <div className={styles['bar']}></div>
-          <div className={styles['question-right__close']}>
-            <div className={styles['close__title']}>Question goes here?</div>
-            <div className={styles['icon-open']}>+</div>
+          <div className={styles['question-right__sub']}>
+            <div className={styles['title']} onClick={(e) => action(e)}>
+              Question goes here?
+              <div className={styles['icon-open']}></div>
+            </div>
+            <div className={styles['desc']}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
+              leo, id gravida eget gravida. Ultrices est sollicitudin risus
+              molestie commodo netus nam.Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Mauris ut leo, id gravida eget gravida. Ultrices
+              est sollicitudin risus molestie commodo netus nam.
+            </div>
           </div>
           <div className={styles['bar']}></div>
         </div>
