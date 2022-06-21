@@ -95,14 +95,24 @@ const NewsBlock = () => {
       touchMove: true,
       swipe: true,
       infinite: false,
-      speed: 500,
-      slidesToShow: 1,
-      touchThreshold: 100,
+      speed: 300,
+      slidesToShow: 3,
+      touchThreshold: 10,
       slidesToScroll: 1,
       adaptiveHeight: true,
-      // cssEase: 'linear',
+      lazyLoad: 'ondemand',
+      cssEase: 'linear',
       nextArrow: <ArrowRight />,
       prevArrow: <ArrowLef />,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            lazyLoad: 'progressive',
+            slidesToShow: 1,
+          },
+        },
+      ],
     }),
     []
   );
@@ -112,17 +122,6 @@ const NewsBlock = () => {
       <div className={styles['container']}>
         <div className={styles['title']}>Tin tức mới nhất</div>
         <div className={styles['content-wrapper']}>
-          {/* <div className={styles['arrow-left']}>
-            <Image
-              src={arrow_left}
-              alt=''
-              width={12}
-              height={19}
-              layout='responsive'
-              objectFit='contain'
-              quality={100}
-            />
-          </div> */}
           <div className={styles['slider-wrapper']} ref={refSliderWrapper}>
             <Slider {...settings}>
               {Array.isArray(arrNews) &&
@@ -139,17 +138,6 @@ const NewsBlock = () => {
                 })}
             </Slider>
           </div>
-          {/* <div className={styles['arrow-right']}>
-            <Image
-              src={arrow_right}
-              alt=''
-              width={12}
-              height={19}
-              layout='responsive'
-              objectFit='contain'
-              quality={100}
-            />
-          </div> */}
         </div>
       </div>
     </>
