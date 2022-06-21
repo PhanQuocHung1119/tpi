@@ -95,7 +95,7 @@ const NewsBlock = () => {
       touchMove: true,
       swipe: true,
       infinite: false,
-      speed: 300,
+      speed: 500,
       slidesToShow: 3,
       touchThreshold: 10,
       slidesToScroll: 1,
