@@ -27,8 +27,12 @@
     }
   }
   .content-wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
     grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
     column-gap: 10px;
     row-gap: 60px;
     grid-auto-flow: dense;
@@ -37,11 +41,13 @@
     overflow: visible;
     margin-top: 60px;
     @include responsive-size(screen-m) {
+      -ms-grid-columns: 1fr 10px 1fr;
       grid-template-columns: repeat(2, 1fr);
       margin-top: 32px;
       row-gap: 32px;
     }
     @include responsive-size(screen-xs) {
+      -ms-grid-columns: 1fr;
       grid-template-columns: repeat(1, 1fr);
       margin-top: 16px;
       row-gap: 24px;
