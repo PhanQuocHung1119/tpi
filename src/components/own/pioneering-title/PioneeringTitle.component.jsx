@@ -14,4 +14,4 @@ const PioneeringTitle = ({ number = 1, title }) => {
     </>
   );
 };
-export default PioneeringTitle;
+export default React.memo(PioneeringTitle);

@@ -12,4 +12,4 @@ const MethodIrradiation = () => {
     </>
   );
 };
-export default MethodIrradiation;
+export default React.memo(MethodIrradiation);

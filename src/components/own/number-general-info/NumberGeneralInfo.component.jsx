@@ -14,4 +14,4 @@ const NumberGeneralInfo = ({ title, desc }) => {
     </>
   );
 };
-export default NumberGeneralInfo;
+export default React.memo(NumberGeneralInfo);

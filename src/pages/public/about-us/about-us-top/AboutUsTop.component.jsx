@@ -40,4 +40,4 @@ const AboutUsTop = () => {
     </>
   );
 };
-export default AboutUsTop;
+export default React.memo(AboutUsTop);

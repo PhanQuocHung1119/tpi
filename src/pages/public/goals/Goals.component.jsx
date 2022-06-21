@@ -34,4 +34,4 @@ const Goals = () => {
     </>
   );
 };
-export default Goals;
+export default React.memo(Goals);

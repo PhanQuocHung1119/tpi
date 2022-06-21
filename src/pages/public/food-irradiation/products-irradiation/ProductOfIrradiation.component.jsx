@@ -55,4 +55,4 @@ const ProductOfIrradiation = () => {
     </>
   );
 };
-export default ProductOfIrradiation;
+export default React.memo(ProductOfIrradiation);

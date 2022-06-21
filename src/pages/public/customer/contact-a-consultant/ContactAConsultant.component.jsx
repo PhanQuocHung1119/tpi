@@ -183,4 +183,4 @@ const ContactAConsultant = () => {
     </>
   );
 };
-export default ContactAConsultant;
+export default React.memo(ContactAConsultant);

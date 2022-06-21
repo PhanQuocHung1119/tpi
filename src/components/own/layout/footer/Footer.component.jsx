@@ -60,4 +60,4 @@ const Footer = () => {
   );
 };
 
-export { Footer };
+export default React.memo(Footer);

@@ -37,4 +37,4 @@ const SubMethodIrradiation = () => {
     </>
   );
 };
-export default SubMethodIrradiation;
+export default React.memo(SubMethodIrradiation);

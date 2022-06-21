@@ -18,4 +18,4 @@ const QuestionAndAnswer = () => {
     </>
   );
 };
-export default QuestionAndAnswer;
+export default React.memo(QuestionAndAnswer);

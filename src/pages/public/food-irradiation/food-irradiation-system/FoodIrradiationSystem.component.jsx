@@ -70,4 +70,4 @@ const FoodIrradiationSystem = () => {
     </>
   );
 };
-export default FoodIrradiationSystem;
+export default React.memo(FoodIrradiationSystem);

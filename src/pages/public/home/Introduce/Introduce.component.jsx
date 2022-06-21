@@ -16,7 +16,6 @@ const Introduce = () => {
   useObserverItem(refContainer, styles);
   useObserverItem(refContent, styles);
   useChooseLanguage(introduce, refArrLanguage);
-  console.log('GGG', refArrLanguage.current);
   return (
     <>
       <div className={styles['container']} ref={refContainer}>

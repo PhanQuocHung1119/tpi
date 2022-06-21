@@ -143,4 +143,4 @@ const NewsBlock = () => {
     </>
   );
 };
-export default NewsBlock;
+export default React.memo(NewsBlock);

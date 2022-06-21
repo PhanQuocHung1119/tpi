@@ -58,4 +58,4 @@ const AboutUsTeamMember = () => {
     </>
   );
 };
-export default AboutUsTeamMember;
+export default React.memo(AboutUsTeamMember);

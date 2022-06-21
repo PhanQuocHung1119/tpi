@@ -29,4 +29,4 @@ const SubMethodStep = ({ number = 1, fullLine = true }) => {
     </>
   );
 };
-export default SubMethodStep;
+export default React.memo(SubMethodStep);

@@ -44,4 +44,4 @@ const FoodIrradiation = () => {
     </>
   );
 };
-export default FoodIrradiation;
+export default React.memo(FoodIrradiation);

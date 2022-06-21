@@ -16,4 +16,4 @@ const LogisticsAndSocial = ({ logisticsAndSocial }) => {
     </>
   );
 };
-export default LogisticsAndSocial;
+export default React.memo(LogisticsAndSocial);

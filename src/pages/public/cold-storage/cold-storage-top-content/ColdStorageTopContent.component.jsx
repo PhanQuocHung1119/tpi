@@ -31,4 +31,4 @@ Dịch vụ kho lạnh Toàn Phát mang lại nhiều giá trị cho các khách
     </>
   );
 };
-export default ColdStorageTopContent;
+export default React.memo(ColdStorageTopContent);

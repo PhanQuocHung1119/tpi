@@ -11,4 +11,4 @@ const NumberAndDesc = ({ number = 1, desc }) => {
     </>
   );
 };
-export default NumberAndDesc;
+export default React.memo(NumberAndDesc);

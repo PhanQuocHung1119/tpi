@@ -50,4 +50,4 @@ const VideoTop = () => {
     </>
   );
 };
-export default VideoTop;
+export default React.memo(VideoTop);

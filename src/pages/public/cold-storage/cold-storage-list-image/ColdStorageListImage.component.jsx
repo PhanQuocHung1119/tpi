@@ -60,4 +60,4 @@ const ColdStorageListImage = () => {
     </>
   );
 };
-export default ColdStorageListImage;
+export default React.memo(ColdStorageListImage);

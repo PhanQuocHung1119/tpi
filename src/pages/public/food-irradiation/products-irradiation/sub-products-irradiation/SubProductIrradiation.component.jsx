@@ -26,4 +26,4 @@ const SubProductIrradiation = ({ image = pro1, desc = 'Trái cây tươi' }) => 
     </>
   );
 };
-export default SubProductIrradiation;
+export default React.memo(SubProductIrradiation);

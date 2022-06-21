@@ -44,4 +44,4 @@ const SubNewsBlock = ({ image, time, title, desc }) => {
     </>
   );
 };
-export default SubNewsBlock;
+export default React.memo(SubNewsBlock);

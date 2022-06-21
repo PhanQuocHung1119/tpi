@@ -20,4 +20,4 @@ const GoalsBanner = () => {
     </>
   );
 };
-export default GoalsBanner;
+export default React.memo(GoalsBanner);

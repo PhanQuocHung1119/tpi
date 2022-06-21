@@ -43,4 +43,4 @@ const MissionAndVaule = () => {
     </>
   );
 };
-export default MissionAndVaule;
+export default React.memo(MissionAndVaule);

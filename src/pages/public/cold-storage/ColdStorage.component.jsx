@@ -24,4 +24,4 @@ const ColdStorage = () => {
     </>
   );
 };
-export default ColdStorage;
+export default React.memo(ColdStorage);

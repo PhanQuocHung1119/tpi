@@ -20,4 +20,4 @@ const NumberIcon = ({ number = number_1 }) => {
     </>
   );
 };
-export default NumberIcon;
+export default React.memo(NumberIcon);
