@@ -39,14 +39,19 @@
     }
   }
   .content-wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 60px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
     column-gap: 10px;
     width: 100%;
     height: 100%;
     padding: 0 10px;
     @include responsive-size(screen-m) {
+      -ms-grid-columns: 1fr;
       grid-template-columns: repeat(1, 1fr);
       row-gap: 32px;
     }
