@@ -57,3 +57,19 @@ export const headerMenu = [
     ],
   },
 ];
+export const introduce = [
+  {
+    locale: 'vi',
+    title: 'Lorem ipsum dolor sit amet, consectetur',
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem etiam
+            luctus amet ultrices sapien id gravida iaculis mattis.`,
+    button: `Chi tiết`,
+  },
+  {
+    locale: 'en-US',
+    title: 'Lorem ipsum dolor sit amet, consectetur',
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem etiam
+            luctus amet ultrices sapien id gravida iaculis mattis.`,
+    button: `Detail`,
+  },
+];

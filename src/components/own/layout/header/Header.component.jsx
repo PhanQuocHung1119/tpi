@@ -145,7 +145,7 @@ const Header = () => {
           >
             <div className={styles['language__icon']}>
               <Image
-                src={flag_us}
+                src={router.locale === 'vi' ? flag_viet_nam : flag_us}
                 alt=''
                 width={24}
                 height={24}

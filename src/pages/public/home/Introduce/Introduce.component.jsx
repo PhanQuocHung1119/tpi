@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import styles from './Introduce.module.scss';
 import { useObserverItem } from 'components/hook/useObserverItem';
-import introduce from '@assets/introduce/introduce-img.png';
+import { introduce } from '@constants/language-option';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
+import introduce_img from '@assets/introduce/introduce-img.png';
 import arrow_right from '@assets/introduce/arrow-right.png';
 
 import Image from 'next/image';
@@ -9,15 +11,18 @@ import Image from 'next/image';
 const Introduce = () => {
   const refContainer = useRef();
   const refContent = useRef();
+  const refArrLanguage = useRef();
 
   useObserverItem(refContainer, styles);
   useObserverItem(refContent, styles);
+  useChooseLanguage(introduce, refArrLanguage);
+  console.log('GGG', refArrLanguage.current);
   return (
     <>
       <div className={styles['container']} ref={refContainer}>
         <div className={styles['introduce-img']}>
           <Image
-            src={introduce}
+            src={introduce_img}
             alt=''
             width={1440}
             height={500}
@@ -28,14 +33,15 @@ const Introduce = () => {
         </div>
         <div className={styles['content']} ref={refContent}>
           <div className={styles['content__title']}>
-            Lorem ipsum dolor sit amet, consectetur
+            {refArrLanguage.current?.title}
           </div>
           <div className={styles['content__desc']}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem etiam
-            luctus amet ultrices sapien id gravida iaculis mattis.
+            {refArrLanguage.current?.desc}
           </div>
           <div className={styles['content__btn']}>
-            <div className={styles['detail']}>Chi tiết</div>
+            <div className={styles['detail']}>
+              {refArrLanguage.current?.button}
+            </div>
             <div className={styles['icon-arrow-right']}>
               <Image
                 src={arrow_right}
