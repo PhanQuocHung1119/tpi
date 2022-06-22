@@ -91,7 +91,9 @@
     max-width: 622px;
     width: 50%;
     height: max-content;
-    margin: 0 16px 0 8px;
+    max-height: 524px;
+    height: 524px;
+    margin: 0 16px -110px 8px;
     @include responsive-size(screen-m) {
       margin: 32px auto 0;
       width: 100%;
@@ -142,9 +144,9 @@
         &.active {
           opacity: 1;
           max-height: 216px;
-          margin-top: 18px;
-          transition: max-height 0.3s ease-in, opacity 0.3s ease-in,
-            margin-top 0.3s ease-in;
+          margin-top: 16px;
+          transition: max-height 0.3s ease-out, opacity 0.3s ease-out,
+            margin-top 0.3s ease-out;
         }
       }
     }
