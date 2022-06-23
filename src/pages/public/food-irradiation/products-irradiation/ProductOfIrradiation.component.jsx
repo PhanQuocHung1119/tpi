@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './ProductOfIrradiation.module.scss';
 import { SubProductIrradiation } from './sub-products-irradiation';
+import { useObserverItem } from 'components/hook/useObserverItem';
+
 import pro1 from '@assets/food-irradiation/pro-1.png';
 import pro2 from '@assets/food-irradiation/pro-2.png';
 import pro3 from '@assets/food-irradiation/pro-3.png';
@@ -36,13 +38,17 @@ const arrSubProducts = [
 ];
 
 const ProductOfIrradiation = () => {
+  const refContent = useRef();
+
+  useObserverItem(refContent, styles);
+
   return (
     <>
       <div className={styles['container']}>
         <div className={styles['title']}>
           Các sản phẩm được chiếu xạ tại TPI:
         </div>
-        <div className={styles['content']}>
+        <div className={styles['content']} ref={refContent}>
           {arrSubProducts.map((item, index) => (
             <SubProductIrradiation
               key={index}

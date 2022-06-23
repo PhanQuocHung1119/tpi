@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './SubProductIrradiation.module.scss';
+
 import Image from 'next/image';
 import pro1 from '@assets/food-irradiation/pro-1.png';
 

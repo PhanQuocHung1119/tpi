@@ -45,5 +45,24 @@
       -ms-grid-columns: 1fr 8px 1fr;
       grid-template-columns: repeat(2, 1fr);
     }
+    opacity: 0;
+    &.active-anim {
+      @include anim-opacity(0s, 0s);
+      @for $i from 1 through 15 {
+        & > :nth-child(#{$i}) {
+          &:nth-child(#{$i}) {
+            & > :last-child {
+              @include anim-move-circle(-10px, 0.4s, 0.23s * $i);
+            }
+          }
+          &:nth-child(odd) {
+            @include anim-move-right(-30px, 0.3s, 0.2s * $i);
+          }
+          &:nth-child(even) {
+            @include anim-move-top(30px, 0.3s, 0.2s * $i);
+          }
+        }
+      }
+    }
   }
 }
