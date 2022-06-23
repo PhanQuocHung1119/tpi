@@ -1,6 +1,9 @@
 @import '/styles/main';
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 1440px;
   max-height: 400px;
   width: 1440px;
