@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import styles from './TrustedBy.module.scss';
 import Image from 'next/image';
 import { useObserverItem } from 'components/hook/useObserverItem';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
+import { trustedBy } from '@constants/language-option';
 
 import icon_1 from '@assets/trusted-by/trusted-by-1.png';
 import icon_2 from '@assets/trusted-by/trusted-by-2.png';
@@ -32,11 +34,15 @@ const icons = [
 ];
 const TrustedBy = () => {
   const refContentWrapper = useRef();
+  const refTitle = useRef();
+
   useObserverItem(refContentWrapper, styles);
+  useChooseLanguage(trustedBy, refTitle);
+
   return (
     <>
       <div className={styles['container']}>
-        <div className={styles['title']}>Trusted by the Top-tier Companies</div>
+        <div className={styles['title']}>{refTitle.current?.title}</div>
         <div className={styles['content-wrapper']} ref={refContentWrapper}>
           {icons.map((item, index) => (
             <div className={styles['content']} key={index}>

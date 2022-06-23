@@ -1,20 +1,25 @@
 import React, { useCallback, useEffect, useRef } from 'react';
-import styles from './Question.module.scss';
 import Image from 'next/image';
+import styles from './Question.module.scss';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
+import { question } from '@constants/language-option';
 import arrow_right from '@assets/news/right-arrow-green.png';
 
 const Question = () => {
   const refFirstElmnt = useRef();
+  const refLang = useRef();
 
   const action = useCallback((e) => {
     let elmnt = e.currentTarget;
     let arrElmnt = document.getElementsByClassName(styles['title']);
     [...arrElmnt].forEach((item) => {
       if (!item.contains(e.currentTarget)) {
-        if (item.lastElementChild.classList.contains(styles['active']))
-          item.lastElementChild.classList.remove(styles['active']);
-        if (item.nextElementSibling.classList.contains(styles['active']))
-          item.nextElementSibling.classList.remove(styles['active']);
+        let itemLast = item.lastElementChild.classList;
+        let itemNext = item.nextElementSibling.classList;
+        if (itemLast.contains(styles['active']))
+          itemLast.remove(styles['active']);
+        if (itemNext.contains(styles['active']))
+          itemNext.remove(styles['active']);
       }
     });
 
@@ -22,23 +27,26 @@ const Question = () => {
     elmnt.nextElementSibling.classList.toggle(styles['active']);
   }, []);
 
+  useChooseLanguage(question, refLang);
+
   useEffect(() => {
-    refFirstElmnt.current.click();
-  }, [refFirstElmnt]);
+    refFirstElmnt.current?.click();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [refFirstElmnt.current, refLang.current]);
   return (
     <>
       <div className={styles['container']}>
         <div className={styles['question-left']}>
           <div className={styles['question-left__title']}>
-            Any questions? We got you.
+            {refLang.current?.title}
           </div>
           <div className={styles['question-left__desc']}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
-            leo, id gravida eget gravida. Ultrices est sollicitudin risus
-            molestie commodo netus nam.
+            {refLang.current?.desc}
           </div>
           <div className={styles['question-left__load-more-btn']}>
-            <div className={styles['load-more-btn__title']}>More FAQs</div>
+            <div className={styles['load-more-btn__title']}>
+              {refLang.current?.button}
+            </div>
             <div className={styles['load-more-btn__icon']}>
               <Image
                 src={arrow_right}
@@ -53,67 +61,35 @@ const Question = () => {
           </div>
         </div>
         <div className={styles['question-right']}>
-          <div className={styles['question-right__sub']}>
-            <div
-              className={styles['title']}
-              onClick={(e) => action(e)}
-              ref={refFirstElmnt}
-            >
-              Question goes here?
-              <div className={styles['icon-open']}></div>
-            </div>
-            <div className={styles['desc']}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
-              leo, id gravida eget gravida. Ultrices est sollicitudin risus
-              molestie commodo netus nam.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Mauris ut leo, id gravida eget gravida. Ultrices
-              est sollicitudin risus molestie commodo netus nam.
-            </div>
-          </div>
-          <div className={styles['bar']}></div>
-          <div className={styles['question-right__sub']}>
-            <div className={styles['title']} onClick={(e) => action(e)}>
-              Question goes here?
-              <div className={styles['icon-open']}></div>
-            </div>
-            <div className={styles['desc']}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
-              leo, id gravida eget gravida. Ultrices est sollicitudin risus
-              molestie commodo netus nam.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Mauris ut leo, id gravida eget gravida. Ultrices
-              est sollicitudin risus molestie commodo netus nam.
-            </div>
-          </div>
-
-          <div className={styles['bar']}></div>
-          <div className={styles['question-right__sub']}>
-            <div className={styles['title']} onClick={(e) => action(e)}>
-              Question goes here?
-              <div className={styles['icon-open']}></div>
-            </div>
-            <div className={styles['desc']}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
-              leo, id gravida eget gravida. Ultrices est sollicitudin risus
-              molestie commodo netus nam.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Mauris ut leo, id gravida eget gravida. Ultrices
-              est sollicitudin risus molestie commodo netus nam.
-            </div>
-          </div>
-          <div className={styles['bar']}></div>
-          <div className={styles['question-right__sub']}>
-            <div className={styles['title']} onClick={(e) => action(e)}>
-              Question goes here?
-              <div className={styles['icon-open']}></div>
-            </div>
-            <div className={styles['desc']}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut
-              leo, id gravida eget gravida. Ultrices est sollicitudin risus
-              molestie commodo netus nam.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Mauris ut leo, id gravida eget gravida. Ultrices
-              est sollicitudin risus molestie commodo netus nam.
-            </div>
-          </div>
-          <div className={styles['bar']}></div>
+          {refLang.current?.subFAQ.map((item, index) =>
+            index === 0 ? (
+              <React.Fragment key={index}>
+                <div className={styles['question-right__sub']}>
+                  <div
+                    className={styles['title']}
+                    onClick={(e) => action(e)}
+                    ref={refFirstElmnt}
+                  >
+                    {item.title}
+                    <div className={styles['icon-open']}></div>
+                  </div>
+                  <div className={styles['desc']}>{item.desc}</div>
+                </div>
+                <div className={styles['bar']}></div>
+              </React.Fragment>
+            ) : (
+              <React.Fragment key={index}>
+                <div className={styles['question-right__sub']}>
+                  <div className={styles['title']} onClick={(e) => action(e)}>
+                    {item.title}
+                    <div className={styles['icon-open']}></div>
+                  </div>
+                  <div className={styles['desc']}>{item.desc}</div>
+                </div>
+                <div className={styles['bar']}></div>
+              </React.Fragment>
+            )
+          )}
         </div>
       </div>
     </>

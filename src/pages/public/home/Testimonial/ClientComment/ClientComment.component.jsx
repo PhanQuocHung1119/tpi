@@ -4,7 +4,7 @@ import Image from 'next/image';
 import client_comment_icon from '@assets/client-comment/client-comment-icon.png';
 import { StarIcon } from '../StarIcon';
 
-const ClientComment = ({ name, title, avatar }) => {
+const ClientComment = ({ name, title, avatar, comment }) => {
   return (
     <>
       <div className={styles['container']}>
@@ -22,10 +22,7 @@ const ClientComment = ({ name, title, avatar }) => {
         <div className={styles['icon-star']}>
           <StarIcon />
         </div>
-        <div className={styles['desc']}>
-          On the other hand, we denounce with righteous indignation and dislike
-          men who are so beguiled and.
-        </div>
+        <div className={styles['desc']}>{comment}</div>
         <div className={styles['client-wrapper']}>
           <div className={styles['client-avatar']}>
             <Image

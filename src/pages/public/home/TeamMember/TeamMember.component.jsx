@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './TeamMember.module.scss';
 import Image from 'next/image';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
+import { teamMember } from '@constants/language-option';
 import member1 from '@assets/team-member/member-1.png';
 import member2 from '@assets/team-member/member-2.png';
 import member3 from '@assets/team-member/member-3.png';
@@ -8,40 +10,35 @@ import member3 from '@assets/team-member/member-3.png';
 const members = [
   {
     image: member1,
-    desc: `Name goes here
-Tittle goes here`,
   },
   {
     image: member2,
-    desc: `Name goes here
-Tittle goes here`,
   },
   {
     image: member3,
-    desc: `Name goes here
-Tittle goes here`,
   },
 ];
+
 const TeamMember = () => {
+  const refContent = useRef();
+  useChooseLanguage(teamMember, refContent);
+
   return (
     <>
       <div className={styles['container']}>
         <div className={styles['content-wrapper']}>
-          <div className={styles['title']}>Our team</div>
+          <div className={styles['title']}>{refContent.current?.title}</div>
           <div className={styles['title-main']}>
-            Our team member is ready to help our clients!
+            {refContent.current?.titleMain}
           </div>
-          <div className={styles['desc']}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet,
-            consequat egestas dictum posuere pellentesque fermentum.
-          </div>
+          <div className={styles['desc']}>{refContent.current?.desc}</div>
         </div>
         <div className={styles['member-wrapper']}>
-          {members.map((item, index) => (
+          {refContent.current?.sub.map((item, index) => (
             <div className={styles['member']} key={index}>
               <div className={styles['member__img']}>
                 <Image
-                  src={item.image}
+                  src={members[index].image}
                   alt=''
                   width={384}
                   height={436}
@@ -52,7 +49,11 @@ const TeamMember = () => {
               </div>
               <div className={styles['member__desc']}>
                 <div className={styles['bar']}></div>
-                <div className={styles['desc']}>{item.desc}</div>
+                <div className={styles['desc']}>
+                  {item.title}
+                  <br />
+                  {item.desc}
+                </div>
               </div>
             </div>
           ))}

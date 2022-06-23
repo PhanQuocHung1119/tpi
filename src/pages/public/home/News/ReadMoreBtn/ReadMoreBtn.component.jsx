@@ -3,11 +3,11 @@ import styles from './ReadMoreBtn.module.scss';
 import Image from 'next/image';
 import arrow_right from '@assets/news/right-arrow-green.png';
 
-const ReadMoreBtn = () => {
+const ReadMoreBtn = ({ readMore = 'Read More' }) => {
   return (
     <>
       <div className={styles['container']}>
-        <div className={styles['title']}>Read More</div>
+        <div className={styles['title']}>{readMore}</div>
         <div className={styles['arrow-icon']}>
           <Image
             src={arrow_right}

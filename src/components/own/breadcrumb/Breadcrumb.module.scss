@@ -52,11 +52,16 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
-      /* or 20px */
-
-      /* Dark / Dark 2 */
 
       color: #555770;
+      &:hover {
+        color: $Grass-100;
+      }
+    }
+    &:last-child {
+      & > a {
+        color: $Black-100;
+      }
     }
   }
 }

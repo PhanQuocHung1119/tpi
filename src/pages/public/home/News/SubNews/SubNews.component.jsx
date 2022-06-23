@@ -4,7 +4,7 @@ import { useObserverItem } from 'components/hook/useObserverItem';
 import Image from 'next/image';
 import { ReadMoreBtn } from '../ReadMoreBtn';
 
-const SubNews = ({ image }) => {
+const SubNews = ({ image, title, desc, readMore }) => {
   const refContainer = useRef();
   useObserverItem(refContainer, styles);
   return (
@@ -21,11 +21,9 @@ const SubNews = ({ image }) => {
             quality={100}
           />
         </div>
-        <div className={styles['title']}>CASE STUDY</div>
-        <div className={styles['desc']}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-        <ReadMoreBtn />
+        <div className={styles['title']}>{title}</div>
+        <div className={styles['desc']}>{desc}</div>
+        <ReadMoreBtn readMore={readMore} />
       </div>
     </>
   );

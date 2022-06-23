@@ -3,7 +3,7 @@ import styles from './SubBestServices.module.scss';
 
 import Image from 'next/image';
 
-const SubBestServices = ({ icon, number }) => {
+const SubBestServices = ({ icon, number, title, desc }) => {
   return (
     <>
       <div className={styles['container']}>
@@ -19,11 +19,8 @@ const SubBestServices = ({ icon, number }) => {
               quality={100}
             />
           </div>
-          <div className={styles['content__title']}>Lorem ipsum</div>
-          <div className={styles['content__desc']}>
-            Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod
-            tempor incididunt
-          </div>
+          <div className={styles['content__title']}>{title}</div>
+          <div className={styles['content__desc']}>{desc}</div>
         </div>
         <div className={styles['number']}>{number}</div>
       </div>

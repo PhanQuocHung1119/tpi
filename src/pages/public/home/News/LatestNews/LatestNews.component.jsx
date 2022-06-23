@@ -5,7 +5,7 @@ import Image from 'next/image';
 import news_1 from '@assets/news/News-1.png';
 import { ReadMoreBtn } from '../ReadMoreBtn';
 
-const LatestNews = () => {
+const LatestNews = ({ title, desc, readMore }) => {
   const refContainer = useRef();
   useObserverItem(refContainer, styles);
   return (
@@ -13,12 +13,9 @@ const LatestNews = () => {
       <div className={styles['container']} ref={refContainer}>
         <div className={styles['content']}>
           <div className={styles['content-left']}>
-            <div className={styles['content-left__title']}>BEST PRACTICES</div>
-            <div className={styles['content-left__desc']}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar
-              etiam facilisi porttitor nunc malesuada
-            </div>
-            <ReadMoreBtn />
+            <div className={styles['content-left__title']}>{title}</div>
+            <div className={styles['content-left__desc']}>{desc}</div>
+            <ReadMoreBtn readMore={readMore} />
           </div>
           <div className={styles['content-right']}>
             <Image

@@ -3,23 +3,26 @@ import Slider from 'react-slick';
 import styles from './Testimonial.module.scss';
 import { ClientComment } from './ClientComment';
 import { useObserverItem } from 'components/hook/useObserverItem';
-
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
+import { testimonial } from '@constants/language-option';
 import avatar_1 from '@assets/client-comment/avatar-1.png';
 import avatar_2 from '@assets/client-comment/avatar-2.png';
 import avatar_3 from '@assets/client-comment/avatar-3.png';
 
-const clientComment = [
-  { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_1 },
-  { name: 'Justus Menke', title: 'CEO Eronaman', avatar: avatar_2 },
-  { name: 'Britain Eriksen', title: 'CEO Universal', avatar: avatar_3 },
-  { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_1 },
-  { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_2 },
-  { name: 'Justus Menke', title: 'CEO Eronaman', avatar: avatar_3 },
-  { name: 'Britain Eriksen', title: 'CEO Universal', avatar: avatar_1 },
-  { name: 'Serhiy Hipskyy', title: 'CEO Universal', avatar: avatar_2 },
+const clientAvatar = [
+  { avatar: avatar_1 },
+  { avatar: avatar_2 },
+  { avatar: avatar_3 },
+  { avatar: avatar_1 },
+  { avatar: avatar_2 },
+  { avatar: avatar_3 },
+  { avatar: avatar_1 },
+  { avatar: avatar_2 },
 ];
+
 const Testimonial = () => {
   const refSlider = useRef(null);
+  const refContent = useRef(null);
 
   const settings = useMemo(
     () => ({
@@ -43,23 +46,26 @@ const Testimonial = () => {
   );
 
   useObserverItem(refSlider, styles);
+  useChooseLanguage(testimonial, refContent);
+
   return (
     <>
       <div className={styles['container']}>
-        <div className={styles['title']}>Testimonial</div>
+        <div className={styles['title']}>{refContent.current?.title}</div>
         <div className={styles['desc']}>
-          Hear what our previous clients had to say about our services!
+          <div className={styles['title']}>{refContent.current?.desc}</div>
         </div>
         <div className={styles['slider-wrapper']} ref={refSlider}>
           <Slider {...settings}>
-            {Array.isArray(clientComment) &&
-              clientComment?.map((item, index) => {
+            {Array.isArray(refContent.current?.comments) &&
+              refContent.current?.comments?.map((item, index) => {
                 return (
                   <ClientComment
+                    key={index}
                     name={item.name}
                     title={item.title}
-                    avatar={item.avatar}
-                    key={index}
+                    avatar={clientAvatar[index].avatar}
+                    comment={item.comment}
                   />
                 );
               })}

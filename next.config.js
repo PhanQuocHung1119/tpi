@@ -13,7 +13,7 @@ module.exports = {
   generateEtags: false,
   i18n: {
     // providing the locales supported by your application
-    locales: ['vi', 'en-US'],
+    locales: ['en-US', 'vi'],
     //  default locale used when the non-locale paths are visited
     defaultLocale: 'vi',
   },
