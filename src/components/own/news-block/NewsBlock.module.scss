@@ -58,23 +58,7 @@
 .setting-slider {
   position: relative;
   width: 100%;
-  & > :first-child {
-    overflow: hidden;
-    @include responsive-size(screen-m) {
-      height: max-content;
-      max-height: max-content;
-    }
-    & > :first-child {
-      @include responsive-size(screen-m) {
-        max-height: max-content;
-      }
-    }
-  }
-  @include responsive-size(screen-m) {
-    height: max-content;
-  }
-
-  & > :first-child {
+  & > :nth-child(2) {
     & > :first-child {
       width: max-content !important;
     }

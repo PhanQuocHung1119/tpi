@@ -27,20 +27,21 @@ const Testimonial = () => {
   const settings = useMemo(
     () => ({
       className: styles['setting-slider'],
-      dotsClass: styles['setting-dots'],
+      // dotsClass: styles['setting-dots'],
       variableWidth: true,
       dots: false,
       arrows: false,
       swipeToSlide: true,
       touchMove: true,
       swipe: true,
-      speed: 500,
+      infinite: false,
+      speed: 300,
       slidesToShow: 1,
       touchThreshold: 50,
       slidesToScroll: 1,
       adaptiveHeight: true,
-      infinite: false,
-      cssEase: 'linear',
+      lazyLoad: 'progressive',
+      cssEase: 'ease-out',
     }),
     []
   );

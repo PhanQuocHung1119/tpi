@@ -87,7 +87,7 @@ const NewsBlock = () => {
   const settings = useMemo(
     () => ({
       className: styles['setting-slider'],
-      dotsClass: styles['setting-dots'],
+      // dotsClass: styles['setting-dots'],
       variableWidth: true,
       dots: false,
       arrows: true,
@@ -95,24 +95,15 @@ const NewsBlock = () => {
       touchMove: true,
       swipe: true,
       infinite: false,
-      speed: 500,
-      slidesToShow: 3,
-      touchThreshold: 10,
+      speed: 300,
+      slidesToShow: 1,
+      touchThreshold: 20,
       slidesToScroll: 1,
       adaptiveHeight: true,
-      lazyLoad: 'ondemand',
-      cssEase: 'linear',
+      lazyLoad: 'progressive',
+      cssEase: 'ease-out',
       nextArrow: <ArrowRight />,
       prevArrow: <ArrowLef />,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            lazyLoad: 'progressive',
-            slidesToShow: 1,
-          },
-        },
-      ],
     }),
     []
   );
