@@ -190,3 +190,28 @@ $breakpoints: (
     }
   }
 }
+
+@mixin anim-move-revert-circle($height: 70px, $duration: 0.3s, $delay: 0s) {
+  opacity: 0;
+  -webkit-animation: move_revert_circle $duration ease-in-out $delay 1 normal
+    forwards running;
+  animation: move_revert_circle $duration ease-in-out $delay 1 normal forwards
+    running;
+  @keyframes move_revert_circle {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d($height, $height, 0);
+      transform: translate3d($height, $height, 0);
+    }
+    // 50% {
+    //   opacity: 0.5;
+    //   -webkit-transform: translate3d(-$height, $height, 0);
+    //   transform: translate3d(-$height, $height, 0);
+    // }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate3d(0px, 0, 0);
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+}

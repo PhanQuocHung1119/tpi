@@ -87,6 +87,7 @@
       border-radius: 5px;
       margin-top: 32px;
       cursor: pointer;
+
       color: $White;
       .detail {
         font-style: normal;
@@ -100,6 +101,12 @@
         position: relative;
         width: 22px;
         height: 16px;
+      }
+
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        background: linear-gradient(45deg, $Dark-Green-100, $Green-100);
       }
     }
   }
