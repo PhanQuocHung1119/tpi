@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './GoogleMap.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 
 const GoogleMap = () => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2399.528817455469!2d106.45170507222925!3d10.68601423610957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310acda26bbb9b57%3A0x34480ab0b0cc801!2zQ8OUTkcgVFkgVE5ISCBDSEnhur5VIFjhuqAgVE_DgE4gUEjDgVQ!5e0!3m2!1svi!2s!4v1656014182754!5m2!1svi!2s'
           width='1440'

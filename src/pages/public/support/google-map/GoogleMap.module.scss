@@ -9,6 +9,11 @@
   width: 1440px;
   height: 100%;
   margin-top: 64px;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.3s, 0s);
+    @include anim-move-top(10px, 0.5s, 0.3s);
+  }
   @include responsive-size(screen-m) {
     margin-top: 48px;
   }
