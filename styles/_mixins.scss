@@ -210,3 +210,30 @@ $breakpoints: (
     }
   }
 }
+
+@mixin anim-line($height: 35px, $duration: 0.3s, $delay: 0s) {
+  -webkit-animation: move_line $duration ease-in-out $delay 1 normal forwards
+    running;
+  animation: move_line $duration ease-in-out $delay 1 normal forwards running;
+  @keyframes move_line {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 35px;
+    }
+  }
+}
+
+@mixin anim-line-2($duration: 0.3s, $delay: 0s) {
+  -webkit-animation: line_2 $duration ease-out $delay 1 normal forwards running;
+  animation: line_2 $duration ease-out $delay 1 normal forwards running;
+  @keyframes line_2 {
+    0% {
+      background: #d5d5d5;
+    }
+    100% {
+      background: $Grass-100;
+    }
+  }
+}

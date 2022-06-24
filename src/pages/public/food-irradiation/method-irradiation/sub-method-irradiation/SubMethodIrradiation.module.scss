@@ -7,6 +7,21 @@
   width: 100%;
   height: max-content;
   margin-bottom: 24px;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.1s, 0s);
+    & > :first-child {
+      & > :first-child {
+        @include anim-move-revert-circle(20px, 0.7s, 0s);
+      }
+    }
+    & > :last-child {
+      @include anim-move-right(20px, 0.7s, 0s);
+      & > :last-child {
+        @include anim-move-top(-20px, 0.5s, 0.7s);
+      }
+    }
+  }
   @include responsive-size(screen-m) {
     flex-direction: column-reverse;
     align-items: center;
@@ -42,6 +57,21 @@
       flex-direction: column;
       width: 100%;
       height: max-content;
+      &.active-anim {
+        @include anim-opacity(0.1s, 0s);
+        @for $i from 1 through 2 {
+          & > :nth-child(#{$i}) {
+            & > :first-child {
+              & > :first-child {
+                @include anim-line-2(1s, 0.5s * $i);
+              }
+              & > :last-child {
+                @include anim-line(35px, 1s, 0.5s * $i);
+              }
+            }
+          }
+        }
+      }
     }
   }
   .content-right {
