@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './ContactAConsultant.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 import { Form } from 'react-bootstrap';
 import styled from 'styled-components';
 
@@ -41,6 +42,12 @@ const ContactAConsultant = () => {
     showPass: false,
     showEye: false,
   });
+  const refContainer = useRef();
+  const refBotton = useRef();
+
+  useObserverItem(refContainer, styles);
+  useObserverItem(refBotton, styles);
+
   const handleSubmit = async (event) => {
     const form = event.currentTarget;
 
@@ -53,7 +60,7 @@ const ContactAConsultant = () => {
 
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['title']}>Liên hệ tư vấn</div>
         <div
           className={styles['desc']}
@@ -159,7 +166,7 @@ const ContactAConsultant = () => {
             Gửi thông tin
           </Button>
         </Form>
-        <div className={styles['bottom-content']}>
+        <div className={styles['bottom-content']} ref={refBotton}>
           <div className={styles['title']}>Liên hệ trực tiếp</div>
           <div className={styles['sub-content']}>
             <div className={styles['sub-content__title']}>

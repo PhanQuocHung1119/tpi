@@ -8,6 +8,23 @@
   max-width: 445px;
   width: 100%;
   height: max-content;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.3s, 0s);
+    & > :first-child {
+      @include anim-move-top(30px, 1s, 0s);
+      & ~ div {
+        @include anim-move-right(30px, 0.5s, 0s);
+      }
+    }
+    & > :nth-child(3) {
+      @for $i from 1 through 15 {
+        & > :nth-child(#{$i}) {
+          @include anim-move-revert-circle(5px, 1s, 0.1s * $i);
+        }
+      }
+    }
+  }
   @include responsive-size(screen-m) {
     padding: 0 10px;
   }
@@ -44,6 +61,16 @@
     width: 100%;
     height: max-content;
     margin-top: 24px;
+    &.active-anim {
+      & > :first-child {
+        @include anim-move-right(20px, 1s, 0.3s);
+      }
+      & > div {
+        & > :first-child {
+          @include anim-move-circle(10px, 1s, 0.3s);
+        }
+      }
+    }
     .title {
       display: flex;
       align-items: center;
