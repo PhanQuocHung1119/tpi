@@ -10,6 +10,11 @@
   max-height: 547px;
   margin-top: 22px;
   user-select: none;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.7s, 0s);
+    @include anim-move-top(-30px, 1s, 0.5s);
+  }
   .video-image-wrapper {
     position: relative;
     @include flex-container(center, center);
@@ -43,6 +48,7 @@
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
+          opacity: 0;
           &:hover {
             background: rgba(150, 150, 150, 0.8);
           }
@@ -50,6 +56,9 @@
             width: 60px;
             height: 60px;
             padding: 20px;
+          }
+          &.active-anim {
+            @include anim-opacity(0.5s, 0.8s);
           }
         }
       }

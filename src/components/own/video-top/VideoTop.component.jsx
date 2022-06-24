@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './VideoTop.module.scss';
 import Image from 'next/image';
 import { useLoadVideo, createIframe } from 'components/hook/useLoadVideo';
-import video_top from '@assets/video-top/video-top.png';
+import { useObserverItem } from 'components/hook/useObserverItem';
+
 import play_icon from '@assets/icons/play-icon.png';
 import toan_phat_icon from '@assets/header/ToanPhat-Mobile-Icon.svg';
 
@@ -12,18 +13,23 @@ const videoInfo = {
 };
 
 const VideoTop = () => {
+  const refContainer = useRef();
+  const refIconPlay = useRef();
+
   useLoadVideo();
+  useObserverItem(refContainer, styles);
+  useObserverItem(refIconPlay, styles);
 
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div
           className={styles['video-image-wrapper']}
           id={`image-${videoInfo.id}`}
           onClick={(e) => createIframe(e, videoInfo.id, videoInfo.video)}
         >
           <div className={styles['thumbnail']}>
-            <div className={styles['thumbnail__icon-play']}>
+            <div className={styles['thumbnail__icon-play']} ref={refIconPlay}>
               <Image
                 src={play_icon}
                 alt=''
