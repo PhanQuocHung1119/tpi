@@ -217,9 +217,11 @@ $breakpoints: (
   animation: move_line $duration ease-in-out $delay 1 normal forwards running;
   @keyframes move_line {
     0% {
+      opacity: 0;
       height: 0px;
     }
     100% {
+      opacity: 1;
       height: 35px;
     }
   }

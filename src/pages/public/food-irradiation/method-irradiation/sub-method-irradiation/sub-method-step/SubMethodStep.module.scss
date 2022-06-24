@@ -36,6 +36,7 @@
       &__line {
         border: 0px solid $Grass-100;
         height: 0px;
+        opacity: 0;
         &.active {
           border: 2px solid $Grass-100;
           // height: 35px;
