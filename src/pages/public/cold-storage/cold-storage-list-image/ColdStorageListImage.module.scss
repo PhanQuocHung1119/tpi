@@ -9,6 +9,20 @@
   max-width: 1170px;
   height: max-content;
   margin-top: 64px;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.3s, 0s);
+    & > :first-child {
+      @include anim-move-circle(10px, 1s, 0s);
+    }
+    & > :last-child {
+      @for $i from 1 through 3 {
+        & > :nth-child(#{$i}) {
+          @include anim-move-circle(10px, 1s, 0.3s * $i);
+        }
+      }
+    }
+  }
   @include responsive-size(screen-m) {
     margin-top: 48px;
   }
