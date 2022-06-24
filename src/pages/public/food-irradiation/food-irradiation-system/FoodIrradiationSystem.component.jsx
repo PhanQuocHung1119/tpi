@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './FoodIrradiationSystem.module.scss';
 import Image from 'next/image';
 import system from '@assets/food-irradiation/food-irradiation-system.png';
 import { PioneeringTitle } from 'components/own/pioneering-title';
+import { useObserverItem } from 'components/hook/useObserverItem';
 
 const FoodIrradiationSystem = () => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['title']}>
           <PioneeringTitle number={1} title='Chiếu xạ' />
         </div>
