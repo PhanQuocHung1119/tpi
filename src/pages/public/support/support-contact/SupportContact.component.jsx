@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './SupportContact.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 
 const SupportContact = () => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['title']}>Liên hệ</div>
         <div className={styles['desc']}>
           Thank you for getting in touch! Fill the form, have a great day!

@@ -9,6 +9,32 @@
   max-width: 580px;
   margin-top: 64px;
   height: max-content;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.5s, 0s);
+    & > :nth-child(1) {
+      @include anim-move-right(10px, 1s, 0s);
+    }
+    & > :nth-child(2) {
+      @include anim-move-revert-circle(10px, 1s, 0.3s);
+    }
+    & > :nth-child(3) {
+      @for $i from 1 through 7 {
+        & > :nth-child(#{$i}) {
+          & > :first-child {
+            @include anim-move-circle(10px, 1s, 0.3s * $i);
+          }
+          & > :last-child {
+            @include anim-move-top(20px, 0.5s, 0.3s * $i);
+          }
+        }
+      }
+    }
+    & > :last-child {
+      @include anim-move-revert-circle(10px, 1s, 1s);
+    }
+  }
+
   @include responsive-size(screen-m) {
     margin-top: 48px;
   }
