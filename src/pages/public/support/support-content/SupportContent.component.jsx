@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './SupportContent.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 
 const SupportContent = () => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['title']}>Hỗ trợ</div>
         <div className={styles['sub-content-wrapper']}>
           <div className={styles['sub-content']}>
