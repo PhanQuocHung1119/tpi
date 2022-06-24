@@ -1,6 +1,8 @@
-import React from 'react';
-import { QuestionAndAnswerSubContent } from '../sub-content-q-and-a';
+import React, { useRef } from 'react';
 import styles from './QuestionContent.module.scss';
+import { QuestionAndAnswerSubContent } from '../sub-content-q-and-a';
+import { useObserverItem } from 'components/hook/useObserverItem';
+
 const arrQuestion = [
   {
     number: 1,
@@ -44,9 +46,12 @@ Các nhà máy vận hành công nghệ chiếu xạ phải tuân theo quy trìn
   },
 ];
 const QuestionContent = () => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
+
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['title']}>{'Q&A - Hỏi đáp'}</div>
         <div className={styles['desc']}>Thông tin chi tiết về TPI</div>
         <div className={styles['content-wrapper']}>

@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './QuestionAndAnswerBanner.module.scss';
+import { useObserverItem } from 'components/hook/useObserverItem';
 import Image from 'next/image';
 import banner from '@assets/question-and-answer/Q&A.png';
 
 const QuestionAndAnswerBanner = () => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
+
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <Image
           src={banner}
           alt=''
