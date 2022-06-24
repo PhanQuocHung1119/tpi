@@ -1,6 +1,7 @@
-import { NumberAndDesc } from 'components/own/number-and-desc';
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './GoalsMain.module.scss';
+import { NumberAndDesc } from 'components/own/number-and-desc';
+import { useObserverItem } from 'components/hook/useObserverItem';
 
 const arrGoals = [
   {
@@ -30,9 +31,11 @@ const arrGoals = [
 ];
 
 const GoalsMain = () => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['title']}>Mục tiêu phát triển</div>
         <div className={styles['content-wrapper']}>
           {arrGoals.map((item, index) => (

@@ -4,4 +4,9 @@
   width: 100%;
   max-width: 1440px;
   height: 100%;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.5s, 0s);
+    @include anim-move-revert-circle(10px, 1s, 0s);
+  }
 }

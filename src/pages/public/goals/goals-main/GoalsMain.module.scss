@@ -9,6 +9,25 @@
   max-width: 1170px;
   height: max-content;
   margin-top: 32px;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.3s, 0s);
+    & > :first-child {
+      @include anim-move-right(-30px, 1s, 0s);
+    }
+    & > :last-child {
+      @for $i from 1 through 6 {
+        & > :nth-child(#{$i}) {
+          & > :first-child {
+            @include anim-move-circle(20px, 1s, 0.3s * $i);
+          }
+          & > :last-child {
+            @include anim-move-revert-circle(-20px, 1s, 0.4s * $i);
+          }
+        }
+      }
+    }
+  }
   @include responsive-size(screen-xs) {
     margin-top: 8px;
   }
