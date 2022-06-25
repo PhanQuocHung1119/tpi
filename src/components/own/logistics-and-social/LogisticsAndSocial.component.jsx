@@ -7,7 +7,7 @@ const LogisticsAndSocial = ({ logisticsAndSocial }) => {
   return (
     <>
       <div className={styles['container']}>
-        {logisticsAndSocial.map((item, index) => (
+        {logisticsAndSocial?.map((item, index) => (
           <div className={styles['content']} key={index}>
             <NumberGeneralInfo title={item.title} desc={item.desc} />
           </div>

@@ -63,10 +63,10 @@
           & > :nth-child(#{$i}) {
             & > :first-child {
               & > :first-child {
-                @include anim-line-2(1s, 0.5s * $i);
+                @include anim-line-2(1s, 0.9s * $i);
               }
               & > :last-child {
-                @include anim-line(35px, 1s, 0.5s * $i);
+                @include anim-line(35px, 1s, 0.8s * $i);
               }
             }
           }

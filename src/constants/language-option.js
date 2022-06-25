@@ -464,3 +464,138 @@ export const question = [
     ],
   },
 ];
+
+export const foodIrradiationSystem = [
+  {
+    locale: 'vi',
+    title: 'Chiếu xạ',
+    desc: `TPI - Nhà máy duy nhất tại Việt Nam ứng dụng đầy đủ 3 công nghệ chiếu xạ:`,
+    subDesc: [
+      { desc: `Dây chuyền chiếu xạ bằng nguồn CoBalt 60 sử dụng tia gamma.` },
+      {
+        desc: `Hệ thống máy chiếu xạ bằng chùm tia điện tử (E-Beam) sử dụng chùm
+              electron.`,
+      },
+      { desc: `Hệ thống máy chiếu xạ Bremsstrahlung (X-ray) sử dụng tia X.` },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Irradiation',
+    desc: `TPI - The only factory in Vietnam that fully applies 3 irradiation technologies:`,
+    subDesc: [
+      { desc: `CoBalt 60 irradiation line using gamma rays.` },
+      {
+        desc: `An electron beam irradiator (E-eam) system uses an electron beam.`,
+      },
+      { desc: `The Bremsstrahlung (X-ray) irradiator system uses X-rays.` },
+    ],
+  },
+];
+
+export const productOfIrradiation = [
+  {
+    locale: 'vi',
+    title: 'Các sản phẩm được chiếu xạ tại TPI:',
+    subDesc: [
+      { desc: 'Trái cây tươi' },
+      { desc: 'Đồ thủ công mỹ nghệ' },
+      { desc: 'Gia vị' },
+      { desc: 'Cá tra đông lạnh' },
+      { desc: 'Thiết bị y tế' },
+      { desc: 'Đá trang sức' },
+      { desc: 'Thực phẩm - Nông sản' },
+      { desc: 'Tôm đông lạnh' },
+      { desc: 'Dược liệu, đông dược' },
+      { desc: 'Thủy hải sản đông lạnh' },
+      { desc: 'Hóa mỹ phẩm' },
+      { desc: 'Các mặt hàng khô khác' },
+      { desc: 'Trái cây đông lạnh' },
+      { desc: 'Sản phẩm bằng tre, gỗ' },
+      { desc: 'Thức ăn thú cưng' },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Products irradiated at TPI:',
+    subDesc: [
+      { desc: 'Fresh fruit' },
+      { desc: 'Handicrafts' },
+      { desc: 'Spice' },
+      { desc: 'Frozen Pangasius' },
+      { desc: 'Medical equipment' },
+      { desc: 'Jewelry stone' },
+      { desc: 'Food - Agricultural products' },
+      { desc: 'Frozen shrimp' },
+      { desc: 'Herbal medicine, oriental medicine' },
+      { desc: 'Frozen seafood' },
+      { desc: 'Cosmetics' },
+      { desc: 'Other dry goods' },
+      { desc: 'Frozen fruit' },
+      { desc: 'Products made of bamboo and wood' },
+      { desc: 'Pet food' },
+    ],
+  },
+];
+
+export const subMethodIrradiation = [
+  {
+    locale: 'vi',
+    title: 'Phương án 1:',
+    sub: [
+      { title: 'Bước 1', desc: 'Mô tả', number: 1, fullLine: true },
+      { title: 'Bước 1', desc: 'Mô tả', number: 2, fullLine: true },
+      { title: 'Bước 1', desc: 'Mô tả', number: 3, fullLine: false },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Option 1:',
+    sub: [
+      { title: 'Step 1', desc: 'Step Description', number: 1, fullLine: true },
+      { title: 'Step 2', desc: 'Step Description', number: 2, fullLine: true },
+      { title: 'Step 3', desc: 'Step Description', number: 3, fullLine: false },
+    ],
+  },
+];
+
+export const logisticsAndSocial = [
+  {
+    locale: 'vi',
+    sub: [
+      {
+        title: 'Vận chuyển',
+        desc: `Với định hướng trở thành một trung tâm logistics với đầy đủ chức năng: vận tải - phân phối - lưu trữ - chiếu xạ. Trong tương lai kho lạnh Toàn Phát sẽ kết hợp chặt chẽ với các doanh nghiệp vận chuyển lạnh để có thể đáp ứng tối đa nhu cầu của khách hàng tạo dựng chuỗi cung ứng khép kín hiện đại nhất.
+Một kho lạnh đạt chuẩn.
+Cung ứng xe tải đông lạnh riêng để vận chuyển hàng hóa.`,
+      },
+      {
+        title: 'Phân phối',
+        desc: `Hệ thống kho lạnh Toàn Phát định hướng phát triển trở thành một trung tâm phân phối logistics với đầy đủ chức năng đáp ứng hầu hết nhu cầu của khách hàng.
+Nhiều dịch vụ đa dạng: vận chuyển, bốc xếp, dán nhãn, đóng gói hàng nhỏ lẻ, xử lý đơn hàng, giao nhận.
+Nhập hàng an toàn, nhanh chóng, phục vụ tốt.
+Có khu vực riêng để xử lý đơn hàng, áp dụng tính công nghệ cao.
+Cầu nối giữa nhà cung cấp và khách hàng`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    sub: [
+      {
+        title: 'Transport',
+        desc: `With the orientation to become a logistics center with full functions: transport - distribution - storage - irradiation. In the future, Toan Phat cold storage will work closely with cold transport businesses to be able to meet the needs of customers to create the most modern closed supply chain.
+A standard cold storage.
+Provide separate refrigerated trucks to transport goods.`,
+      },
+      {
+        title: 'Distribution',
+        desc: `Toan Phat cold storage system is oriented to become a logistics distribution center with full functions to meet most of the needs of customers.
+Various services: transportation, loading and unloading, labeling, packaging of small goods, order processing, delivery.
+Import goods safely, quickly, good service.
+There is a separate area for order processing, applying high technology.
+Bridge between suppliers and customers`,
+      },
+    ],
+  },
+];

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './SubMethodStep.module.scss';
 import clsx from 'clsx';
 
-const SubMethodStep = ({ number = 1, fullLine = true }) => {
+const SubMethodStep = ({ number = 1, fullLine = true, title, desc }) => {
   return (
     <>
       <div className={styles['container']}>
@@ -22,8 +22,8 @@ const SubMethodStep = ({ number = 1, fullLine = true }) => {
           ></div>
         </div>
         <div className={styles['content-right']}>
-          <div className={styles['content-right__title']}>Step 1</div>
-          <div className={styles['content-right__desc']}>Step Description</div>
+          <div className={styles['content-right__title']}>{title}</div>
+          <div className={styles['content-right__desc']}>{desc}</div>
         </div>
       </div>
     </>

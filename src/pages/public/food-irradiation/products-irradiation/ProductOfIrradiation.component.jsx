@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import styles from './ProductOfIrradiation.module.scss';
+import { productOfIrradiation } from '@constants/language-option';
 import { SubProductIrradiation } from './sub-products-irradiation';
 import { useObserverItem } from 'components/hook/useObserverItem';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 
 import pro1 from '@assets/food-irradiation/pro-1.png';
 import pro2 from '@assets/food-irradiation/pro-2.png';
@@ -19,40 +21,40 @@ import pro13 from '@assets/food-irradiation/pro-13.png';
 import pro14 from '@assets/food-irradiation/pro-14.png';
 import pro15 from '@assets/food-irradiation/pro-15.png';
 
-const arrSubProducts = [
-  { image: pro1, desc: 'Trái cây tươi' },
-  { image: pro2, desc: 'Đồ thủ công mỹ nghệ' },
-  { image: pro3, desc: 'Gia vị' },
-  { image: pro4, desc: 'Cá tra đông lạnh' },
-  { image: pro5, desc: 'Thiết bị y tế' },
-  { image: pro6, desc: 'Đá trang sức' },
-  { image: pro7, desc: 'Thực phẩm - Nông sản' },
-  { image: pro8, desc: 'Tôm đông lạnh' },
-  { image: pro9, desc: 'Dược liệu, đông dược' },
-  { image: pro10, desc: 'Thủy hải sản đông lạnh' },
-  { image: pro11, desc: 'Hóa mỹ phẩm' },
-  { image: pro12, desc: 'Các mặt hàng khô khác' },
-  { image: pro13, desc: 'Trái cây đông lạnh' },
-  { image: pro14, desc: 'Sản phẩm bằng tre, gỗ' },
-  { image: pro15, desc: 'Thức ăn thú cưng' },
+const proImages = [
+  { image: pro1 },
+  { image: pro2 },
+  { image: pro3 },
+  { image: pro4 },
+  { image: pro5 },
+  { image: pro6 },
+  { image: pro7 },
+  { image: pro8 },
+  { image: pro9 },
+  { image: pro10 },
+  { image: pro11 },
+  { image: pro12 },
+  { image: pro13 },
+  { image: pro14 },
+  { image: pro15 },
 ];
 
 const ProductOfIrradiation = () => {
   const refContent = useRef();
+  const refLang = useRef(null);
 
   useObserverItem(refContent, styles);
+  useChooseLanguage(productOfIrradiation, refLang);
 
   return (
     <>
       <div className={styles['container']}>
-        <div className={styles['title']}>
-          Các sản phẩm được chiếu xạ tại TPI:
-        </div>
+        <div className={styles['title']}>{refLang.current?.title}</div>
         <div className={styles['content']} ref={refContent}>
-          {arrSubProducts.map((item, index) => (
+          {refLang.current?.subDesc.map((item, index) => (
             <SubProductIrradiation
               key={index}
-              image={item.image}
+              image={proImages[index].image}
               desc={item.desc}
             />
           ))}
