@@ -672,3 +672,96 @@ export const newsBlock = [
     ],
   },
 ];
+
+export const coldStorageTopContent = [
+  {
+    locale: 'vi',
+    title: 'Kho lạnh lưu trữ',
+    desc: `Hệ thống kho lạnh với sức chứa đạt khoảng 10.000 tấn hàng hóa.
+Dịch vụ kho lạnh Toàn Phát mang lại nhiều giá trị cho các khách hàng:`,
+    sub: [
+      {
+        desc: `Không tốn chi phí xây dựng, vận hành, quản lý kho, tiết kiệm chi phí đầu tư`,
+      },
+      { desc: `Chủ động trong việc xuất nhập hàng xuyên suốt (24/7).` },
+      {
+        desc: `Chủ động trong việc chiếu xạ hàng hóa đang lưu tại kho mà không tốn thêm phí vận chuyển phát sinh.`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Cold storage',
+    desc: `Cold storage system with a capacity of about 10,000 tons of goods.
+Toan Phat cold storage service brings many values to customers:`,
+    sub: [
+      {
+        desc: `No cost of construction, operation, warehouse management, saving investment costs`,
+      },
+      {
+        desc: `Be proactive in importing and exporting goods throughout (24/7).`,
+      },
+      {
+        desc: `Be proactive in irradiating goods stored at the warehouse without additional shipping costs.`,
+      },
+    ],
+  },
+];
+
+export const contactAConsultant = [
+  {
+    locale: 'vi',
+    title: 'Liên hệ tư vấn',
+    desc: `Khách hàng cần tư vấn từ TPI, xin vui lòng điền đầy đủ thông tin sẽ có nhân viên liên hệ hỗ trợ trong vòng 24 giờ.`,
+    username: { label: `Họ tên`, desc: `Nhập họ tên vào đây` },
+    email: { label: `Email`, desc: `Nhập Email vào đây` },
+    address: { label: `Địa chỉ`, desc: `Nhập địa chỉ vào đây` },
+    typeProduct: { label: `Loại hàng`, desc: `Nhập loại hàng vào đây` },
+    phone: { label: `Tư vấn dịch vụ`, desc: `Nhập số điện thoại vào đây` },
+    register: { title: `Đăng ký`, label1: `Chiếu xạ`, label2: `Gửi kho` },
+    note: { label: `Ghi chú`, desc: `Nhập ghi chú vào đây` },
+    button: `Gửi thông tin`,
+    directContact: {
+      title: `Liên hệ trực tiếp`,
+      sub: [
+        {
+          title: `Tư vấn trực tiếp: Bộ Phận Thông Tin.`,
+          desc: [`Số điện thoại:`, `Email:`],
+        },
+        {
+          title: `Nhận lịch đăng ký:`,
+          desc: [`Bộ Phận Tiếp Nhận :`, `Số Điện Thoại:`, `Email:`],
+        },
+      ],
+    },
+  },
+  {
+    locale: 'en-US',
+    title: 'Contact consultation',
+    desc: `Customers need advice from TPI, please fill in the information and a staff member will contact support within 24 hours.`,
+    username: { label: `Full name`, desc: `Enter your name here` },
+    email: { label: `Email`, desc: `Enter Email here` },
+    address: { label: `Address`, desc: `Enter your address here` },
+    typeProduct: { label: `Product Type`, desc: `Enter product type here` },
+    phone: {
+      label: `Consulting Services`,
+      desc: `Enter your phone number here`,
+    },
+    register: { title: `Register`, label1: `Irradiation`, label2: `warehouse` },
+    note: { label: `Note`, desc: `Enter a note here` },
+    button: `Send information`,
+    directContact: {
+      title: `Direct contact`,
+      sub: [
+        {
+          title: `Direct consulting: Information Department.`,
+          desc: [`Phone number:`, `Email:`],
+        },
+        {
+          title: `Get registration schedule:`,
+          desc: [`Receiving Department:`, `Phone number:`, `Email:`],
+        },
+      ],
+    },
+  },
+];

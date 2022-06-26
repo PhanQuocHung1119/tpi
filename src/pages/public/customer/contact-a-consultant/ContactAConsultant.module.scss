@@ -20,7 +20,12 @@
     & > :nth-child(3) {
       @for $i from 1 through 15 {
         & > :nth-child(#{$i}) {
-          @include anim-move-revert-circle(5px, 1s, 0.1s * $i);
+          &:nth-child(odd) {
+            @include anim-move-revert-circle(15px, 1s, 0.1s * $i);
+          }
+          &:nth-child(even) {
+            @include anim-move-circle(15px, 1s, 0.1s * $i);
+          }
         }
       }
     }

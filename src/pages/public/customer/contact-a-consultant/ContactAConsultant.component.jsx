@@ -3,16 +3,8 @@ import styles from './ContactAConsultant.module.scss';
 import { useObserverItem } from 'components/hook/useObserverItem';
 import { Form } from 'react-bootstrap';
 import styled from 'styled-components';
-
-const label = {
-  password: 'Mật khẩu',
-  username: 'Nhập họ tên vào đây',
-  email: 'Nhập Email vào đây',
-  address: 'Nhập địa chỉ vào đây',
-  typeProduct: 'Nhập loại hàng vào đây',
-  phone: 'Nhập số điện thoại vào đây',
-  note: 'Nhập ghi chú vào đây',
-};
+import { contactAConsultant } from '@constants/language-option';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 
 const Button = styled.button`
   display: flex;
@@ -44,9 +36,11 @@ const ContactAConsultant = () => {
   });
   const refContainer = useRef();
   const refBotton = useRef();
+  const refLang = useRef();
 
   useObserverItem(refContainer, styles);
   useObserverItem(refBotton, styles);
+  useChooseLanguage(contactAConsultant, refLang);
 
   const handleSubmit = async (event) => {
     const form = event.currentTarget;
@@ -61,10 +55,8 @@ const ContactAConsultant = () => {
   return (
     <>
       <div className={styles['container']} ref={refContainer}>
-        <div className={styles['title']}>Liên hệ tư vấn</div>
-        <div
-          className={styles['desc']}
-        >{`Khách hàng cần tư vấn từ TPI, xin vui lòng điền đầy đủ thông tin sẽ có nhân viên liên hệ hỗ trợ trong vòng 24 giờ.`}</div>
+        <div className={styles['title']}>{refLang.current?.title}</div>
+        <div className={styles['desc']}>{refLang.current?.desc}</div>
 
         <Form
           noValidate
@@ -72,12 +64,14 @@ const ContactAConsultant = () => {
           onSubmit={handleSubmit}
           className={styles['form-main']}
         >
-          <div className={styles['form-title-important']}>{`Họ tên`}</div>
+          <div className={styles['form-title-important']}>
+            {refLang.current?.username.label}
+          </div>
           <Form.Group className='mb-4' controlId='formHorizontalEmail'>
             <Form.Control
               type='text'
               name='username'
-              placeholder={label.username}
+              placeholder={refLang.current?.username.desc}
               required
             />
             <Form.Control.Feedback type='invalid'>
@@ -85,12 +79,14 @@ const ContactAConsultant = () => {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <div className={styles['form-title-important']}>{`Email`}</div>
+          <div className={styles['form-title-important']}>
+            {refLang.current?.email.label}
+          </div>
           <Form.Group className='mb-4' controlId='formHorizontalEmail'>
             <Form.Control
               type='email'
               name='username'
-              placeholder={label.email}
+              placeholder={refLang.current?.email.desc}
               required
             />
             <Form.Control.Feedback type='invalid'>
@@ -98,12 +94,14 @@ const ContactAConsultant = () => {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <div className={styles['form-title']}>{`Địa chỉ`}</div>
+          <div className={styles['form-title']}>
+            {refLang.current?.address.label}
+          </div>
           <Form.Group className='mb-4' controlId='formHorizontalEmail'>
             <Form.Control
               type='text'
               name='username'
-              placeholder={label.address}
+              placeholder={refLang.current?.address.desc}
               required
             />
             <Form.Control.Feedback type='invalid'>
@@ -111,12 +109,14 @@ const ContactAConsultant = () => {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <div className={styles['form-title']}>{`Loại hàng`}</div>
+          <div className={styles['form-title']}>
+            {refLang.current?.typeProduct.label}
+          </div>
           <Form.Group className='mb-4' controlId='formHorizontalEmail'>
             <Form.Control
               type='text'
               name='username'
-              placeholder={label.typeProduct}
+              placeholder={refLang.current?.typeProduct.desc}
               required
             />
             <Form.Control.Feedback type='invalid'>
@@ -124,12 +124,14 @@ const ContactAConsultant = () => {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <div className={styles['form-title']}>{`Tư vấn dịch vụ`}</div>
+          <div className={styles['form-title']}>
+            {refLang.current?.phone.label}
+          </div>
           <Form.Group className='mb-4' controlId='formHorizontalEmail'>
             <Form.Control
               type='text'
               name='username'
-              placeholder={label.phone}
+              placeholder={refLang.current?.phone.desc}
               required
             />
             <Form.Control.Feedback type='invalid'>
@@ -137,24 +139,32 @@ const ContactAConsultant = () => {
             </Form.Control.Feedback>
           </Form.Group>
 
-          <div className={styles['form-title']}>{`Đăng ký`}</div>
+          <div className={styles['form-title']}>
+            {refLang.current?.register.title}
+          </div>
           <div className={styles['form-checkbox']}>
             <Form.Check id={`check-api`}>
               <Form.Check.Input isValid />
-              <Form.Check.Label>{`Chiếu xạ`}</Form.Check.Label>
+              <Form.Check.Label>
+                {refLang.current?.register.label1}
+              </Form.Check.Label>
             </Form.Check>
             <Form.Check id={`check-api-2`}>
               <Form.Check.Input isValid />
-              <Form.Check.Label>{`Gửi kho`}</Form.Check.Label>
+              <Form.Check.Label>
+                {refLang.current?.register.label2}
+              </Form.Check.Label>
             </Form.Check>
           </div>
 
-          <div className={styles['form-title']}>{`Ghi chú`}</div>
+          <div className={styles['form-title']}>
+            {refLang.current?.note.label}
+          </div>
           <Form.Group className='mb-4' controlId='formHorizontalEmail'>
             <Form.Control
               type='text'
               name='username'
-              placeholder={label.note}
+              placeholder={refLang.current?.note.desc}
               required
             />
             <Form.Control.Feedback type='invalid'>
@@ -163,28 +173,23 @@ const ContactAConsultant = () => {
           </Form.Group>
 
           <Button type='submit' color='primary'>
-            Gửi thông tin
+            {refLang.current?.button}
           </Button>
         </Form>
         <div className={styles['bottom-content']} ref={refBotton}>
-          <div className={styles['title']}>Liên hệ trực tiếp</div>
-          <div className={styles['sub-content']}>
-            <div className={styles['sub-content__title']}>
-              Tư vấn trực tiếp: Bộ Phận Thông Tin.
-            </div>
-            <div className={styles['sub-content__desc']}>Số điện thoại:</div>
-            <div className={styles['sub-content__desc']}> Email:</div>
+          <div className={styles['title']}>
+            {refLang.current?.directContact.title}
           </div>
-          <div className={styles['sub-content']}>
-            <div className={styles['sub-content__title']}>
-              Nhận lịch đăng ký:
+          {refLang.current?.directContact.sub.map((item, idx) => (
+            <div className={styles['sub-content']} key={idx}>
+              <div className={styles['sub-content__title']}>{item.title}</div>
+              {item.desc.map((_item, _idx) => (
+                <div className={styles['sub-content__desc']} key={_idx}>
+                  {_item}
+                </div>
+              ))}
             </div>
-            <div className={styles['sub-content__desc']}>
-              Bộ Phận Tiếp Nhận :
-            </div>
-            <div className={styles['sub-content__desc']}> Số Điện Thoại:</div>
-            <div className={styles['sub-content__desc']}> Email:</div>
-          </div>
+          ))}
         </div>
       </div>
     </>
