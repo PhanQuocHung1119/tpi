@@ -599,3 +599,76 @@ Bridge between suppliers and customers`,
     ],
   },
 ];
+
+export const newsBlock = [
+  {
+    locale: 'vi',
+    sub: [
+      {
+        time: `08/02/2022`,
+        title: `Doanh nhân Vương Hiếu, CEO Công ty TNHH Chiếu xạ Toàn Phát (TPI): Càng khó, càng muốn chinh phục`,
+        desc: `CEO Vương Hiếu nói, trong quá trình khởi nghiệp, anh may mắn vì được người thân và các đối tác ủng hộ...`,
+      },
+      {
+        time: `23/05/2022`,
+        title: `Lễ khởi công kho lạnh Toàn Phát - kho vận`,
+        desc: `The waitlist is an invaluable marketing tool when used appropriately. Here's how to `,
+      },
+      {
+        time: `08/03/2022`,
+        title: `Happy Woman’s Day - NHỮNG BÔNG HOA CỦA ĐẠI GIA ĐÌNH TPI`,
+        desc: `Cảm ơn "các nàng" đã luôn đồng hành của TPI trong suốt hành trình qua!`,
+      },
+      {
+        time: `08/02/2022`,
+        title: `Doanh nhân Vương Hiếu, CEO Công ty TNHH Chiếu xạ Toàn Phát (TPI): Càng khó, càng muốn chinh phục`,
+        desc: `CEO Vương Hiếu nói, trong quá trình khởi nghiệp, anh may mắn vì được người thân và các đối tác ủng hộ...`,
+      },
+      {
+        time: `08/03/2022`,
+        title: `Happy Woman’s Day - NHỮNG BÔNG HOA CỦA ĐẠI GIA ĐÌNH TPI`,
+        desc: `Cảm ơn "các nàng" đã luôn đồng hành của TPI trong suốt hành trình qua!`,
+      },
+      {
+        time: `23/05/2022`,
+        title: `Lễ khởi công kho lạnh Toàn Phát - kho vận`,
+        desc: `The waitlist is an invaluable marketing tool when used appropriately. Here's how to `,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    sub: [
+      {
+        time: `02/08/2022`,
+        title: `Entrepreneur Vuong Hieu, CEO of Toan Phat Irradiation Co., Ltd. (TPI): The harder it is, the more you want to conquer`,
+        desc: `CEO Vuong Hieu said, in the process of starting a business, he was fortunate to have the support of his family and partners...`,
+      },
+      {
+        time: `05/23/2022`,
+        title: `Groundbreaking ceremony of Toan Phat cold storage - logistics`,
+        desc: `The waitlist is an invaluable marketing tool when used appropriately. Here's how to`,
+      },
+      {
+        time: `03/08/2022`,
+        title: `Happy Women's Day - THE FLOWERS OF THE BIGGEST FAMILY TPI`,
+        desc: `Thank you "girls" for always accompanying TPI during the past journey!`,
+      },
+      {
+        time: `02/08/2022`,
+        title: `Entrepreneur Vuong Hieu, CEO of Toan Phat Irradiation Co., Ltd. (TPI): The harder it is, the more you want to conquer`,
+        desc: `CEO Vuong Hieu said, in the process of starting a business, he was fortunate to have the support of his family and partners...`,
+      },
+      {
+        time: `03/08/2022`,
+        title: `Happy Women's Day - THE FLOWERS OF THE BIGGEST FAMILY TPI`,
+        desc: `Thank you "girls" for always accompanying TPI during the past journey!`,
+      },
+      {
+        time: `05/23/2022`,
+        title: `Groundbreaking ceremony of Toan Phat cold storage - logistics`,
+        desc: `The waitlist is an invaluable marketing tool when used appropriately. Here's how to`,
+      },
+    ],
+  },
+];

@@ -11,7 +11,7 @@
   margin-top: 64px;
   opacity: 0;
   &.active-anim {
-    @include anim-opacity(0.3s, 0s);
+    @include anim-opacity(0.5s, 0s);
     & > :first-child {
       @include anim-move-circle(10px, 1s, 0s);
     }
