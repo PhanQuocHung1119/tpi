@@ -1,39 +1,27 @@
 import React, { useRef } from 'react';
 import styles from './SupportContent.module.scss';
 import { useObserverItem } from 'components/hook/useObserverItem';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
+import { supportContent } from '@constants/language-option';
 
 const SupportContent = () => {
   const refContainer = useRef();
+  const refLang = useRef(null);
+
   useObserverItem(refContainer, styles);
+  useChooseLanguage(supportContent, refLang);
+
   return (
     <>
       <div className={styles['container']} ref={refContainer}>
-        <div className={styles['title']}>Hỗ trợ</div>
+        <div className={styles['title']}>{refLang.current?.title}</div>
         <div className={styles['sub-content-wrapper']}>
-          <div className={styles['sub-content']}>
-            <div className={styles['sub-content__title']}>Chiếu xạ</div>
-            <div className={styles['sub-content__desc']}>
-              {`Công ty TNHH Chiếu Xạ Toàn Phát
-Địa chỉ: Lô A24-1, Đường Ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Huyện Bến Lức, Tỉnh Long An.
-MST: 1101846577.
-Đăng ký dịch vụ: 
-Email: 
-SĐT:
-`}
+          {refLang.current?.sub.map((item, idx) => (
+            <div className={styles['sub-content']} key={idx}>
+              <div className={styles['sub-content__title']}>{item.title}</div>
+              <div className={styles['sub-content__desc']}>{item.desc}</div>
             </div>
-          </div>
-          <div className={styles['sub-content']}>
-            <div className={styles['sub-content__title']}>Thuê kho lạnh</div>
-            <div className={styles['sub-content__desc']}>
-              {`Công ty TNHH Toàn Phát - Kho Vận
-Địa chỉ: Lô A24-2, Đường Ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Huyện Bến Lức, Tỉnh Long An.
-MST: 1101966433. 
-Đăng ký thuê kho:
-Email:
-SĐT:
-`}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>

@@ -765,3 +765,87 @@ export const contactAConsultant = [
     },
   },
 ];
+
+export const supportContent = [
+  {
+    locale: 'vi',
+    title: 'Hỗ trợ',
+    sub: [
+      {
+        title: 'Chiếu xạ',
+        desc: `Công ty TNHH Chiếu Xạ Toàn Phát
+        Địa chỉ: Lô A24-1, Đường Ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Huyện Bến Lức, Tỉnh Long An.
+        MST: 1101846577.
+        Đăng ký dịch vụ:
+        Email:
+        SĐT:`,
+      },
+      {
+        title: 'Thuê kho lạnh',
+        desc: `Công ty TNHH Toàn Phát - Kho Vận 
+        Địa chỉ: Lô A24-2, Đường Ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Huyện Bến Lức, Tỉnh Long An. 
+        MST: 1101966433. 
+        Đăng ký thuê kho: 
+        Email:
+        SĐT:`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Support',
+    sub: [
+      {
+        title: 'Irradiation',
+        desc: `Toan Phat Irradiation Co., Ltd
+Address: Lot A24-1, Ngang 1 Street, Phu An Thanh Industrial Park, An Thanh Commune, Ben Luc District, Long An Province.
+MST: 1101846577.
+Register Service:
+Email:
+Tel:`,
+      },
+      {
+        title: 'Cold storage rental',
+        desc: `Toan Phat Co., Ltd - Warehouse
+Address: Lot A24-2, Ngang 1 Street, Phu An Thanh Industrial Park, An Thanh Commune, Ben Luc District, Long An Province.
+MST: 1101966433.
+Register to rent a warehouse:
+Email:
+Tel:`,
+      },
+    ],
+  },
+];
+
+export const supportContact = [
+  {
+    locale: 'vi',
+    title: 'Liên hệ',
+    desc: `Cảm ơn bạn đã liên hệ! Xin điền vào biểu mẫu, chúc bạn một ngày tốt lành!`,
+    sub: [
+      { title: `Tên của bạn` },
+      { title: `Email của bạn` },
+      { title: `Số điện thoại của bạn` },
+      { title: `Quốc gia` },
+      { title: `Tên công ty` },
+      { title: `Quan tâm dịch vụ` },
+      { title: `Thông điệp` },
+    ],
+    button: `Liên hệ`,
+  },
+  {
+    locale: 'en-US',
+    title: 'Contact',
+    desc: `Thank you for getting in touch! Fill the form, have a great day!`,
+    sub: [
+      { title: `Your Name` },
+      { title: `Your Email` },
+      { title: `Your Phone Number` },
+      { title: `Country` },
+      { title: `Company Name` },
+      { title: `Interested in service` },
+      { title: `Message` },
+    ],
+    button: `Contact`,
+  },
+];
