@@ -4,13 +4,13 @@ import { Breadcrumb } from 'components/own/breadcrumb';
 import { QuestionAndAnswerBanner } from './question-and-answer-banner';
 import { QuestionContent } from './question-content';
 import { NewsBlock } from 'components/own/news-block';
-const path = [{ path: '#', title: 'Q&A' }];
+import { breadcrumb } from '@constants/language-option';
 
 const QuestionAndAnswer = () => {
   return (
     <>
       <div className={styles['container']}>
-        <Breadcrumb data={path} />
+        <Breadcrumb data={breadcrumb.questionAndAnswer} />
         <QuestionAndAnswerBanner />
         <QuestionContent />
         <NewsBlock />

@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './Breadcrumb.module.scss';
 import Link from 'next/link';
 import clsx from 'clsx';
 import Image from 'next/image';
 import home_icon from '@assets/bread-crumb/Home-Icon.png';
+import { isArray } from 'lodash';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 
-const defaultData = [{ path: '#', title: 'Giới thiệu về TPI' }];
+const defaultData = [
+  {
+    locale: 'vi',
+    sub: [{ path: '#', title: 'Giới thiệu về TPI' }],
+  },
+];
 
 const Breadcrumb = ({ className, data = defaultData }) => {
+  const refLang = useRef(null);
+  useChooseLanguage(data, refLang);
   return (
     <>
       <article className={clsx(styles['breadcrumb'])}>
@@ -30,17 +39,23 @@ const Breadcrumb = ({ className, data = defaultData }) => {
 
           <li className={styles['breadcrumb__link']}>
             <Link href='/'>
-              <a> Trang chủ</a>
+              <a>
+                {refLang.current?.locale == `vi` ? `Trang chủ` : `Homepage`}
+              </a>
             </Link>
           </li>
 
-          {data.map((_d) => (
-            <li className={styles['breadcrumb__link']} key={_d.path + _d.title}>
-              <Link href={_d.path}>
-                <a>{_d.title}</a>
-              </Link>
-            </li>
-          ))}
+          {isArray(refLang.current?.sub) &&
+            refLang.current?.sub.map((_d) => (
+              <li
+                className={styles['breadcrumb__link']}
+                key={_d.path + _d.title}
+              >
+                <Link href={_d.path}>
+                  <a>{_d.title}</a>
+                </Link>
+              </li>
+            ))}
         </ul>
       </article>
     </>

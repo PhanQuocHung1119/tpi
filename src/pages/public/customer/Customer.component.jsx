@@ -3,14 +3,13 @@ import styles from './Customer.module.scss';
 import { Breadcrumb } from 'components/own/breadcrumb';
 import { NewsBlock } from 'components/own/news-block';
 import { ContactAConsultant } from './contact-a-consultant';
-
-const path = [{ path: '#', title: 'Khách hàng' }];
+import { breadcrumb } from '@constants/language-option';
 
 const Customer = () => {
   return (
     <>
       <div className={styles['container']}>
-        <Breadcrumb data={path} />
+        <Breadcrumb data={breadcrumb.customer} />
         <ContactAConsultant />
         <NewsBlock />
       </div>

@@ -5,17 +5,13 @@ import { VideoTop } from 'components/own/video-top';
 import { ColdStorageTopContent } from './cold-storage-top-content';
 import { ColdStorageListImage } from './cold-storage-list-image';
 import { NewsBlock } from 'components/own/news-block';
-
-const path = [
-  { path: '#', title: 'Lĩnh vực tiên phong' },
-  { path: '#', title: 'Kho lạnh lưu trữ' },
-];
+import { breadcrumb } from '@constants/language-option';
 
 const ColdStorage = () => {
   return (
     <>
       <div className={styles['container']}>
-        <Breadcrumb data={path} />
+        <Breadcrumb data={breadcrumb.coldStorage} />
         <VideoTop />
         <ColdStorageTopContent />
         <ColdStorageListImage />

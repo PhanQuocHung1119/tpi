@@ -6,14 +6,13 @@ import { SupportBanner } from './support-banner';
 import { SupportContent } from './support-content';
 import { GoogleMap } from './google-map';
 import { SupportContact } from './support-contact';
-
-const path = [{ path: '#', title: 'Hỗ trợ' }];
+import { breadcrumb } from '@constants/language-option';
 
 const Support = () => {
   return (
     <>
       <div className={styles['container']}>
-        <Breadcrumb data={path} />
+        <Breadcrumb data={breadcrumb.support} />
         <SupportBanner />
         <SupportContent />
         <GoogleMap />

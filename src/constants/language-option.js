@@ -603,6 +603,7 @@ Bridge between suppliers and customers`,
 export const newsBlock = [
   {
     locale: 'vi',
+    title: `Tin tức mới nhất`,
     sub: [
       {
         time: `08/02/2022`,
@@ -638,6 +639,7 @@ export const newsBlock = [
   },
   {
     locale: 'en-US',
+    title: `Latest news`,
     sub: [
       {
         time: `02/08/2022`,
@@ -817,6 +819,103 @@ Tel:`,
   },
 ];
 
+export const goalsMain = [
+  {
+    locale: 'vi',
+    title: 'Mục tiêu phát triển',
+    sub: [
+      {
+        number: 1,
+        desc: `TPI hứa hẹn sẽ vươn xa tầm quốc tế và mang lại giá trị bền vững đến đối tác cũng như toàn cộng đồng.`,
+      },
+      {
+        number: 2,
+        desc: `Tất cả đội ngũ, CBNV cùng vươn lên, tỏa sáng và tập thể luôn đồng lòng, gắn kết như những viên đá quý.`,
+      },
+      {
+        number: 3,
+        desc: `Từ lãnh đạo đến đội ngũ nhân viên các cấp các đội đều được đối xử bình đẳng, sẻ chia và được lắng nghe.`,
+      },
+      {
+        number: 4,
+        desc: `Từ lãnh đạo đến đội ngũ nhân viên các cấp các đội đều được đối xử bình đẳng, sẻ chia và được lắng nghe.`,
+      },
+      {
+        number: 5,
+        desc: `Sự gắn kết thể hiện trong đời sống sinh hoạt thường nhật tại công ty như những bữa ăn cùng nhau, những buổi tụ họp sinh nhật hay liên hoan.`,
+      },
+      {
+        number: 6,
+        desc: `Đội ngũ CBNV luôn hướng về mục tiêu chung, mỗi bộ phận luôn đảm nhiệm vai trò nhất định không thể tách rời. Từng mục tiêu nhỏ hướng về mục tiêu lớn đưa TPI ngày càng lớn mạnh và vươn xa tầm khu vực.`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Goals',
+    sub: [
+      {
+        number: 1,
+        desc: `TPI promises to go beyond the international reach and bring sustainable value to partners as well as the whole community.`,
+      },
+      {
+        number: 2,
+        desc: `All teams and employees rise up, shine and the team is always united and connected like gems.`,
+      },
+      {
+        number: 3,
+        desc: `From leaders to staff at all levels, all teams are treated equally, shared and heard.`,
+      },
+      {
+        number: 4,
+        desc: `From leaders to staff at all levels, all teams are treated equally, shared and heard.`,
+      },
+      {
+        number: 5,
+        desc: `Cohesion manifests in daily life at the company such as meals together, birthday gatherings or parties.`,
+      },
+      {
+        number: 6,
+        desc: `The staff is always aiming for the common goal, each department always takes on a certain role that cannot be separated. Each small goal towards the big goal makes TPI grow stronger and reach out to the region.`,
+      },
+    ],
+  },
+];
+
+export const goalsLogisticsAndSocial = [
+  {
+    locale: 'vi',
+    sub: [
+      {
+        title: 'Chiến lược phát triển nguồn nhân lực',
+        desc: `Tài sản lớn nhất của một doanh nghiệp không phải là tiền cũng không phải bất động sản mà chính là con người. Vì vậy phát triển nguồn nhân lực là vấn đề thiết yếu và được ưu tiên hàng đầu.`,
+      },
+      {
+        title: 'Xã hội và cộng đồng',
+        desc: `Hoạt động từ thiện với tinh thần tương thân tương ái, cảm thông và sẻ chia những khó khăn với cộng đồng.
+Không chỉ dừng lại ở chiếu xạ nông sản và thủy sản, TPI còn nghiên cứu thực hiện ứng dụng chiếu xạ trên nhiều mặt hàng khác góp phần thúc đẩy xuất khẩu hàng hóa, và khẳng định giá trị Quốc gia.
+Giá chiếu xạ trái cây tươi tại Việt Nam hiện còn khá cao. TPI cố gắng để đưa ra mức phí chiếu xạ hợp lý hơn nhằm hỗ trợ các nhà xuất khẩu có thêm sức cạnh tranh trên thị trường quốc tế.
+`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    sub: [
+      {
+        title: 'Human resource development strategy',
+        desc: `The biggest asset of a business is neither money nor real estate, but people. Therefore, human resource development is an essential issue and a top priority.`,
+      },
+      {
+        title: 'Society and community',
+        desc: `Charity activities with the spirit of mutual affection, sympathy and sharing difficulties with the community.
+Not only stopping at irradiation of agricultural and aquatic products, TPI also researches and applies irradiation on many other items, contributing to promoting export of goods, and affirming the national value.
+The price of fresh fruit irradiation in Vietnam is still quite high. TPI strives to offer more reasonable irradiation fees to help exporters be more competitive in the international market.`,
+      },
+    ],
+  },
+];
+
 export const supportContact = [
   {
     locale: 'vi',
@@ -849,3 +948,184 @@ export const supportContact = [
     button: `Contact`,
   },
 ];
+
+export const questionContent = [
+  {
+    locale: 'vi',
+    title: `Q&A - Hỏi đáp`,
+    desc: `Thông tin chi tiết về TPI`,
+    sub: [
+      {
+        number: 1,
+        title: `Chiếu xạ là gì?`,
+        desc: `Chiếu xạ là sử dụng năng lượng bức xạ ion hóa để xử lý hàng hóa nhằm đảm bảo vấn đề vệ sinh và an toàn cho sản phẩm, thực phẩm. Hiện nay trên thế giới có rất nhiều nước sử dụng công nghệ này để xử lý và bảo quản hơn 40 loại sản phẩm, thực phẩm khác nhau, bao gồm trái cây, rau, ngũ cốc, cá, tôm, thịt, gia cầm, thiết bị y tế…`,
+      },
+      {
+        number: 2,
+        title: `Mục đích của Chiếu xạ thực phẩm?`,
+        desc: `Phòng chống thực phẩm gây bệnh: Chiếu xạ có thể được sử dụng hiệu quả để loại bỏ vi sinh vật gây bệnh từ thực phẩm, chẳng hạn như Salmonella và Escherichia coli.
+
+Bảo quản: Chiếu xạ có thể được sử dụng để tiêu diệt hoặc vô hoạt vi sinh vật gây hư hỏng và phân hủy thực phẩm, đồng thời kéo dài tuổi thọ của các loại thực phẩm.
+
+Kiểm soát côn trùng: Chiếu xạ có thể được sử dụng để tiêu diệt côn trùng bên trong hoặc trên bề mặt các loại trái cây. Chiếu xạ cũng giúp giảm các hoạt động kiểm soát sâu bệnh khác có thể gây hại cho trái cây.
+Ức chế sự nảy mầm và quá trình chín: Chiếu xạ có thể được sử dụng để ức chế sự nảy mầm (ví dụ như khoai tây) và trì hoãn quá trình chín của trái cây để tăng thời gian bảo quản.
+`,
+      },
+      {
+        number: 3,
+        title: `Lợi ích của việc chiếu xạ thực phẩm?`,
+        desc: `Thực phẩm chiếu xạ rất an toàn và mang lại nhiều lợi ích.
+
+Tính an toàn về mặt sức khỏe cũng như lợi ích về mặt kinh tế của thực phẩm chiếu xạ đã được các tổ chức có uy tín của Liên Hiệp Quốc như: Tổ chức Y tế thể giới (WHO), Tổ chức Lương nông (FAO) và Cơ quan Năng lượng nguyên`,
+      },
+      {
+        number: 4,
+        title: `Chiếu xạ có làm thực phẩm bị nhiễm xạ?`,
+        desc: `Thực phẩm được chiếu xạ không tiếp xúc trực tiếp với nguồn phát ra phóng xạ, nên không thể trở thành “thực phẩm bị nhiễm phóng xạ” do đó không có tác động xấu đến người sử dụng.`,
+      },
+      {
+        number: 5,
+        title: `Chiếu xạ có tạo ra các chất độc hại cho thực phẩm và con người?`,
+        desc: `Thực phẩm sau khi chiếu xạ không gây ra ảnh hưởng tiêu cực đến sức khỏe con người vì không xuất hiện độc tố và không có bất kỳ sự thay đổi thành phần hóa học nào.
+
+Các nhà máy vận hành công nghệ chiếu xạ phải tuân theo quy trình kỹ thuật rất nghiêm ngặt, rất an toàn nên không gây ra bất cứ ảnh hưởng tiêu cực nào cho môi trường sống của con người. `,
+      },
+      {
+        number: 6,
+        title: `Chiếu xạ có làm giảm các chất dinh dưỡng có trong thực phẩm?`,
+        desc: `Chiếu xạ không làm giảm giá trị dinh dưỡng mà vẫn giữ nguyên các vitamin acid amin và acid béo có trong thực phẩm… ủy ban hỗn hợp giữa FAO, WHO và IAEA, đã có nhiều nghiên cứu và khẳng định chiếu xạ không làm giảm các tố chất dinh dưỡng trong thực phẩm.`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Q&A',
+    desc: `Detailed information about TPI`,
+    sub: [
+      {
+        number: 1,
+        title: `What is irradiation?`,
+        desc: `Irradiation is the use of ionizing radiation energy to process goods to ensure hygiene and safety for products and food. Currently, there are many countries in the world that use this technology to process and preserve more than 40 different types of products and foods, including fruits, vegetables, grains, fish, shrimp, meat, poultry, medical equipment…`,
+      },
+      {
+        number: 2,
+        title: `What is the purpose of Food Irradiation?`,
+        desc: `Prevention of foodborne illness: Irradiation can be used effectively to eliminate foodborne pathogens, such as Salmonella and Escherichia coli.
+
+Preservation: Irradiation can be used to kill or inactivate microorganisms that cause spoilage and decomposition of food and prolong the shelf life of foods.
+
+Insect control: Irradiation can be used to kill insects inside or on the surface of fruits. Irradiation also helps reduce other pest control activities that can damage fruit.
+Inhibition of germination and ripening: Irradiation can be used to inhibit germination (e.g. potatoes) and delay fruit ripening to increase shelf life.`,
+      },
+      {
+        number: 3,
+        title: `What are the benefits of food irradiation?`,
+        desc: `Irradiated foods are very safe and offer many benefits.
+
+The safety of health as well as economic benefits of irradiated foods have been recognized by prestigious United Nations organizations such as the World Health Organization (WHO), Food and Agriculture Organization (FAO) ) and the Raw Energy Agency`,
+      },
+      {
+        number: 4,
+        title: `Does irradiation make food contaminated?`,
+        desc: `Irradiated food does not come into direct contact with radioactive sources, so it cannot become “radioactive food” and therefore has no adverse effects on the consumer.`,
+      },
+      {
+        number: 5,
+        title: `Does irradiation produce substances that are toxic to food and humans?`,
+        desc: `Food after irradiation does not cause negative effects on human health because there is no toxicity and no change in chemical composition.
+
+Factories operating irradiation technology must follow a very strict and safe technical process, so they do not cause any negative effects to the human living environment.`,
+      },
+      {
+        number: 6,
+        title: `Does irradiation reduce the nutrients present in food?`,
+        desc: `Irradiation does not reduce the nutritional value, but still preserves the vitamins, amino acids and fatty acids found in food… Joint committee between FAO, WHO and IAEA, there have been many studies and confirmed that irradiation does not reduce the nutrients in food.`,
+      },
+    ],
+  },
+];
+
+export const breadcrumb = {
+  aboutUs: [
+    {
+      locale: 'vi',
+      sub: [{ path: '#', title: 'Giới thiệu về TPI' }],
+    },
+    {
+      locale: 'en-US',
+      sub: [{ path: '#', title: 'About TPI' }],
+    },
+  ],
+  foodIrradiation: [
+    {
+      locale: 'vi',
+      sub: [
+        { path: '#', title: 'Lĩnh vực tiên phong' },
+        { path: '#', title: 'Chiếu xạ' },
+      ],
+    },
+    {
+      locale: 'en-US',
+      sub: [
+        { path: '#', title: 'Pioneering field' },
+        { path: '#', title: 'Irradiation' },
+      ],
+    },
+  ],
+  coldStorage: [
+    {
+      locale: 'vi',
+      sub: [
+        { path: '#', title: 'Lĩnh vực tiên phong' },
+        { path: '#', title: 'Kho lạnh lưu trữ' },
+      ],
+    },
+    {
+      locale: 'en-US',
+      sub: [
+        { path: '#', title: 'Pioneering field' },
+        { path: '#', title: 'Cold storage' },
+      ],
+    },
+  ],
+  goals: [
+    {
+      locale: 'vi',
+      sub: [{ path: '#', title: 'Mục tiêu phát triển' }],
+    },
+    {
+      locale: 'en-US',
+      sub: [{ path: '#', title: 'Goals' }],
+    },
+  ],
+  customer: [
+    {
+      locale: 'vi',
+      sub: [{ path: '#', title: 'Khách hàng' }],
+    },
+    {
+      locale: 'en-US',
+      sub: [{ path: '#', title: 'Customer' }],
+    },
+  ],
+  support: [
+    {
+      locale: 'vi',
+      sub: [{ path: '#', title: 'Hỗ trợ' }],
+    },
+    {
+      locale: 'en-US',
+      sub: [{ path: '#', title: 'Support' }],
+    },
+  ],
+  questionAndAnswer: [
+    {
+      locale: 'vi',
+      sub: [{ path: '#', title: 'Q&A' }],
+    },
+    {
+      locale: 'en-US',
+      sub: [{ path: '#', title: 'Q&A' }],
+    },
+  ],
+};

@@ -9,11 +9,7 @@ import { MethodIrradiation } from './method-irradiation';
 import { ProductOfIrradiation } from './products-irradiation';
 import { logisticsAndSocial } from '@constants/language-option';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
-
-const path = [
-  { path: '#', title: 'Lĩnh vực tiên phong' },
-  { path: '#', title: 'Chiếu xạ' },
-];
+import { breadcrumb } from '@constants/language-option';
 
 const FoodIrradiation = () => {
   const refLang = useRef();
@@ -22,7 +18,7 @@ const FoodIrradiation = () => {
   return (
     <>
       <div className={styles['container']}>
-        <Breadcrumb data={path} />
+        <Breadcrumb data={breadcrumb.foodIrradiation} />
         <VideoTop />
         <FoodIrradiationSystem />
         <ProductOfIrradiation />

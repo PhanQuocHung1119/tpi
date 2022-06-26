@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import styles from './QuestionContent.module.scss';
 import { QuestionAndAnswerSubContent } from '../sub-content-q-and-a';
 import { useObserverItem } from 'components/hook/useObserverItem';
+import { questionContent } from '@constants/language-option';
+import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 
 const arrQuestion = [
   {
@@ -47,15 +49,18 @@ Các nhà máy vận hành công nghệ chiếu xạ phải tuân theo quy trìn
 ];
 const QuestionContent = () => {
   const refContainer = useRef();
+  const refLang = useRef(null);
+
   useObserverItem(refContainer, styles);
+  useChooseLanguage(questionContent, refLang);
 
   return (
     <>
       <div className={styles['container']} ref={refContainer}>
-        <div className={styles['title']}>{'Q&A - Hỏi đáp'}</div>
-        <div className={styles['desc']}>Thông tin chi tiết về TPI</div>
+        <div className={styles['title']}>{refLang.current?.title}</div>
+        <div className={styles['desc']}>{refLang.current?.desc}</div>
         <div className={styles['content-wrapper']}>
-          {arrQuestion.map((item, index) => (
+          {refLang.current?.sub.map((item, index) => (
             <QuestionAndAnswerSubContent
               key={index}
               number={item.number}

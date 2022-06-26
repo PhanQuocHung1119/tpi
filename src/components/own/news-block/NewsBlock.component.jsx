@@ -97,7 +97,7 @@ const NewsBlock = () => {
   return (
     <>
       <div className={styles['container']}>
-        <div className={styles['title']}>Tin tức mới nhất</div>
+        <div className={styles['title']}>{refLang.current?.title}</div>
         <div className={styles['content-wrapper']}>
           <div className={styles['slider-wrapper']} ref={refSliderWrapper}>
             <Slider {...settings}>
