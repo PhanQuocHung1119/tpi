@@ -146,6 +146,18 @@ export const teamMember = [
         title: 'Tên',
         desc: `Chức vụ`,
       },
+      {
+        title: 'Tên',
+        desc: `Chức vụ`,
+      },
+      {
+        title: 'Tên',
+        desc: `Chức vụ`,
+      },
+      {
+        title: 'Tên',
+        desc: `Chức vụ`,
+      },
     ],
   },
   {
@@ -155,6 +167,18 @@ export const teamMember = [
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet,
             consequat egestas dictum posuere pellentesque fermentum.`,
     sub: [
+      {
+        title: 'Name goes here',
+        desc: `Tittle goes here`,
+      },
+      {
+        title: 'Name goes here',
+        desc: `Tittle goes here`,
+      },
+      {
+        title: 'Name goes here',
+        desc: `Tittle goes here`,
+      },
       {
         title: 'Name goes here',
         desc: `Tittle goes here`,

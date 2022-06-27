@@ -1,6 +1,6 @@
 import React, { useMemo, useRef } from 'react';
-import Slider from 'react-slick';
 import styles from './Testimonial.module.scss';
+import Slider from 'react-slick';
 import { ClientComment } from './ClientComment';
 import { useObserverItem } from 'components/hook/useObserverItem';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';

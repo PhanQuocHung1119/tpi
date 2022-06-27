@@ -4,7 +4,6 @@ import styles from './LogisticsAndSocial.module.scss';
 import { NumberGeneralInfo } from 'components/own/number-general-info';
 
 const LogisticsAndSocial = ({ logisticsAndSocial }) => {
-  console.log('GGG', logisticsAndSocial);
   return (
     <>
       <div className={styles['container']}>

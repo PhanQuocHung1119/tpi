@@ -11,6 +11,41 @@
   height: 100%;
   max-height: 750px;
   margin: 200px auto 0;
+  overflow: hidden;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.5s, 0.1s);
+    & > :nth-child(1) {
+      & > :nth-child(1) {
+        @include anim-move-top(20px, 1.2s, 0.3s);
+      }
+      & > :nth-child(2) {
+        @include anim-move-right(10px, 1.5s, 0.3s);
+      }
+      & > :nth-child(3) {
+        @include anim-move-right(10px, 1.7s, 0.3s);
+      }
+    }
+
+    & > :nth-child(2) {
+      & > :first-child {
+        & > :first-child {
+          & > :first-child {
+            @for $i from 1 through 6 {
+              & > :nth-child(#{$i}) {
+                & > :first-child {
+                  & > :first-child {
+                    @include anim-move-revert-circle(10px, 0.8s, 0.3s * $i);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   @include responsive-size(screen-l) {
     margin-top: 60px;
     height: max-content;
@@ -118,5 +153,12 @@
         }
       }
     }
+  }
+}
+
+.setting-slider {
+  width: 100% !important;
+  & > :first-child {
+    overflow: visible !important;
   }
 }
