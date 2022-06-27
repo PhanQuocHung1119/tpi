@@ -18,6 +18,9 @@ module.exports = {
     defaultLocale: 'vi',
     localeDetection: false,
   },
+  compiler: {
+    styledComponents: true,
+  },
   experimental: {
     // Enables the styled-components SWC transform
     styledComponents: true,

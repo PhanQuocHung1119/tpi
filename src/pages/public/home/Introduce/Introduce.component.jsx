@@ -28,6 +28,7 @@ const Introduce = () => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            priority
           />
         </div>
         <div className={styles['content']} ref={refContent}>

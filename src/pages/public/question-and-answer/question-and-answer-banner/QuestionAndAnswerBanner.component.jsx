@@ -19,6 +19,7 @@ const QuestionAndAnswerBanner = () => {
           layout='responsive'
           objectFit='contain'
           quality={100}
+          priority
         />
       </div>
     </>

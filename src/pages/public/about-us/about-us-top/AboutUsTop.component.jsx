@@ -33,6 +33,7 @@ const AboutUsTop = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              priority
             />
           </div>
         </div>
