@@ -12,7 +12,6 @@
   opacity: 0;
   &.active-anim {
     @include anim-opacity(0.1s, 0s);
-
     & > :nth-child(1) {
       @include anim-move-top(50px, 1.2s);
     }
@@ -139,7 +138,8 @@
       justify-content: center;
       width: 180px;
       min-height: 40px;
-      background: #009e4a;
+      // background: #009e4a;
+      background: linear-gradient(45deg, #009e4a, #009e4a);
       border-radius: 5px;
       color: #ffffff;
       font-style: normal;
@@ -157,6 +157,15 @@
       }
       @media only screen and (max-width: 1200px) {
         margin: 24px 0 24px;
+      }
+
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background: linear-gradient(45deg, $Dark-Green-100, $Green-100);
+        transition: all 0.5s ease-in-out;
+        & > .icon-arrow {
+          @include anim-move-right(-10px, 1s, 0s);
+        }
       }
     }
   }
