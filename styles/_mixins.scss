@@ -167,6 +167,26 @@ $breakpoints: (
   }
 }
 
+@mixin anim-fade-right($right: 70px, $duration: 0.3s, $delay: 0s, $opacity: 1) {
+  opacity: 0;
+  -webkit-animation: anim_fade_rignt $duration ease-in-out $delay 1 normal
+    forwards running;
+  animation: anim_fade_rignt $duration ease-in-out $delay 1 normal forwards
+    running;
+  @keyframes anim_fade_rignt {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d($right, 0, 0);
+      transform: translate3d($right, 0, 0);
+    }
+    100% {
+      opacity: $opacity;
+      -webkit-transform: translate3d(0px, 0, 0);
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+}
+
 @mixin anim-move-circle($height: 70px, $duration: 0.3s, $delay: 0s) {
   opacity: 0;
   -webkit-animation: move_circle $duration ease-in-out $delay 1 normal forwards
