@@ -44,7 +44,18 @@
     &.active-anim {
       @for $i from 1 through 3 {
         & > :nth-child(#{$i}) {
-          @include anim-wave(20px, 1s, 0.2s * $i);
+          @include anim-wave(20px, 0.8s, 0.5s * $i);
+          & > :nth-child(1) {
+            & > :nth-child(1) {
+              @include anim-move-top(20px, 1s, 1s * $i);
+            }
+            & > :nth-child(2) {
+              @include anim-move-revert-circle(20px, 1s, 0.7s * $i);
+            }
+            & > :nth-child(3) {
+              @include anim-move-right(20px, 1s, 0.5s * $i);
+            }
+          }
         }
       }
     }
