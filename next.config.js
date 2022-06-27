@@ -13,9 +13,10 @@ module.exports = {
   generateEtags: false,
   i18n: {
     // providing the locales supported by your application
-    locales: ['en-US', 'vi'],
+    locales: ['vi', 'en-US'],
     //  default locale used when the non-locale paths are visited
     defaultLocale: 'vi',
+    localeDetection: false,
   },
   experimental: {
     // Enables the styled-components SWC transform

@@ -37,21 +37,30 @@ const Header = () => {
     [router.locale, headerMenu]
   );
 
-  const redirectToPage = useCallback((_link) => {
-    router.push(_link);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const redirectToPage = useCallback(
+    (_link) => {
+      router.push(_link);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    },
+    [router]
+  );
 
-  const activeLanguage = useCallback((e) => {
-    let elmnt = e.currentTarget.classList;
-    elmnt.toggle(styles['active']);
+  const activeLanguage = useCallback(
+    (e) => {
+      let elmnt = e.currentTarget.classList;
+      elmnt.toggle(styles['active']);
+    },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    [styles]
+  );
 
-  const chooseLanguage = useCallback((_language) => {
-    router.push('#', '#', { locale: _language });
+  const chooseLanguage = useCallback(
+    (_language) => {
+      router.push('#', '#', { locale: _language });
+    },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    [router.locale]
+  );
 
   useObserverItem(refMenu, styles);
 
