@@ -17,13 +17,13 @@
     @include anim-opacity(0.5s, 0.1s);
     & > :nth-child(1) {
       & > :nth-child(1) {
-        @include anim-move-top(20px, 1.2s, 0.3s);
+        @include anim-move-top(20px, 1.2s, 0s);
       }
       & > :nth-child(2) {
-        @include anim-move-right(10px, 1.5s, 0.3s);
+        @include anim-move-right(10px, 1.2s, 0.3s);
       }
       & > :nth-child(3) {
-        @include anim-move-right(10px, 1.7s, 0.3s);
+        @include anim-move-right(20px, 1.2s, 0.6s);
       }
     }
 
@@ -35,7 +35,7 @@
               & > :nth-child(#{$i}) {
                 & > :first-child {
                   & > :first-child {
-                    @include anim-move-revert-circle(10px, 0.8s, 0.3s * $i);
+                    @include anim-move-revert-circle(10px, 1s, 0.3s * $i);
                   }
                 }
               }
@@ -102,7 +102,7 @@
       max-width: 384px;
       max-height: 495px;
       margin-right: 8px;
-
+      cursor: pointer;
       &__img {
         width: 384px;
         height: 100a;
