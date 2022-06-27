@@ -5,7 +5,6 @@ const useChooseLanguage = (item, ref) => {
   const router = useRouter();
   const [state, setState] = useState(null);
   const arrResult = (_arrMain, _ref, _router) => {
-    console.log('GGGG', router.locale);
     if (typeof window != 'undefined' && !!_router) {
       _ref.current = _arrMain?.find((_m) => _m?.locale == _router.locale);
     }
