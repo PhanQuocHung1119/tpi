@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './ClientComment.module.scss';
 import Image from 'next/image';
+import { useObserverItem } from 'components/hook/useObserverItem';
+
 import client_comment_icon from '@assets/client-comment/client-comment-icon.png';
 import { StarIcon } from '../StarIcon';
 
 const ClientComment = ({ name, title, avatar, comment }) => {
+  const refContainer = useRef();
+  useObserverItem(refContainer, styles);
+
   return (
     <>
-      <div className={styles['container']}>
+      <div className={styles['container']} ref={refContainer}>
         <div className={styles['icon-top']}>
           <Image
             src={client_comment_icon}

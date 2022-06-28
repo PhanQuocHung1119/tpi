@@ -259,3 +259,24 @@ $breakpoints: (
     }
   }
 }
+
+@mixin anim-move-scale-x($lenght: 0, $duration: 0.3s, $delay: 0s) {
+  opacity: 0;
+  -webkit-animation: move_scale_x $duration ease-in-out $delay 1 normal forwards
+    running;
+  animation: move_scale_x $duration ease-in-out $delay 1 normal forwards running;
+  @keyframes move_scale_x {
+    0% {
+      opacity: 0;
+      -webkit-transform: scaleX($lenght);
+      -ms-transform: scaleX($lenght);
+      transform: scaleX($lenght);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+}
