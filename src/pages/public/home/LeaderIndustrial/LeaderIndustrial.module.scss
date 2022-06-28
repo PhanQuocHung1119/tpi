@@ -164,7 +164,7 @@
         background: linear-gradient(45deg, $Dark-Green-100, $Green-100);
         transition: all 0.5s ease-in-out;
         & > .icon-arrow {
-          @include anim-move-right(-10px, 1s, 0s);
+          @include anim-fade-right(-10px, 1s, 0s);
         }
       }
     }
