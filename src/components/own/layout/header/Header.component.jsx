@@ -26,6 +26,7 @@ const Header = () => {
 
   const ref = useRef();
   const refMenu = useRef();
+  const refLanguage = useRef();
 
   const [openMenu, setOpenMenu] = useState(dataPopup);
 
@@ -71,6 +72,11 @@ const Header = () => {
       })
     )
   );
+
+  useClickOutside(refLanguage, () => {
+    let elmnt = refLanguage.current.classList;
+    elmnt.remove(styles['active']);
+  });
 
   return (
     <>
@@ -151,6 +157,7 @@ const Header = () => {
           <div
             className={styles['language']}
             onClick={(e) => activeLanguage(e)}
+            ref={refLanguage}
           >
             <div className={styles['language__icon']}>
               <Image
