@@ -92,9 +92,10 @@ $breakpoints: (
   transform-origin: top;
   visibility: visible;
   opacity: 0;
-  -webkit-animation: move_top_anim $duration ease-out $delay 1 normal forwards
-    running;
-  animation: move_top_anim $duration ease-out $delay 1 normal forwards running;
+  -webkit-animation: move_top_anim $duration ease-out ($delay * 80 /100) 1
+    normal forwards running;
+  animation: move_top_anim $duration ease-out ($delay * 80 /100) 1 normal
+    forwards running;
   @keyframes move_top_anim {
     0% {
       opacity: 0;
@@ -111,9 +112,10 @@ $breakpoints: (
 
 @mixin anim-opacity($duration: 0.3s, $delay: 0.3s) {
   opacity: 0;
-  -webkit-animation: fade_opacity $duration ease-out $delay 1 normal forwards
-    running;
-  animation: fade_opacity $duration ease-out $delay 1 normal forwards running;
+  -webkit-animation: fade_opacity $duration ease-out ($delay * 80 /100) 1 normal
+    forwards running;
+  animation: fade_opacity $duration ease-out ($delay * 80 /100) 1 normal
+    forwards running;
   @keyframes fade_opacity {
     0% {
       opacity: 0;
@@ -126,9 +128,10 @@ $breakpoints: (
 
 @mixin anim-wave($height: 70px, $duration: 0.3s, $delay: 0s) {
   opacity: 0;
-  -webkit-animation: move_wave $duration ease-in-out $delay 1 normal forwards
-    running;
-  animation: move_wave $duration ease-in-out $delay 1 normal forwards running;
+  -webkit-animation: move_wave $duration ease-in-out ($delay * 80 /100) 1 normal
+    forwards running;
+  animation: move_wave $duration ease-in-out ($delay * 80 /100) 1 normal
+    forwards running;
   @keyframes move_wave {
     0% {
       opacity: 0;
@@ -150,9 +153,10 @@ $breakpoints: (
 
 @mixin anim-move-right($right: 70px, $duration: 0.3s, $delay: 0s) {
   opacity: 0;
-  -webkit-animation: move_right $duration ease-in-out $delay 1 normal forwards
-    running;
-  animation: move_right $duration ease-in-out $delay 1 normal forwards running;
+  -webkit-animation: move_right $duration ease-in-out ($delay * 80 /100) 1
+    normal forwards running;
+  animation: move_right $duration ease-in-out ($delay * 80 /100) 1 normal
+    forwards running;
   @keyframes move_right {
     0% {
       opacity: 0;
@@ -169,10 +173,10 @@ $breakpoints: (
 
 @mixin anim-fade-right($right: 70px, $duration: 0.3s, $delay: 0s, $opacity: 1) {
   opacity: 0;
-  -webkit-animation: anim_fade_rignt $duration ease-in-out $delay 1 normal
+  -webkit-animation: anim_fade_rignt $duration ease-in-out ($delay * 80 /100) 1
+    normal forwards running;
+  animation: anim_fade_rignt $duration ease-in-out ($delay * 80 /100) 1 normal
     forwards running;
-  animation: anim_fade_rignt $duration ease-in-out $delay 1 normal forwards
-    running;
   @keyframes anim_fade_rignt {
     0% {
       opacity: 0;
@@ -189,9 +193,10 @@ $breakpoints: (
 
 @mixin anim-move-circle($height: 70px, $duration: 0.3s, $delay: 0s) {
   opacity: 0;
-  -webkit-animation: move_circle $duration ease-in-out $delay 1 normal forwards
-    running;
-  animation: move_circle $duration ease-in-out $delay 1 normal forwards running;
+  -webkit-animation: move_circle $duration ease-in-out ($delay * 80 /100) 1
+    normal forwards running;
+  animation: move_circle $duration ease-in-out ($delay * 80 /100) 1 normal
+    forwards running;
   @keyframes move_circle {
     0% {
       opacity: 0;
@@ -213,10 +218,10 @@ $breakpoints: (
 
 @mixin anim-move-revert-circle($height: 70px, $duration: 0.3s, $delay: 0s) {
   opacity: 0;
-  -webkit-animation: move_revert_circle $duration ease-in-out $delay 1 normal
-    forwards running;
-  animation: move_revert_circle $duration ease-in-out $delay 1 normal forwards
-    running;
+  -webkit-animation: move_revert_circle $duration ease-in-out ($delay * 80 /100)
+    1 normal forwards running;
+  animation: move_revert_circle $duration ease-in-out ($delay * 80 /100) 1
+    normal forwards running;
   @keyframes move_revert_circle {
     0% {
       opacity: 0;
@@ -262,9 +267,10 @@ $breakpoints: (
 
 @mixin anim-move-scale-x($lenght: 0, $duration: 0.3s, $delay: 0s) {
   opacity: 0;
-  -webkit-animation: move_scale_x $duration ease-in-out $delay 1 normal forwards
-    running;
-  animation: move_scale_x $duration ease-in-out $delay 1 normal forwards running;
+  -webkit-animation: move_scale_x $duration ease-in-out ($delay * 80 /100) 1
+    normal forwards running;
+  animation: move_scale_x $duration ease-in-out ($delay * 80 /100) 1 normal
+    forwards running;
   @keyframes move_scale_x {
     0% {
       opacity: 0;

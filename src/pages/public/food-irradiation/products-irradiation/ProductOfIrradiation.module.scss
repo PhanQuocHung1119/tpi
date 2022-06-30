@@ -52,14 +52,14 @@
         & > :nth-child(#{$i}) {
           &:nth-child(#{$i}) {
             & > :last-child {
-              @include anim-move-right(20px, 0.4s, 0.25s * $i);
+              @include anim-move-right(20px, 0.4s, 0.22s * $i);
             }
           }
           &:nth-child(odd) {
-            @include anim-move-revert-circle(20px, 0.4s, 0.2s * $i);
+            @include anim-move-revert-circle(20px, 0.4s, 0.17s * $i);
           }
           &:nth-child(even) {
-            @include anim-move-revert-circle(-20px, 0.4s, 0.2s * $i);
+            @include anim-move-revert-circle(-20px, 0.4s, 0.17s * $i);
           }
         }
       }
