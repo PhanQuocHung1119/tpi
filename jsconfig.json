@@ -26,6 +26,11 @@
       "@store/*": ["redux/*"]
     }
   },
-  "include": ["next-env.d.js", "**/*.js", "**/*.jsx"],
+  "include": [
+    "next-env.d.js",
+    "**/*.js",
+    "**/*.jsx",
+    "src/pages/public/logistic-hub/LogisticHUB.component.jsx"
+  ],
   "exclude": ["node_modules"]
 }

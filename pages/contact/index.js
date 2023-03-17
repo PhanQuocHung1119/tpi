@@ -1,10 +1,10 @@
 import { Layout } from '@my-components';
-import { Customer } from '@pages/public/customer';
+import { Contact } from '@pages/public/contact';
 
 const HomePage = () => {
   return (
     <Layout>
-      <Customer />
+      <Contact />
     </Layout>
   );
 };

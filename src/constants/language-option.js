@@ -5,56 +5,126 @@ export const headerMenu = [
     locale: 'vi',
     titles: [
       { title: 'Giới thiệu', status: '', link: RoutePages.ABOUT_US },
+      // {
+      //   title: 'Lĩnh vực tiên phong',
+      //   sub: [
+      //     {
+      //       title: 'Chiếu xạ',
+      //       status: 'sub',
+      //       link: RoutePages.FOOD_IRRADIATION,
+      //     },
+      //     {
+      //       title: 'Kho lạnh lưu trữ',
+      //       status: 'sub',
+      //       link: RoutePages.COLD_STORAGE,
+      //     },
+      //   ],
+      //   status: 'wrapper',
+      //   link: '',
+      // },
+
+      { title: 'Logistic HUB', status: '', link: RoutePages.LOGISTIC_HUB }, // new
+      { title: 'Vị trí', status: '', link: RoutePages.LOCATION }, // new
       {
-        title: 'Lĩnh vực tiên phong',
+        title: `Khách hàng & đối tác`,
+        status: '',
+        link: RoutePages.CUSTOMER_AND_PARTNER,
+      }, // new
+      {
+        title: `Thị trường`,
+        status: '',
+        link: RoutePages.MARKET,
+      }, // new
+      {
+        title: 'Hỗ trợ - Q&A',
         sub: [
           {
-            title: 'Chiếu xạ',
+            title: 'Hỗ trợ',
             status: 'sub',
-            link: RoutePages.FOOD_IRRADIATION,
+            link: RoutePages.SUPPORT,
           },
           {
-            title: 'Kho lạnh lưu trữ',
+            title: 'Q&A',
             status: 'sub',
-            link: RoutePages.COLD_STORAGE,
+            link: RoutePages.QUESTION_AND_ANSWER,
           },
         ],
         status: 'wrapper',
         link: '',
-      },
+      }, //new
+      {
+        title: `Liên hệ`,
+        status: '',
+        link: RoutePages.CONTACT,
+      }, // new
 
-      { title: 'Mục tiêu phát triển', status: '', link: RoutePages.GOALS },
-      { title: 'Khách hàng', status: '', link: RoutePages.CUSTOMER },
-      { title: 'Hỗ trợ', status: '', link: RoutePages.SUPPORT },
-      { title: 'Q&A', status: '', link: RoutePages.QUESTION_AND_ANSWER },
+      // { title: 'Mục tiêu phát triển', status: '', link: RoutePages.GOALS },
+      // { title: 'Khách hàng', status: '', link: RoutePages.CUSTOMER },
+      // { title: 'Hỗ trợ', status: '', link: RoutePages.SUPPORT },
+      // { title: 'Q&A', status: '', link: RoutePages.QUESTION_AND_ANSWER },
     ],
   },
   {
     locale: 'en-US',
     titles: [
       { title: 'About Us', status: '', link: RoutePages.ABOUT_US },
+      // {
+      //   title: 'Pioneering Field',
+      //   sub: [
+      //     {
+      //       title: 'Irradiation',
+      //       status: 'sub',
+      //       link: RoutePages.FOOD_IRRADIATION,
+      //     },
+      //     {
+      //       title: 'Cold Storage',
+      //       status: 'sub',
+      //       link: RoutePages.COLD_STORAGE,
+      //     },
+      //   ],
+      //   status: 'wrapper',
+      //   link: '',
+      // },
+
+      { title: 'Logistic HUB', status: '', link: RoutePages.LOGISTIC_HUB }, //new
+      { title: 'Location', status: '', link: RoutePages.LOCATION }, // new
       {
-        title: 'Pioneering Field',
+        title: 'Customer & Partner',
+        status: '',
+        link: RoutePages.CUSTOMER_AND_PARTNER,
+      }, // new
+      {
+        title: `Market`,
+        status: '',
+        link: RoutePages.MARKET,
+      }, // new
+      {
+        title: 'Support - Q&A',
         sub: [
           {
-            title: 'Irradiation',
+            title: 'Support',
             status: 'sub',
-            link: RoutePages.FOOD_IRRADIATION,
+            link: RoutePages.SUPPORT,
           },
           {
-            title: 'Cold Storage',
+            title: 'Q&A',
             status: 'sub',
-            link: RoutePages.COLD_STORAGE,
+            link: RoutePages.QUESTION_AND_ANSWER,
           },
         ],
         status: 'wrapper',
         link: '',
-      },
+      }, //new
+      {
+        title: `Contact`,
+        status: '',
+        link: RoutePages.CONTACT,
+      }, // new
 
-      { title: 'Goals', status: '', link: RoutePages.GOALS },
-      { title: 'Customer', status: '', link: RoutePages.CUSTOMER },
-      { title: 'Support', status: '', link: RoutePages.SUPPORT },
-      { title: 'Q&A', status: '', link: RoutePages.QUESTION_AND_ANSWER },
+      // { title: 'Goals', status: '', link: RoutePages.GOALS },
+      // { title: 'Customer', status: '', link: RoutePages.CUSTOMER },
+      // { title: 'Support', status: '', link: RoutePages.SUPPORT },
+      // { title: 'Q&A', status: '', link: RoutePages.QUESTION_AND_ANSWER },
     ],
   },
 ];
@@ -1096,6 +1166,16 @@ export const breadcrumb = {
       ],
     },
   ],
+  location: [
+    {
+      locale: 'vi',
+      sub: [{ path: '#', title: 'Vị trí' }],
+    },
+    {
+      locale: 'en-US',
+      sub: [{ path: '#', title: 'Location' }],
+    },
+  ],
   coldStorage: [
     {
       locale: 'vi',
@@ -1130,6 +1210,16 @@ export const breadcrumb = {
     {
       locale: 'en-US',
       sub: [{ path: '#', title: 'Customer' }],
+    },
+  ],
+  contact: [
+    {
+      locale: 'vi',
+      sub: [{ path: '#', title: 'Liên hệ' }],
+    },
+    {
+      locale: 'en-US',
+      sub: [{ path: '#', title: 'Contact' }],
     },
   ],
   support: [

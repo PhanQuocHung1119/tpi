@@ -6,6 +6,7 @@ import Image from 'next/image';
 import home_icon from '@assets/bread-crumb/Home-Icon.png';
 import { isArray } from 'lodash';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
+import { RoutePages } from '@constants/router';
 
 const defaultData = [
   {
@@ -22,7 +23,7 @@ const Breadcrumb = ({ className, data = defaultData }) => {
       <article className={clsx(styles['breadcrumb'])}>
         <ul className={clsx(styles['breadcrumb__container'], className)}>
           <li className={styles['breadcrumb__link']}>
-            <Link href='/'>
+            <Link href={RoutePages.HOME_PAGE}>
               <div className={styles['icon-home']}>
                 <Image
                   src={home_icon}
@@ -38,7 +39,7 @@ const Breadcrumb = ({ className, data = defaultData }) => {
           </li>
 
           <li className={styles['breadcrumb__link']}>
-            <Link href='/'>
+            <Link href={RoutePages.HOME_PAGE}>
               <a>
                 {refLang.current?.locale == `vi` ? `Trang chủ` : `Homepage`}
               </a>
