@@ -1202,16 +1202,6 @@ export const breadcrumb = {
       sub: [{ path: '#', title: 'Goals' }],
     },
   ],
-  customer: [
-    {
-      locale: 'vi',
-      sub: [{ path: '#', title: 'Khách hàng' }],
-    },
-    {
-      locale: 'en-US',
-      sub: [{ path: '#', title: 'Customer' }],
-    },
-  ],
   contact: [
     {
       locale: 'vi',

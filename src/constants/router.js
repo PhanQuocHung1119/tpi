@@ -9,7 +9,6 @@ export const RoutePages = {
   CONTACT: '/contact', //new
 
   GOALS: '/goals',
-  CUSTOMER: '/customer',
   SUPPORT: '/support',
   QUESTION_AND_ANSWER: '/question-and-answer',
   HOME_PAGE: '/home',
