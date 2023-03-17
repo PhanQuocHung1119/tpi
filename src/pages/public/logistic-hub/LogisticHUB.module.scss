@@ -29,4 +29,8 @@
   height: 46px;
   z-index: 1;
   object-fit: contain;
+  @include responsive-size(screen-m) {
+    width: 300px;
+    height: 28px;
+  }
 }
