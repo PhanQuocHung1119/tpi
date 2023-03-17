@@ -67,6 +67,7 @@
     transition: all 0.5s ease-in-out;
     &:hover {
       transition: all 0.5s ease-in-out;
+      opacity: 1;
       background: linear-gradient(45deg, $Dark-Green-100, $Green-100);
     }
   }
