@@ -11,8 +11,12 @@ const Footer = () => {
       <div className={styles['container']}>
         <div className={styles['content-wrapper']}>
           <div className={styles['content']}>
-            <div className={styles['content__title']}>Nhà Máy Chiếu Xạ Toàn Phát</div>
-            <div className={styles['content__sub']}>Hotline 24/7: 0272 3786 888</div>
+            <div className={styles['content__title']}>
+              Nhà Máy Chiếu Xạ Toàn Phát
+            </div>
+            <div className={styles['content__sub']}>
+              Hotline 24/7: 0272 3786 888
+            </div>
             <div className={styles['content__sub']}>Email: info@tpirr.vn</div>
           </div>
           <div className={styles['content-mid']}>
@@ -27,33 +31,39 @@ const Footer = () => {
                 quality={100}
               />
             </div>
-            <div className={styles['content-mid__social-icon']}>
-              <Image
-                src={socialFacebook}
-                alt=''
-                width={72}
-                height={20}
-                layout='responsive'
-                objectFit='contain'
-                quality={100}
-              />
-            </div>
-            <div className={styles['content-mid__social-icon']}>
-              <Image
-                src={socialYoutube}
-                alt=''
-                width={72}
-                height={20}
-                layout='responsive'
-                objectFit='contain'
-                quality={100}
-              />
+            <div className={styles['content-mid-social']}>
+              <div className={styles['content-mid-social__social-icon']}>
+                <Image
+                  src={socialFacebook}
+                  alt=''
+                  width={20}
+                  height={20}
+                  layout='responsive'
+                  objectFit='contain'
+                  quality={100}
+                />
+              </div>
+              <div className={styles['content-mid-social__social-icon']}>
+                <Image
+                  src={socialYoutube}
+                  alt=''
+                  width={20}
+                  height={20}
+                  layout='responsive'
+                  objectFit='contain'
+                  quality={100}
+                />
+              </div>
             </div>
           </div>
           <div className={styles['content']}>
             <div className={styles['content__title']}>Kho Lạnh Toàn Phát</div>
-            <div className={styles['content__sub']}>Hotline 24/7: 092 191 69 99</div>
-            <div className={styles['content__sub']}>Email: tiepnhan@tprw.vn</div>
+            <div className={styles['content__sub']}>
+              Hotline 24/7: 092 191 69 99
+            </div>
+            <div className={styles['content__sub']}>
+              Email: tiepnhan@tprw.vn
+            </div>
           </div>
         </div>
         <div className={styles['bottom']}>

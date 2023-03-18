@@ -1,1 +1,1 @@
-export { default as AboutUsTop } from './AboutUsTopAdd.component';
+export { default as AboutUsTopAdd } from './AboutUsTopAdd.component';
