@@ -23,7 +23,30 @@ export const headerMenu = [
       //   link: '',
       // },
 
-      { title: 'Logistic HUB', status: '', link: RoutePages.LOGISTIC_HUB }, // new
+      //{ title: 'Logistic HUB', status: '', link: RoutePages.LOGISTIC_HUB }, // new
+      { //Binh add
+        title: 'Logistic HUB',
+        sub: [
+          {
+            title: 'Chiếu xạ',
+            status: 'sub',
+            link: RoutePages.FOOD_IRRADIATION,
+          },
+          {
+            title: 'Kho lạnh lưu trữ',
+            status: 'sub',
+            link: RoutePages.COLD_STORAGE,
+          },
+          {
+            title: 'Logistic',
+            status: 'sub',
+            link: RoutePages.LOGISTIC_HUB,
+          },
+        ],
+        status: 'wrapper',
+        link: '',
+      }
+
       { title: 'Vị trí', status: '', link: RoutePages.LOCATION }, // new
       {
         title: `Khách hàng & đối tác`,
