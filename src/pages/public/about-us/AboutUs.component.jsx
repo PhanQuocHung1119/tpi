@@ -13,8 +13,8 @@ const AboutUs = () => {
       <div className={styles['container']}>
         <Breadcrumb data={breadcrumb?.aboutUs} />
         <AboutUsTop />
-        <AboutUsTeamMember />
         <MissionAndVaule />
+        <AboutUsTeamMember />
         <NewsBlock />
       </div>
     </>

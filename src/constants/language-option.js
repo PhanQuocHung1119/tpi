@@ -1143,7 +1143,7 @@ export const breadcrumb = {
   aboutUs: [
     {
       locale: 'vi',
-      sub: [{ path: '#', title: 'Giới thiệu về TPI' }],
+      sub: [{ path: '#', title: 'Giới thiệu về TOAN PHAT GROUP' }],
     },
     {
       locale: 'en-US',

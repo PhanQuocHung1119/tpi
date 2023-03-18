@@ -5,7 +5,7 @@ import { useObserverItem } from 'components/hook/useObserverItem';
 import { NumberGeneralInfo } from 'components/own/number-general-info';
 import about_us_img from '@assets/about-us/About-Us-Image.png';
 
-const title = `Giới thiệu về TPI`;
+const title = `Giới thiệu về TOAN PHAT GROUP`;
 const desc = `Tên doanh nghiệp: CÔNG TY TNHH CHIẾU XẠ TOÀN PHÁT.
 Tên giao dịch: TOAN PHAT IRRADIATION LIMITED COMPANY.
 Tên viết tắt: TPI.
