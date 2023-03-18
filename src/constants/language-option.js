@@ -821,12 +821,12 @@ export const contactAConsultant = [
       title: `Liên hệ trực tiếp`,
       sub: [
         {
-          title: `Tư vấn trực tiếp: Bộ Phận Thông Tin.`,
-          desc: [`Số điện thoại:`, `Email:`],
+          title: `Nhà Máy Chiếu Xạ Toàn Phát.`,
+          desc: [`Hotline 24/7: 0272 3786 888`, `Email: info@tpirr.vn`, `Địa chỉ: Lô A24-1 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`, `Facebook: https://www.facebook.com/chieuxatoanphat`, `Youtube: https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA`],
         },
         {
-          title: `Nhận lịch đăng ký:`,
-          desc: [`Bộ Phận Tiếp Nhận :`, `Số Điện Thoại:`, `Email:`],
+          title: `Kho Lạnh Toàn Phát`,
+          desc: [`Hotline 24/7: 092 191 69 99`, `Email: tiepnhan@tprw.vn`, `Địa chỉ: Lô A24-2 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`, `Facebook: https://www.facebook.com/kholanhtoanphat`, `Youtube: https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA`],
         },
       ],
     },
