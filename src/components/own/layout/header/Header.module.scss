@@ -244,7 +244,7 @@
             position: absolute;
             display: flex;
             top: 50%;
-            transform: translateY(30%);
+            transform: translateY(18%);
 
             align-items: center;
             justify-content: center;
@@ -260,6 +260,7 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease-out;
+            transform-origin: top;
 
             @include responsive-size(screen-l) {
               top: 20%;
@@ -325,8 +326,11 @@
             & > .sub-item-wrapper {
               visibility: visible;
               opacity: 1;
-              transform: translateY(35%);
+              transform: translateY(20%);
               transition: all 0.3s ease-out;
+              @include responsive-size(screen-m) {
+                transform: translateY(24%);
+              }
             }
             background: $Grass-100;
             border-radius: 6px;
