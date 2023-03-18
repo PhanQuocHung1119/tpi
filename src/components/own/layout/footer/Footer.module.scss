@@ -82,7 +82,9 @@
           width: 20px;
           height: 20px;
           cursor: pointer;
-          margin-right: 16px;
+          &:first-child {
+            margin-right: 16px;
+          }
         }
       }
     }
