@@ -24,7 +24,8 @@ export const headerMenu = [
       // },
 
       //{ title: 'Logistic HUB', status: '', link: RoutePages.LOGISTIC_HUB }, // new
-      { //Binh add
+      {
+        //Binh add
         title: 'Logistic HUB',
         sub: [
           {
@@ -45,7 +46,7 @@ export const headerMenu = [
         ],
         status: 'wrapper',
         link: '',
-      }
+      },
 
       { title: 'Vị trí', status: '', link: RoutePages.LOCATION }, // new
       {
@@ -845,11 +846,23 @@ export const contactAConsultant = [
       sub: [
         {
           title: `Nhà Máy Chiếu Xạ Toàn Phát.`,
-          desc: [`Hotline 24/7: 0272 3786 888`, `Email: info@tpirr.vn`, `Địa chỉ: Lô A24-1 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`, `Facebook: https://www.facebook.com/chieuxatoanphat`, `Youtube: https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA`],
+          desc: [
+            `Hotline 24/7: 0272 3786 888`,
+            `Email: info@tpirr.vn`,
+            `Địa chỉ: Lô A24-1 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`,
+            `Facebook: https://www.facebook.com/chieuxatoanphat`,
+            `Youtube: https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA`,
+          ],
         },
         {
           title: `Kho Lạnh Toàn Phát`,
-          desc: [`Hotline 24/7: 092 191 69 99`, `Email: tiepnhan@tprw.vn`, `Địa chỉ: Lô A24-2 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`, `Facebook: https://www.facebook.com/kholanhtoanphat`, `Youtube: https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA`],
+          desc: [
+            `Hotline 24/7: 092 191 69 99`,
+            `Email: tiepnhan@tprw.vn`,
+            `Địa chỉ: Lô A24-2 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`,
+            `Facebook: https://www.facebook.com/kholanhtoanphat`,
+            `Youtube: https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA`,
+          ],
         },
       ],
     },
