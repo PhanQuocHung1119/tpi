@@ -188,7 +188,7 @@ export const bestServices = [
 export const trustedBy = [
   {
     locale: 'vi',
-    title: 'Được tin cậy bởi các công ty hàng đầu',
+    title: 'Được tin cậy bởi các đối tác hàng đầu',
   },
   {
     locale: 'en-US',
@@ -268,7 +268,7 @@ export const teamMember = [
 export const leaderIndustrial = [
   {
     locale: 'vi',
-    title: 'Chúng tôi dẫn đầu trong thị trường công nghiệp',
+    title: 'Chúng tôi dẫn đầu trong lĩnh vực Logistic HUB',
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet, 
     consequat egestas dictum posuere pellentesque fermentum.`,
     subDesc: [
@@ -392,8 +392,8 @@ export const testimonial = [
 export const ourProject = [
   {
     locale: 'vi',
-    title: 'Dự án của chúng tôi',
-    mainTitle: 'Dự án mới nhất',
+    title: 'Thư viện',
+    mainTitle: 'Hình ảnh',
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet,
           consequat egestas dictum posuere pellentesque fermentum.`,
   },
@@ -409,7 +409,7 @@ export const ourProject = [
 export const news = [
   {
     locale: 'vi',
-    title: 'Tin mới nhất',
+    title: 'Thị trường',
     latestNews: {
       title: 'NHIỀU LƯỢT XEM',
       desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar 
