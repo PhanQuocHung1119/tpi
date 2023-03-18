@@ -45,8 +45,8 @@ export const headerMenu = [
         ],
         status: 'wrapper',
         link: '',
-      }
-
+      },
+      
       { title: 'Vị trí', status: '', link: RoutePages.LOCATION }, // new
       {
         title: `Khách hàng & đối tác`,
