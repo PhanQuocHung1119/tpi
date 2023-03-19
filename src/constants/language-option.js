@@ -223,7 +223,7 @@ export const trustedBy = [
 export const teamMember = [
   {
     locale: 'vi',
-    title: 'Đội ngũ của chúng tôi',
+    title: 'Đội ngũ nhân sự & Văn hóa doanh nghiệp',
     titleMain: 'Đội ngũ của chúng tôi sẵn sàng giúp đỡ khách hàng!',
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet,
             consequat egestas dictum posuere pellentesque fermentum.`,

@@ -44,7 +44,7 @@ const AboutUsTeamMember = () => {
           </div>
         </div>
         <div className={styles['member-content']}>
-          <div className={styles['member-content__title']}>Đội ngũ nhân sự</div>
+          <div className={styles['member-content__title']}>Đội ngũ nhân sự & Văn hóa doanh nghiệp</div>
           <div
             className={styles['member-content__content']}
             ref={refMemberContent}
