@@ -173,7 +173,7 @@ export const introduce = [
 export const bestServices = [
   {
     locale: 'vi',
-    title: 'Cung cấp các ngành dịch vụ tốt nhất',
+    title: 'Lĩnh vực tiên phong',
     sub: [
       {
         title: 'Lorem ipsum',
