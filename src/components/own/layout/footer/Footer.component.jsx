@@ -17,7 +17,7 @@ const Footer = () => {
             <div className={styles['content__sub']}>
               Hotline 24/7: 0272 3786 888
             </div>
-            <div className={styles['content__sub']}>Email: info@tpirr.vn</div>
+            <div className={styles['content__sub']}>Email: info@tpirr.vn - tiepnhan@tpirr.vn </div>
           </div>
           <div className={styles['content-mid']}>
             <div className={styles['content-mid__icon-toan-phat']}>
@@ -62,7 +62,7 @@ const Footer = () => {
               Hotline 24/7: 092 191 69 99
             </div>
             <div className={styles['content__sub']}>
-              Email: tiepnhan@tprw.vn
+              Email: info@tprw.vn - tiepnhan@tprw.vn
             </div>
           </div>
         </div>
