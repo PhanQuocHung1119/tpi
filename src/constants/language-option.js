@@ -828,6 +828,55 @@ Toan Phat cold storage service brings many values to customers:`,
   },
 ];
 
+export const LocationMapContent = [
+  {
+    locale: 'vi',
+    title: 'Vị trí cửa ngõ',
+    desc: `Với vị trí nằm tại KCN An Phú Thạnh (Bến Lức – Long An), Kho Lạnh Toàn Phát kết nối dễ dàng, nhanh chóng đến các tuyến đường huyết mạch, hệ thống cảng, các tỉnh thành và khu vực lân cận. Nhờ đó giúp các doanh nghiệp thuận tiện, tiết kiệm trong việc vận chuyển, lưu trữ, bốc dỡ sản phẩm và hàng hóa.`,
+    sub: [
+      {
+        desc: `Ngay nút giao Cao tốc Trung Lương - Bến Lức , Cách Quốc lộ 1A: 3km`,
+      },
+      { desc: `Cách cảng Hiệp Phước: 35km` },
+      {
+        desc: `Cách cảng Cát Lái: 40km`,
+      },
+      {
+        desc: `Cảng quốc tế Long An: 40km`,
+      },
+      {
+        desc: `Cách cảng Cái Mép: 95km `,
+      },
+      {
+        desc: `Cách cảng hàng không Quốc tế Tân Sơn Nhất: 42 km`,
+      },
+      {
+        desc: `Giáp ranh với huyện Bình Chánh (TP. HCM) `,
+      },
+      {
+        desc: `Cách trung tâm TP. HCM: 36km`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Cold storage',
+    desc: `Cold storage system with a capacity of about 10,000 tons of goods.
+Toan Phat cold storage service brings many values to customers:`,
+    sub: [
+      {
+        desc: `No cost of construction, operation, warehouse management, saving investment costs`,
+      },
+      {
+        desc: `Be proactive in importing and exporting goods throughout (24/7).`,
+      },
+      {
+        desc: `Be proactive in irradiating goods stored at the warehouse without additional shipping costs.`,
+      },
+    ],
+  },
+];
+
 export const contactAConsultant = [
   {
     locale: 'vi',

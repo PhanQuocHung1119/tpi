@@ -1,0 +1,78 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1170px;
+  height: max-content;
+  margin-top: 64px;
+  padding: 0 10px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 482px;
+    width: 100%;
+    height: max-content;
+  }
+  .desc-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 32px;
+    @include responsive-size(screen-m) {
+      margin-top: 16px;
+    }
+    &__title {
+      min-height: 60px;
+      width: 100%;
+      margin-bottom: 8px;
+      color: $Dark-Green-100;
+      @include setting-font('Josefin Sans', normal, 400, 32px, 120%);
+      @include responsive-size(screen-m) {
+        display: none;
+      }
+    }
+    &__desc {
+      font-weight: 500;
+      line-height: 200%;
+      width: 100%;
+      height: max-content;
+      white-space: pre-line;
+    }
+  }
+  .sub-content {
+    margin-top: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: max-content;
+    opacity: 0;
+    @include responsive-size(screen-m) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &.active-anim {
+      @include anim-opacity(0.1s, 0s);
+      @for $i from 1 through 3 {
+        & > :nth-child(#{$i}) {
+          & > :first-child {
+            @include anim-move-circle(10px, 1s, 0.3s * $i);
+          }
+          & > :last-child {
+            @include anim-move-top(20px, 0.5s, 0.3s * $i);
+          }
+        }
+      }
+    }
+  }
+}

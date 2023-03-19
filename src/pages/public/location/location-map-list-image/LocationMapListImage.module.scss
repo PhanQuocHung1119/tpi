@@ -1,0 +1,51 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1170px;
+  height: max-content;
+  margin-top: 64px;
+  opacity: 0;
+  &.active-anim {
+    @include anim-opacity(0.5s, 0s);
+    & > :first-child {
+      @include anim-move-circle(10px, 1s, 0s);
+    }
+    & > :last-child {
+      @for $i from 1 through 3 {
+        & > :nth-child(#{$i}) {
+          @include anim-move-circle(10px, 1s, 0.3s * $i);
+        }
+      }
+    }
+  }
+  @include responsive-size(screen-m) {
+    margin-top: 48px;
+  }
+  .main-image {
+    width: 100%;
+    height: 100%;
+    max-width: 1170px;
+    max-height: 602px;
+    margin-bottom: 8px;
+  }
+  .sub-image {
+    width: 381px;
+    height: 100%;
+    margin-right: 10px;
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: max-content;
+    }
+  }
+}
