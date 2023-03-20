@@ -8,7 +8,7 @@
   width: 100%;
   max-width: 1170px;
   height: max-content;
-  margin-top: 64px;
+  margin-top: 40px;
   opacity: 0;
   &.active-anim {
     @include anim-opacity(0.5s, 0s);
