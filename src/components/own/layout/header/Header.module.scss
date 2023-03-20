@@ -145,7 +145,7 @@
         margin-right: 16px;
         color: $White;
         text-align: center;
-        @include setting-font('Josefin Sans', normal, 700, 14px, 120%);
+        @include setting-font('Josefin Sans', normal, 700, 13px, 120%);
 
         @include responsive-size(screen-l) {
           margin-right: 8px;
