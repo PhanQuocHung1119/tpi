@@ -6,7 +6,7 @@ import { useObserverItem } from 'components/hook/useObserverItem';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 import { LocationMapContent } from '@constants/language-option';
 
-const locationMap = () => {
+const LocationMap = () => {
   const refContent = useRef(null);
   const refLang = useRef();
   useObserverItem(refContent, styles);
@@ -35,4 +35,4 @@ const locationMap = () => {
     </>
   );
 };
-export default React.memo(locationMap);
+export default React.memo(LocationMap);

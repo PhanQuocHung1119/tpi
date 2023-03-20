@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import styles from './ColdStorageListImage.module.scss';
+import styles from './LocationMapListImage.module.scss';
 import Image from 'next/image';
 import { useObserverItem } from 'components/hook/useObserverItem';
 import map from '@assets/location/location.png';

@@ -1,1 +1,1 @@
-export { default as locationMap } from './LocationMap.component';
+export { default as LocationMap } from './LocationMap.component';
