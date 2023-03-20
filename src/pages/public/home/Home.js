@@ -19,7 +19,6 @@ const Home = () => {
       <Testimonial />
       <OurProject />
       <News />
-      <Question />
     </>
   );
 };
