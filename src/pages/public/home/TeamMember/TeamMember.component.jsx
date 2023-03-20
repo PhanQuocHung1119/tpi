@@ -83,14 +83,14 @@ const TeamMember = () => {
                     quality={100}
                   />
                 </div>
-                <div className={styles['member__desc']}>
+                {/*<div className={styles['member__desc']}> //Bo chuc danh
                   <div className={styles['bar']}></div>
                   <div className={styles['desc']}>
                     {item.title}
                     <br />
                     {item.desc}
                   </div>
-                </div>
+            </div>*/}
               </div>
             ))}
           </Slider>
