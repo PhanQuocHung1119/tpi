@@ -52,10 +52,14 @@
     margin-top: 32px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     width: 100%;
     height: max-content;
     opacity: 0;
+    @media only screen and (max-width: 1200px) {
+      justify-content: center;
+    }
     @include responsive-size(screen-m) {
       flex-direction: column;
       align-items: center;
@@ -63,7 +67,7 @@
     }
     &.active-anim {
       @include anim-opacity(0.1s, 0s);
-      @for $i from 1 through 3 {
+      @for $i from 1 through 10 {
         & > :nth-child(#{$i}) {
           & > :first-child {
             @include anim-move-circle(10px, 1s, 0.3s * $i);

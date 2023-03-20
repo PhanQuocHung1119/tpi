@@ -12,7 +12,7 @@ const Location = () => {
       <div className={styles['container']}>
         <Breadcrumb data={breadcrumb.location} />
         <LocationMap />
-        {/* <LocationMapListImage /> */}
+        <LocationMapListImage />
         <VideoTop />
       </div>
     </>
