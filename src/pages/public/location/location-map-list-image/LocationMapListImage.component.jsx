@@ -15,7 +15,7 @@ const LocationMapListImage = () => {
       <div className={styles['container']} ref={refContent}>
         <div className={styles['main-image']}>
           <Image
-            src={cold1}
+            src={map}
             alt=''
             width={1170}
             height={602}
@@ -27,7 +27,7 @@ const LocationMapListImage = () => {
         <div className={styles['sub-image-wrapper']}>
           <div className={styles['sub-image']}>
             <Image
-              src={cold2}
+              src={map2}
               alt=''
               width={381}
               height={283}
@@ -38,7 +38,7 @@ const LocationMapListImage = () => {
           </div>
           <div className={styles['sub-image']}>
             <Image
-              src={cold3}
+              src={map3}
               alt=''
               width={381}
               height={283}
@@ -49,7 +49,7 @@ const LocationMapListImage = () => {
           </div>
           <div className={styles['sub-image']}>
             <Image
-              src={cold4}
+              src={map4}
               alt=''
               width={381}
               height={283}
