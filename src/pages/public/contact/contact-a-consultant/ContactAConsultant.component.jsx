@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { contactAConsultant } from '@constants/language-option';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Button = styled.button`
   display: flex;
@@ -189,31 +190,35 @@ const ContactAConsultant = () => {
                   {_item}
                 </div>
               ))}
-              <div className={styles['sub-content__image']}>
-                {/*Facebook&Youtube Button*/}
-                <Image
-                  src={item.button1}
-                  alt=''
-                  width={422}
-                  height={70}
-                  layout='responsive'
-                  objectFit='contain'
-                  quality={100}
-                  priority
-                />
-              </div>
-              <div className={styles['sub-content__image']}>
-                <Image
-                  src={item.button2}
-                  alt=''
-                  width={422}
-                  height={70}
-                  layout='responsive'
-                  objectFit='contain'
-                  quality={100}
-                  priority
-                />
-              </div>
+              <Link href={item.link1} passHref>
+                <div className={styles['sub-content__image']}>
+                  {/*Facebook&Youtube Button*/}
+                  <Image
+                    src={item.button1}
+                    alt=''
+                    width={422}
+                    height={70}
+                    layout='responsive'
+                    objectFit='contain'
+                    quality={100}
+                    priority
+                  />
+                </div>
+              </Link>
+              <Link href={item.link2} passHref>
+                <div className={styles['sub-content__image']}>
+                  <Image
+                    src={item.button2}
+                    alt=''
+                    width={422}
+                    height={70}
+                    layout='responsive'
+                    objectFit='contain'
+                    quality={100}
+                    priority
+                  />
+                </div>
+              </Link>
             </div>
           ))}
         </div>

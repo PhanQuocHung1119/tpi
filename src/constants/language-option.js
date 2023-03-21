@@ -1,6 +1,10 @@
 import { RoutePages } from './router';
 import facebookButton from '@assets/icons/facebook-button.png';
 import youtubeButton from '@assets/icons/youtube-button.png';
+const item1_link1 = ' https://www.facebook.com/chieuxatoanphat';
+const item1_link2 = ' https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA';
+const item2_link1 = ' https://www.facebook.com/kholanhtoanphat';
+const item2_link2 = ' https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA';
 
 export const headerMenu = [
   {
@@ -903,9 +907,9 @@ export const contactAConsultant = [
             `Địa chỉ: Lô A24-1 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`,
           ],
           button1: facebookButton,
-          link1: '',
+          link1: item1_link1,
           button2: youtubeButton,
-          link2: '',
+          link2: item1_link2,
         },
         {
           title: `Kho Lạnh Toàn Phát`,
@@ -915,9 +919,9 @@ export const contactAConsultant = [
             `Địa chỉ: Lô A24-2 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`,
           ],
           button1: facebookButton,
-          link1: '',
+          link1: item2_link1,
           button2: youtubeButton,
-          link2: '',
+          link2: item2_link2,
         },
       ],
     },
@@ -944,17 +948,17 @@ export const contactAConsultant = [
           title: `Direct consulting: Information Department.`,
           desc: [`Phone number:`, `Email:`],
           button1: facebookButton,
-          link1: '',
+          link1: item1_link1,
           button2: youtubeButton,
-          link2: '',
+          link2: item1_link2,
         },
         {
           title: `Get registration schedule:`,
           desc: [`Receiving Department:`, `Phone number:`, `Email:`],
           button1: facebookButton,
-          link1: '',
+          link1: item2_link1,
           button2: youtubeButton,
-          link2: '',
+          link2: item2_link2,
         },
       ],
     },
