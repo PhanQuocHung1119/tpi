@@ -943,10 +943,18 @@ export const contactAConsultant = [
         {
           title: `Direct consulting: Information Department.`,
           desc: [`Phone number:`, `Email:`],
+          button1: facebookButton,
+          link1: '',
+          button2: youtubeButton,
+          link2: '',
         },
         {
           title: `Get registration schedule:`,
           desc: [`Receiving Department:`, `Phone number:`, `Email:`],
+          button1: facebookButton,
+          link1: '',
+          button2: youtubeButton,
+          link2: '',
         },
       ],
     },

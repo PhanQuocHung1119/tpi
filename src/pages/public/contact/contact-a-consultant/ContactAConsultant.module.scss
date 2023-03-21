@@ -99,6 +99,13 @@
         padding-left: 20px;
         @include setting-font('Josefin Sans', normal, 300, 16px, 130%);
       }
+      &__image {
+        max-width: 422px;
+        width: 100%;
+        height: 100%;
+        margin: 8px 0;
+        cursor: pointer;
+      }
     }
   }
 }

@@ -189,27 +189,30 @@ const ContactAConsultant = () => {
                   {_item}
                 </div>
               ))}
-              <div className={styles['sub-content']}>{/*Facebook&Youtube Button*/}
-              <Image
-                src={item.button1}
-                alt=''
-                width={422}
-                height={70}
-                layout='responsive'
-                objectFit='contain'
-                quality={100}
-                priority
-              />
-              <Image
-                src={item.button2}
-                alt=''
-                width={422}
-                height={70}
-                layout='responsive'
-                objectFit='contain'
-                quality={100}
-                priority
-              />
+              <div className={styles['sub-content__image']}>
+                {/*Facebook&Youtube Button*/}
+                <Image
+                  src={item.button1}
+                  alt=''
+                  width={422}
+                  height={70}
+                  layout='responsive'
+                  objectFit='contain'
+                  quality={100}
+                  priority
+                />
+              </div>
+              <div className={styles['sub-content__image']}>
+                <Image
+                  src={item.button2}
+                  alt=''
+                  width={422}
+                  height={70}
+                  layout='responsive'
+                  objectFit='contain'
+                  quality={100}
+                  priority
+                />
               </div>
             </div>
           ))}
