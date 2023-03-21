@@ -11,7 +11,7 @@
   margin: 0 auto 16px;
   opacity: 0;
   &.active-anim {
-    @include anim-move-top(50px, 1.2s, 1.2s);
+    @include anim-move-top(50px, 0.5s, 0.2s);
   }
 
   @include responsive-size(screen-m) {

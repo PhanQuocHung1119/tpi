@@ -12,7 +12,7 @@
   &.active-anim {
     @for $i from 1 through 4 {
       & > :nth-child(#{$i}) {
-        @include anim-move-right(50px, 1s, 0.2s * $i);
+        @include anim-move-right(50px, 0.5s, 0.25 + 0.2s * $i);
       }
     }
   }

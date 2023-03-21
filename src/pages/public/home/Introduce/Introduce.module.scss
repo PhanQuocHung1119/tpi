@@ -14,7 +14,7 @@
   margin: 70px auto 0;
   opacity: 0;
   &.active-anim {
-    @include anim-move-top(50px, 1.2s);
+    @include anim-move-top(50px, 0.5s);
   }
   @include responsive-size(screen-m) {
     margin-top: 50px;
@@ -44,7 +44,7 @@
       @include anim-opacity(1.2s, 1s);
       @for $i from 1 through 3 {
         & > :nth-child(#{$i}) {
-          @include anim-move-right(30px, 1s, 0.6s * $i);
+          @include anim-move-right(30px, 0.5s, 0.2s * $i);
         }
       }
     }
@@ -109,7 +109,7 @@
         transition: all 0.5s ease-in-out;
         background: linear-gradient(45deg, $Dark-Green-100, $Green-100);
         & > .icon-arrow-right {
-          @include anim-move-right(-10px, 1s, 0s);
+          @include anim-move-right(-10px, 0.5s, 0s);
         }
       }
     }

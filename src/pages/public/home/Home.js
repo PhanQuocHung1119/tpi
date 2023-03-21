@@ -14,13 +14,13 @@ const Home = () => {
     <>
       <Introduce />
       <BestServices />
-      <TrustedBy />
+      <News />
       <LocationVideo />
       <TeamMember />
       <LeaderIndustrial />
+      <TrustedBy />
       <Testimonial />
       <OurProject />
-      <News />
     </>
   );
 };
