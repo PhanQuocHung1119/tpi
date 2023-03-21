@@ -7,6 +7,7 @@ import { Testimonial } from './Testimonial';
 import { OurProject } from './OurProject';
 import { News } from './News';
 import { Question } from './Question';
+import { LocationVideo } from 'components/own/location-video'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Introduce />
       <BestServices />
       <TrustedBy />
+      <LocationVideo />
       <TeamMember />
       <LeaderIndustrial />
       <Testimonial />

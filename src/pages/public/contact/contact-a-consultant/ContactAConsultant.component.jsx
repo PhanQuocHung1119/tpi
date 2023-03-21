@@ -5,6 +5,7 @@ import { Form } from 'react-bootstrap';
 import styled from 'styled-components';
 import { contactAConsultant } from '@constants/language-option';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
+import Image from 'next/image';
 
 const Button = styled.button`
   display: flex;
@@ -188,6 +189,28 @@ const ContactAConsultant = () => {
                   {_item}
                 </div>
               ))}
+              <div className={styles['sub-content']}>{/*Facebook&Youtube Button*/}
+              <Image
+                src={item.button1}
+                alt=''
+                width={422}
+                height={70}
+                layout='responsive'
+                objectFit='contain'
+                quality={100}
+                priority
+              />
+              <Image
+                src={item.button2}
+                alt=''
+                width={422}
+                height={70}
+                layout='responsive'
+                objectFit='contain'
+                quality={100}
+                priority
+              />
+              </div>
             </div>
           ))}
         </div>

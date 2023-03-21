@@ -1,4 +1,6 @@
 import { RoutePages } from './router';
+import facebookButton from '@assets/icons/facebook-button.png';
+import youtubeButton from '@assets/icons/youtube-button.png';
 
 export const headerMenu = [
   {
@@ -899,9 +901,11 @@ export const contactAConsultant = [
             `Hotline 24/7: 0272 3786 888`,
             `Email: info@tpirr.vn`,
             `Địa chỉ: Lô A24-1 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`,
-            `Facebook: https://www.facebook.com/chieuxatoanphat`,
-            `Youtube: https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA`,
           ],
+          button1: facebookButton,
+          link1: '',
+          button2: youtubeButton,
+          link2: '',
         },
         {
           title: `Kho Lạnh Toàn Phát`,
@@ -909,9 +913,11 @@ export const contactAConsultant = [
             `Hotline 24/7: 092 191 69 99`,
             `Email: tiepnhan@tprw.vn`,
             `Địa chỉ: Lô A24-2 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`,
-            `Facebook: https://www.facebook.com/kholanhtoanphat`,
-            `Youtube: https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA`,
           ],
+          button1: facebookButton,
+          link1: '',
+          button2: youtubeButton,
+          link2: '',
         },
       ],
     },
