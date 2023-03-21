@@ -25,44 +25,52 @@
     max-width: 482px;
     width: 100%;
     height: max-content;
+    margin-bottom: 32px;
   }
   .desc-wrapper {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 24px;
     @include responsive-size(screen-m) {
       margin-top: 16px;
     }
     &__title {
       min-height: 60px;
       width: 100%;
-      margin-bottom: 8px;
-      align-items: center;
       color: $Dark-Green-100;
+      margin-top: 32px;
       @include setting-font('Josefin Sans', normal, 400, 32px, 120%);
       @include responsive-size(screen-m) {
-        display: none;
+        margin-top: 8px;
       }
     }
     &__desc {
+      display: flex;
       font-weight: 500;
       line-height: 200%;
       align-items: center;
       width: 100%;
       height: max-content;
       white-space: pre-line;
+      max-width: 621px;
+      @include responsive-size(screen-m) {
+        padding: 0 8px;
+      }
     }
   }
-}
-.video {
+  .video {
     position: relative;
-    width: 1440px;
-    height: 590px;
+    max-width: 1440px;
+    max-height: 590px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
     background: transparent;
+  }
 }
-

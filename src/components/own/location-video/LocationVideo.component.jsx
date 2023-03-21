@@ -4,8 +4,8 @@ import { useObserverItem } from 'components/hook/useObserverItem';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 import { LocationMapContent } from '@constants/language-option';
 
-
-const videoLocationInfo = 'https://ik.imagekit.io/damnedbrain/Main_2.mp4?updatedAt=1679375237760'
+const videoLocationInfo =
+  'https://ik.imagekit.io/damnedbrain/Main_2.mp4?updatedAt=1679375237760';
 
 const LocationVideo = () => {
   const refContainer = useRef();
@@ -47,11 +47,11 @@ const LocationVideo = () => {
             {refLang.current?.desc}
           </div>
         </div>
-      </div>
-      <div className={styles['container']}>
-        <video autoPlay muted loop className={styles['video']}>
-          <source src={videoLocationInfo} type='video/mp4' />
-        </video>
+        <div className={styles['video']}>
+          <video autoPlay muted loop className={styles['video']}>
+            <source src={videoLocationInfo} type='video/mp4' />
+          </video>
+        </div>
       </div>
     </>
   );
