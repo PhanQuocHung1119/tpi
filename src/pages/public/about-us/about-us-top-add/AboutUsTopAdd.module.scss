@@ -8,6 +8,8 @@
   max-height: 507px;
   width: 100%;
   height: 100%;
+  margin-top: 40px;
+  text-align: center;
   opacity: 0;
   &.active-anim {
     @include anim-opacity(0.1s, 0s);
@@ -38,23 +40,15 @@
     max-width: 100%;
   }
   .content {
-    &-left {
-      width: 50%;
-      max-width: 580px;
-      height: max-content;
-      @include responsive-size(screen-m) {
-        max-width: none;
-        width: 100%;
-      }
-    }
-    &-right {
-      width: 590px;
-      height: 100%;
-      @include responsive-size(screen-m) {
-        max-width: 100%;
-        width: 100%;
-        margin-bottom: 16px;
-      }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+    @include responsive-size(screen-m) {
+      margin-bottom: 16px;
     }
   }
 }
