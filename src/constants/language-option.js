@@ -1338,7 +1338,7 @@ export const breadcrumb = {
   market: [
     {
       locale: 'vi',
-      sub: [{ path: '#', title: 'Market' }],
+      sub: [{ path: '#', title: 'Thị trường' }],
     },
     {
       locale: 'en-US',

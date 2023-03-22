@@ -24,9 +24,13 @@
     grid-gap: 32px;
     overflow: visible;
     @include responsive-size(screen-m) {
+      padding: 0 8px;
+    }
+    @include responsive-size(screen-s) {
       -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 24px;
+      max-width: 500px;
     }
   }
 }

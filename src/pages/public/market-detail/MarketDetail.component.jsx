@@ -34,6 +34,17 @@ const MarketDetail = ({ news }) => {
     'image',
     'height',
   ]);
+
+  const convertTime = (time) => {
+    const event = new Date(time);
+    const options = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    };
+    return event.toLocaleDateString('vi', options);
+  };
+
   return (
     <>
       <div className={styles['container']}>
@@ -67,6 +78,8 @@ const MarketDetail = ({ news }) => {
               quality={100}
             />
           </div>
+          <div className={styles['time']}>{convertTime(time)}</div>
+
           <div className={styles['desc']}>
             {documentToReactComponents(desc)}
           </div>

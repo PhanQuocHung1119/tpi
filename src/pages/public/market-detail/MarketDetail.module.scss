@@ -82,6 +82,13 @@
       margin-top: 16px;
       @include setting-font('Josefin Sans', normal, 500, 16px, 130%);
     }
+    .time {
+      max-width: 800px;
+      width: 100%;
+      height: 100%;
+      margin-top: 16px;
+      padding-left: 8px;
+    }
     .detail {
       width: 100%;
       height: max-content;
