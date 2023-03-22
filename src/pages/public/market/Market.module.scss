@@ -1,0 +1,32 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+
+  .wrapper {
+    max-width: 1440px;
+    margin: 0px auto 0px;
+    padding-bottom: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    max-width: 1024px;
+    width: 100%;
+    height: max-content;
+    grid-auto-flow: dense;
+    grid-gap: 32px;
+    overflow: visible;
+    @include responsive-size(screen-m) {
+      -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px;
+    }
+  }
+}

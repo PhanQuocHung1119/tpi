@@ -1335,4 +1335,14 @@ export const breadcrumb = {
       sub: [{ path: '#', title: 'Q&A' }],
     },
   ],
+  market: [
+    {
+      locale: 'vi',
+      sub: [{ path: '#', title: 'Market' }],
+    },
+    {
+      locale: 'en-US',
+      sub: [{ path: '#', title: 'Market' }],
+    },
+  ],
 };
