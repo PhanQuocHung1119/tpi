@@ -6,6 +6,25 @@ import { useObserverItem } from 'components/hook/useObserverItem';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 import { LocationMapContent } from '@constants/language-option';
 
+const videoLocationInfo =
+  'https://ik.imagekit.io/damnedbrain/location_map_video.mp4?updatedAt=1679480383008';
+
+const opts = {
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+      controls: 0,
+      showinfo: 0,
+      modestbranding: 1,
+      rel: 0,
+      enablejsapi: 1,
+      disablekb: 1,
+      mute: 1,
+      loop: 1,
+      playsinline: 1,
+    },
+};
+
 const LocationMap = () => {
   const refContent = useRef(null);
   const refLang = useRef();
@@ -22,6 +41,11 @@ const LocationMap = () => {
           <div className={styles['desc-wrapper__desc']}>
             {refLang.current?.desc}
           </div>
+        </div>
+        <div className={styles['video']}>
+          <video autoPlay muted loop className={styles['video']}>
+            <source src={videoLocationInfo} type='video/mp4' />
+          </video>
         </div>
         <div className={styles['sub-content']} ref={refContent}>
           {refLang.current?.sub.map((item, index) => (

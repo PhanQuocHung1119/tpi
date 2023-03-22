@@ -66,8 +66,8 @@ export const headerMenu = [
         link: RoutePages.MARKET,
       }, // new
       {
-        title: 'Hỗ trợ - Q&A',
-        sub: [
+        title: 'FAQs',
+        /*sub: [
           {
             title: 'Hỗ trợ',
             status: 'sub',
@@ -78,9 +78,9 @@ export const headerMenu = [
             status: 'sub',
             link: RoutePages.QUESTION_AND_ANSWER,
           },
-        ],
-        status: 'wrapper',
-        link: '',
+        ],*/
+        status: '',
+        link: RoutePages.QUESTION_AND_ANSWER,
       }, //new
       {
         title: `Liên hệ`,
