@@ -11,7 +11,7 @@ const Contact = () => {
       <div className={styles['container']}>
         <Breadcrumb data={breadcrumb.contact} />
         <ContactAConsultant />
-        <NewsBlock />
+         
       </div>
     </>
   );

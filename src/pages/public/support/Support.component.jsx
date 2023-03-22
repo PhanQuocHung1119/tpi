@@ -17,7 +17,7 @@ const Support = () => {
         <SupportContent />
         <GoogleMap />
         <SupportContact />
-        <NewsBlock />
+         
       </div>
     </>
   );

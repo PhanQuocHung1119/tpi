@@ -17,7 +17,6 @@ const AboutUs = () => {
         <AboutUsTopAdd />
         <MissionAndVaule />
         <AboutUsTeamMember />
-        <NewsBlock />
       </div>
     </>
   );

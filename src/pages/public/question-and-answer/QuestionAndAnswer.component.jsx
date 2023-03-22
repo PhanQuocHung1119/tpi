@@ -13,7 +13,7 @@ const QuestionAndAnswer = () => {
         <Breadcrumb data={breadcrumb.questionAndAnswer} />
         <QuestionAndAnswerBanner />
         <QuestionContent />
-        <NewsBlock />
+         
       </div>
     </>
   );

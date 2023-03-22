@@ -15,7 +15,7 @@ const ColdStorage = () => {
         <VideoTop />
         <ColdStorageTopContent />
         <ColdStorageListImage />
-        <NewsBlock />
+         
       </div>
     </>
   );

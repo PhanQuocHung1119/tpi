@@ -24,7 +24,7 @@ const FoodIrradiation = () => {
         <ProductOfIrradiation />
         <MethodIrradiation />
         <LogisticsAndSocial logisticsAndSocial={refLang.current?.sub} />
-        <NewsBlock />
+         
       </div>
     </>
   );

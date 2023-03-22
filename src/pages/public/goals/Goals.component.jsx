@@ -20,7 +20,7 @@ const Goals = () => {
         <GoalsBanner />
         <GoalsMain />
         <LogisticsAndSocial logisticsAndSocial={refLang.current?.sub} />
-        <NewsBlock />
+         
       </div>
     </>
   );
