@@ -14,8 +14,8 @@ const Home = () => {
     <>
       <Introduce />
       <BestServices />
-      <News />
       <LocationVideo />
+      <News />
       <TeamMember />
       <LeaderIndustrial />
       <TrustedBy />
