@@ -10,8 +10,12 @@
   width: 100%;
   border: 1px solid #ececec;
   border-radius: 10px;
-
   overflow: hidden;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 5px 10px rgba(36, 36, 36, 0.12);
+  &:hover {
+    box-shadow: 5px 10px 17px rgba(0, 0, 0, 0.12);
+  }
   &.active-anim {
     & > :nth-child(1) {
       @include anim-opacity(0.5s, 0s);
@@ -112,6 +116,7 @@
         width: 40px;
         height: 100%;
         margin-right: 16px;
+        border-radius: 100%;
       }
       &__name {
         @include setting-font('Josefin Sans', normal, 700, 16px, 130%);

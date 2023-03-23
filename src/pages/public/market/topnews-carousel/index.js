@@ -1,1 +1,1 @@
-export { default as topNewsCarousel } from './topnews-carousel.component';
+export { default as TopNewsCarousel } from './TopNewsCarousel.component';

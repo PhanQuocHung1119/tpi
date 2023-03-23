@@ -3,6 +3,7 @@
 @import './bootstrap/form.scss';
 @import './bootstrap/accordion.scss';
 @import '/styles/mixins';
+@import '/styles/color';
 
 html,
 body {
@@ -36,7 +37,7 @@ button {
 
 .slick-active {
   button {
-    border: 1px solid #007770 !important;
+    border: 2px solid $Dark-Green-100 !important;
   }
 }
 

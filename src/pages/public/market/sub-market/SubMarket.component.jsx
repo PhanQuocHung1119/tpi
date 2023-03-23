@@ -7,7 +7,8 @@ import { useObserverItem } from 'components/hook/useObserverItem';
 import { useRouter } from 'next/router';
 
 const SubMarket = ({ news }) => {
-  const { title, image, desc, slug, time, author, avatar } = news.fields;
+  const { title, image, desc, slug, time, author, avatar, hightLight } =
+    news?.fields;
   const refContent = useRef(null);
   useObserverItem(refContent, styles);
   const router = useRouter();
@@ -19,6 +20,7 @@ const SubMarket = ({ news }) => {
     },
     [router]
   );
+  if (hightLight) return;
 
   let _desc = get(desc, ['content', 0, 'content', 0, 'value']);
   let _image = get(image, ['fields', 'file', 'url']);
