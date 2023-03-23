@@ -1,0 +1,1 @@
+export { default as topNewsCarousel } from './topnews-carousel.component';
