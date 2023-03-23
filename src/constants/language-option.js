@@ -299,8 +299,7 @@ export const leaderIndustrial = [
   {
     locale: 'vi',
     title: 'Văn hóa doanh nghiệp',
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet, 
-    consequat egestas dictum posuere pellentesque fermentum.`,
+    desc: `Từ những con người có cá tính khác biệt, để kiến tạo nên một tập thể đồng lòng, gắn kết và có chung mục tiêu, chúng tôi xây dựng văn hoá doanh nghiệp dựa trên 03 tiêu chí: `,
     subDesc: [
       { desc: `Sự đa dạng hòa hợp` },
       { desc: `Phát triển không ngừng` },

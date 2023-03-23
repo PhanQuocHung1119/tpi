@@ -1,0 +1,123 @@
+@import '/styles/main';
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1252px;
+  width: 100%;
+  max-height: 800px;
+  height: max-content;
+  background-color: $White;
+  //margin-top: 80px;
+  border-top: 1px dashed #e3e6e9;
+  margin: 70px auto 0;
+  opacity: 0;
+  &.active-anim {
+    @include anim-move-top(50px, 0.5s);
+  }
+  @include responsive-size(screen-m) {
+    margin-top: 50px;
+    flex-direction: column;
+    max-height: max-content;
+  }
+  .introduce-img {
+    display: block;
+    position: relative;
+    margin-top:80px;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+  }
+  .content {
+    position: absolute;
+    left: 136px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex;
+    justify-content: top;
+    max-width: 1252px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    opacity: 0;
+    &.active-anim {
+      @include anim-opacity(1.2s, 1s);
+      @for $i from 1 through 3 {
+        & > :nth-child(#{$i}) {
+          @include anim-move-right(30px, 0.5s, 0.2s * $i);
+        }
+      }
+    }
+    @include responsive-size(screen-m) {
+      position: relative;
+      color: $text-color;
+      left: 0;
+      margin-top: 24px;
+      max-width: none;
+      padding: 0 10px;
+    }
+    &__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 27px;
+      line-height: 120%;
+      color: $Dark-Green-100;
+      margin-bottom: 16px;
+      margin-top:0;
+      margin-left:-100px;
+      position: relative;
+      @include responsive-size(screen-m) {
+        color: $text-color;
+      }
+    }
+    &__desc {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 130%;
+      color: $White;
+      @include responsive-size(screen-m) {
+        color: $text-color;
+      }
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 40px;
+      background: linear-gradient(45deg, #009e4a, #009e4a);
+
+      border-radius: 5px;
+      margin-top: 32px;
+      cursor: pointer;
+
+      color: $White;
+      .detail {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        margin-right: 32px;
+      }
+      .icon-arrow-right {
+        display: block;
+        position: relative;
+        width: 22px;
+        height: 16px;
+      }
+
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        background: linear-gradient(45deg, $Dark-Green-100, $Green-100);
+        & > .icon-arrow-right {
+          @include anim-move-right(-10px, 0.5s, 0s);
+        }
+      }
+    }
+  }
+}
