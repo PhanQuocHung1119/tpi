@@ -78,7 +78,7 @@ $breakpoints: (
     width: 0;
     bottom: 0;
     overflow: hidden;
-    background-color: $primary-main-color;
+    background-color: $Black-80;
     transition: width $duration ease-out;
   }
   &:hover::before {

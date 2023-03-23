@@ -7,7 +7,8 @@ import { Breadcrumb } from 'components/own/breadcrumb';
 import { breadcrumb } from '@constants/language-option';
 
 const MarketDetail = ({ news }) => {
-  const { title, image, desc, time, author, avatar, slug } = news.fields;
+  if (!news?.fields) return;
+  const { title, image, desc, time, author, avatar, slug } = news?.fields;
 
   let _image = get(image, ['fields', 'file', 'url']);
   let _avatar = get(avatar, ['fields', 'file', 'url']);

@@ -15,13 +15,18 @@ export async function getStaticPaths() {
     return {
       params: {
         slug: item.fields.slug,
+        locale: 'en-US',
+      },
+      params: {
+        slug: item.fields.slug,
+        locale: 'vi',
       },
     };
   });
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
