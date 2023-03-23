@@ -42,6 +42,7 @@
       width: 50%;
       max-width: 580px;
       height: max-content;
+      margin-right: 25px;
       @include responsive-size(screen-m) {
         max-width: none;
         width: 100%;

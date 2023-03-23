@@ -6,13 +6,9 @@ import { NumberGeneralInfo } from 'components/own/number-general-info';
 import about_us_img from '@assets/about-us/About-Us-Image.png';
 
 const title = `Giới thiệu về TOAN PHAT GROUP`;
-const desc = `Tên doanh nghiệp: CÔNG TY TNHH CHIẾU XẠ TOÀN PHÁT.
-Tên giao dịch: TOAN PHAT IRRADIATION LIMITED COMPANY.
-Tên viết tắt: TPI.
-Mã số thuế: 1101846577.
-Địa chỉ nhà máy: Lô A24-1, Đường Ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Huyện Bến Lức, Tỉnh Long An.
-Ngày cấp giấy phép: 27/03/2017.
-Ngành nghề hoạt động chính: chiếu xạ khử trùng các loại nông lâm, thủy sản, các dụng cụ y tế; Chiếu xạ bảo quản các sản phẩm công nghiệp và các sản phẩm tiêu dùng khác.`;
+const desc = `Năm 2017, bắt nguồn từ mong muốn chung tay cùng các doanh nghiệp nâng tầm thương hiệu và giá trị Nông - Thủy sản Việt, Toàn Phát Group (TPG) đã được xây dựng và phát triển. Để đặt nền móng cho sự khởi đầu, Dịch vụ Chiếu xạ (Công ty TNHH Chiếu Xạ Toàn Phát) là bước triển khai đầu tiên21 trong kế hoạch của TPG, thông qua đó đồng hành hỗ trợ các doanh nghiệp xuất khẩu Nông - Thủy sản giảm đi những áp lực về chi phí, nghiên cứu ứng dụng công nghệ để chủ động hơn trong lĩnh vực chiếu xạ và có thêm nhiều lợi thế khi xuất khẩu thực phẩm, hàng hóa ra quốc tế.
+
+Với tầm nhìn xa hơn để con đường đưa Nông - Thủy sản Việt Nam có mặt trên thị trường thế giới được thuận lợi hơn nữa, năm 2023 TPG đã mở rộng lĩnh vực phát triển, xây dựng và đưa vào vận hành Kho Lạnh Toàn Phát (Công ty TNHH Toàn Phát Kho Vận) với khả năng lưu trữ tối đa lên đến 12.000 tấn. Trong chiến lược phát triển dài hạn, TPG hướng đến trở thành Trung tâm Logistic (LOGISTIC HUB) tại khu vực Đồng Bằng Sông Cửu Long cung cấp đầy đủ 03 dịch vụ: Chiếu xạ - Lưu trữ - Vận chuyển.`;
 
 const AboutUsTop = () => {
   const refContainer = useRef();

@@ -182,16 +182,16 @@ export const bestServices = [
     title: 'Lĩnh vực tiên phong',
     sub: [
       {
-        title: 'Lorem ipsum',
-        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+        title: 'Chiếu Xạ',
+        desc: ` TPG là một trong những đơn vị tiên phong trên thị trường hiện nay ứng dụng cả 3 công nghệ chiếu xạ: Cobalt 60, E-Beam, X-ray nhằm đẩy nhanh tiến độ xử lý hàng hóa và đảm bảo chất lượng tốt nhất cho Nông - Thuỷ sản. `,
       },
       {
-        title: 'Lorem ipsum',
-        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+        title: 'Kho Lạnh Lưu Trữ',
+        desc: ` TPG xây dựng và đưa vào vận hành Kho Lạnh Toàn Phát với tổng số vị trí 12.000 pallet, tương đương với sức chứa lưu trữ tối đa lên đến 12.000 tấn. Nhiệt độ lưu trữ từ -18 độ C (+/-3 độ C), kho hạ độ: -35 độ C.`,
       },
       {
-        title: 'Lorem ipsum',
-        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+        title: 'Vận Chuyển',
+        desc: ` Chúng tôi hướng đến trở thành một Trung tâm Logistic với đầy đủ chức năng: Chiếu xạ - Lưu trữ - Vận chuyển, nhằm tối ưu chi phí, tạo đòn bẩy cạnh tranh cho hoạt động xuất khẩu Nông - Thủy sản.`,
       },
     ],
   },
@@ -230,7 +230,7 @@ export const teamMember = [
   {
     locale: 'vi',
     title: 'Đội ngũ nhân sự & Văn hóa doanh nghiệp',
-    titleMain: 'Đội ngũ của chúng tôi sẵn sàng giúp đỡ khách hàng!',
+    titleMain: 'Đội ngũ nhân sự',
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet,
             consequat egestas dictum posuere pellentesque fermentum.`,
     sub: [
@@ -298,13 +298,13 @@ export const teamMember = [
 export const leaderIndustrial = [
   {
     locale: 'vi',
-    title: 'Chúng tôi dẫn đầu trong lĩnh vực Logistic HUB',
+    title: 'Văn hóa doanh nghiệp',
     desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet, 
     consequat egestas dictum posuere pellentesque fermentum.`,
     subDesc: [
-      { desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.` },
-      { desc: `Metus, tristique faucibus sem sed aenean commodo velit.` },
-      { desc: `Enim varius pellentesque posuere mattis.` },
+      { desc: `Sự đa dạng hòa hợp` },
+      { desc: `Phát triển không ngừng` },
+      { desc: `Gắn kết và thấu hiểu` },
     ],
     button: `Chi tiết`,
   },
