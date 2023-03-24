@@ -70,14 +70,14 @@
     .desc {
       width: 100%;
       height: max-content;
-      max-height: 70px;
+      //max-height: 70px;
       display: -webkit-box;
       text-overflow: ellipsis;
       // -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
       margin-bottom: 8px;
-      text-align: center;
+      text-align: left;
       max-width: 800px;
       margin-top: 16px;
       @include setting-font('Josefin Sans', normal, 500, 16px, 130%);

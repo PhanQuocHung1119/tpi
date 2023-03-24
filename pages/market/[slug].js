@@ -10,7 +10,7 @@ const client = createClient({
 });
 
 export async function getStaticPaths() {
-  const res = await client.getEntries({ content_type: 'news' });
+  const res = await client.getEntries({ content_type: 'toanPhatMarketNews' });
   const paths = res.items.map((item) => {
     return {
       params: {
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const res = await client.getEntries({
-    content_type: 'news',
+    content_type: 'toanPhatMarketNews',
     'fields.slug': params.slug,
   });
 

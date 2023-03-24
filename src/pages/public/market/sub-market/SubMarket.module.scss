@@ -83,7 +83,7 @@
     }
     .desc {
       width: 100%;
-      height: max-content;
+      max-height: max-content;
       max-height: 70px;
       display: -webkit-box;
       text-overflow: ellipsis;
