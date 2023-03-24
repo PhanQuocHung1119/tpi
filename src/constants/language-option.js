@@ -215,6 +215,69 @@ export const bestServices = [
   },
 ];
 
+export const sixWord = [
+  {
+    locale: 'vi',
+    title: '6 Giá Trị Cốt Lõi',
+    sub: [
+      {
+        title: 'TRỌNG',
+        desc: `TPG đề cao giá trị của sự tôn trọng trong mọi hoàn cảnh. Tôn trọng bản thân, đồng nghiệp, tập thể, đối tác và khách hàng, đó là kim chỉ nam cho sự phát triển bền vững và gắn kết mối quan hệ lâu dài. Hơn thế nữa, sự tự trọng cũng là một điều thiết yếu, từng cá nhân luôn biết coi trọng những phẩm chất tốt đẹp của bản thân, coi trọng danh dự, uy tín của tổ chức, hình thành nên một tập thể chính trực và luôn coi trọng lẽ phải. `,
+      },
+      {
+        title: 'TÍN',
+        desc: `TPG đặt chữ “Tín” làm giá trị chuẩn mực trong quá trình làm việc với khách hàng, đối tác. Từng mỗi dịch vụ cung cấp đều đem lại giá trị đích thực, minh bạch trong tất cả các giao dịch, chuyên nghiệp trong mọi quy trình để đảm bảo chất lượng, uy tín thương hiệu.`,
+      },
+      {
+        title: 'TÂM',
+        desc: `Với chúng tôi, hành động từ tâm là tham chiếu cho sự trường tồn của TPG. Đó là cái tâm và cái đức trong từng dịch vụ mang đến cho khách hàng, trong việc đối xử với CBCNV hay cả những hành động có ảnh hưởng đến sự phát triển của cộng đồng. Khi xuất phát từ những giá trị tốt đẹp, chúng tôi tin rằng đó là nền tảng vững chắc để vươn đến những tầm cao mới.`,
+      },
+      {
+        title: 'TRÍ',
+        desc: `TPG lấy trí làm sức mạnh cạnh tranh và nguồn năng lượng cho sự sáng tạo. Luôn khuyến khích toàn bộ CBCNV nghiên cứu, học hỏi, khai phá giá trị tiềm năng của mỗi người, từ đó ứng dụng công nghệ vào quản trị, vận hành, kỹ thuật để ngày một nâng cao các giá trị, chất lượng dịch vụ.`,
+      },
+      {
+        title: 'PHÁT',
+        desc: `TPG luôn đề cao tinh thần dám nghĩ dám làm của tập thể CBCNV trong công ty. Sự phát triển của mỗi cá nhân, không ngừng nỗ lực để vượt qua những thử thách là điều kiện thiết yếu tạo nên một tập thể vững mạnh, thành công và phát đạt.`,
+      },
+      {
+        title: 'ÍCH',
+        desc: ` TPG luôn tâm niệm lợi ích của khách hàng/đối tác/cộng đồng phải được đặt lên trên hết, chúng tôi lấy đó làm trọng tâm để phụng sự, cống hiến vì sự phát triển chung của xã hội. Ở khía cạnh khác, Ban lãnh đạo TPG luôn coi trọng lợi ích của từng thành viên đã đồng hành, gắn bó vì sự phát triển của tập thể. Khi mỗi cá nhân luôn giữ tinh thần cầu tiến, biết trau dồi nội lực và tích cực đóng góp, đó là giữ vững lợi ích của chính mình.`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Provide Best Services Industries',
+    sub: [
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+    ],
+  },
+];
+
 export const trustedBy = [
   {
     locale: 'vi',

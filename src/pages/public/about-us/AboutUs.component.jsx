@@ -8,6 +8,7 @@ import { MissionAndVaule } from './mission-and-vaule';
 import { NewsBlock } from 'components/own/news-block';
 import { breadcrumb } from '@constants/language-option';
 import { TimelineTPG } from './Timeline-TPG';
+import { SixWord } from './six-word';
 
 const AboutUs = () => {
   return (
@@ -18,6 +19,7 @@ const AboutUs = () => {
         <TimelineTPG />
         <AboutUsTopAdd />
         <MissionAndVaule />
+        <SixWord />
         <AboutUsTeamMember />
       </div>
     </>
