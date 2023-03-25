@@ -1,0 +1,104 @@
+@import '/styles/main';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  height: max-content;
+  margin-top: 120px;
+
+  @include responsive-size(screen-m) {
+    margin-top: 46px;
+  }
+  .member {
+    &-img-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: max-content;
+      opacity: 0;
+      .member-img {
+        width: 715px;
+        height: max-content;
+      }
+      &.active-anim {
+        @include anim-opacity(0.1s, 0s);
+
+        & > :nth-child(1) {
+          @include anim-move-top(50px, 1.2s);
+          @include responsive-size(screen-m) {
+            @include anim-move-top(10px, 1s);
+          }
+        }
+        & > :nth-child(2) {
+          @include anim-move-right(50px, 1.2s);
+          @include responsive-size(screen-m) {
+            @include anim-move-right(10px, 1s);
+          }
+        }
+      }
+    }
+  }
+  .member-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    height: max-content;
+    @include responsive-size(screen-m) {
+      padding: 0 10px;
+    }
+    &__title {
+      color: $Dark-Green-100;
+      //margin: 16px 0;
+      margin-top: 60px;
+      margin-left: -100px;
+      text-align: center;
+      @include setting-font('Josefin Sans', normal, 400, 40px, 120%);
+      @include responsive-size(screen-m) {
+        margin-top: 16px;
+      }
+    }
+    &__content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      //grid-template-columns: max-content;
+      width: 180%;
+      margin-top: 20px;
+      border-top: 1px dashed #f1f1f1;
+      padding-top: 20px;
+      max-width: 1440px;
+      height: max-content;
+      &___child{
+        max-width: 460px;
+        margin-right: 30px;
+        padding-left: 20px;
+        border-left: 2px dashed darkgreen;
+      }
+      &.active-anim {
+        @for $i from 1 through 3 {
+          & > :nth-child(#{$i}) {
+            @include anim-move-top(50px, 0.7s, 0.5s * $i);
+            & > :nth-child(1) {
+              @include anim-move-top(50px, 0.7s, 0.4s * $i);
+            }
+            & > :nth-child(2) {
+              @include anim-move-right(50px, 0.7s, 0.7s * $i);
+            }
+          }
+        }
+      }
+      @include responsive-size(screen-m) {
+        flex-direction: column;
+        max-width: none;
+      }
+    }
+  }
+}

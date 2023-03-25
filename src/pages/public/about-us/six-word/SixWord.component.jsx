@@ -4,17 +4,21 @@ import { SubSixWord } from './sub-six-word';
 import { useObserverItem } from 'components/hook/useObserverItem';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 import { sixWord } from '@constants/language-option';
-import light from '@assets/best-services/Light.png';
-import pencil from '@assets/best-services/pencil.png';
+import icon1 from '@assets/about-us/six-word-icons/icon1.png';
+import icon2 from '@assets/about-us/six-word-icons/icon2.png';
+import icon3 from '@assets/about-us/six-word-icons/icon3.png';
+import icon4 from '@assets/about-us/six-word-icons/icon4.png';
+import icon5 from '@assets/about-us/six-word-icons/icon5.png';
+import icon6 from '@assets/about-us/six-word-icons/icon6.png';
 import Arrow_top from '@assets/best-services/Arrow-top.png';
 
 const action = [
-  { icon: light, number: 1 },
-  { icon: pencil, number: 2 },
-  { icon: Arrow_top, number: 3 },
-  { icon: Arrow_top, number: 4 },
-  { icon: Arrow_top, number: 5 },
-  { icon: Arrow_top, number: 6 },
+  { icon: icon1, number: 1 },
+  { icon: icon2, number: 2 },
+  { icon: icon3, number: 3 },
+  { icon: icon4, number: 4 },
+  { icon: icon5, number: 5 },
+  { icon: icon6, number: 6 },
 ];
 
 const SixWord = () => {

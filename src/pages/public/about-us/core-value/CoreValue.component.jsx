@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import styles from './MissionAndVaule.module.scss';
+import styles from './CoreValue.module.scss';
 import { useObserverItem } from 'components/hook/useObserverItem';
 import Image from 'next/image';
 import mission from '@assets/about-us/Mission-and-value.png';
@@ -15,7 +15,7 @@ Sứ mệnh: Trở thành đối tác tin cậy của các doanh nghiệp xuất
 const desc2 = `TRỌNG - TÍN - TÂM - TRÍ - PHÁT - ÍCH 
 Trong quá trình kiến tạo và phát triển, đội ngũ CBCNV của TPG luôn giữ vững 6 giá trị cốt lõi: TRỌNG - TÍN - TÂM - TRÍ - PHÁT - ÍCH. Từng mỗi bộ phận đảm nhiệm một vai trò nhất định nhưng luôn hướng về mục tiêu chung và không thể tách rời. Tất cả tạo nên sự kết hợp hài hoà, một tập thể đoàn kết và luôn tuân thủ những giá trị cốt lõi để nâng tầm phát triển mỗi ngày.`;
 
-const MissionAndVaule = () => {
+const CoreValue = () => {
   const refContainer = useRef();
   useObserverItem(refContainer, styles);
   return (
@@ -42,4 +42,4 @@ const MissionAndVaule = () => {
     </>
   );
 };
-export default React.memo(MissionAndVaule);
+export default React.memo(CoreValue);
