@@ -10,6 +10,7 @@ import { breadcrumb } from '@constants/language-option';
 import { TimelineTPG } from './Timeline-TPG';
 import { SixWord } from './six-word';
 import { FutureGoal } from './future-goal';
+import { HumanResource } from './HumanResource';
 
 const AboutUs = () => {
   return (
@@ -22,6 +23,7 @@ const AboutUs = () => {
         <CoreValue />
         <SixWord />
         <FutureGoal />
+        <HumanResource />
         <AboutUsTeamMember />
       </div>
     </>

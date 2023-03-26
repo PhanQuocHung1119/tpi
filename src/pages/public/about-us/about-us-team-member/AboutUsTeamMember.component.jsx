@@ -6,10 +6,12 @@ import mem1 from '@assets/team-member/team-member-img-1.png';
 import mem2 from '@assets/team-member/team-member-img-2.png';
 import { NumberAndDesc } from 'components/own/number-and-desc';
 
-const desc1 =
-  'Mỗi cá nhân sẽ tạo nên tập thể, từng đóng góp nhỏ là tiền đề của những thành quả lớn. Tại TPG, chúng tôi trân trọng giá trị của từng cá nhân, từ lãnh đạo, quản lý cấp cao am hiểu kiến thức chuyên môn đến những người trẻ với nguồn năng lượng tích cực và ham học hỏi. Một tập thể luôn coi trọng lợi ích chung và hướng đến sự cải tiến sẽ tạo nên một doanh nghiệp phát triển vững mạnh. Và tất cả những giá trị, kết quả tích cực đó đều được hình thành từ việc coi trọng Văn hóa doanh nghiệp.';
-const desc2 = `Với đội ngũ cán bộ nhân viên kỹ thuật, giàu kinh nghiệm đam mê nghiên cứu xây dựng và phát triển sản phẩm dịch vụ mới (chiếu xạ trái cây tươi, đo và kiểm soát suất liều bài bản) đảm bảo yếu tố an toàn vận hành và đạt yêu cầu về các chỉ tiêu của khách hàng một cách chuẩn mực và chính xác, được đào tạo từ các trường đại học chính quy hàng đầu trong nước (Đại học Bách Khoa, Đại học Khoa học tự nhiên, Đại học Công nghiệp…) với thành tích học tập nổi bậc, được trang bị đầy đủ các kỹ năng phục vụ cho nhu cầu công việc của TPI.`;
-const desc3 = `Chúng tôi tin rằng: TPI sẽ chinh phục và vượt qua được mọi khó khăn thách thức và khẳng định giá trị thương hiệu của TPI trên thị trường.`;
+const desc1 =`Sự đa dạng hòa hợp :
+TPG chú trọng xây dựng văn hóa doanh nghiệp xuất phát từ sự đa dạng hòa hợp. Dù là bất cứ ai, không phân biệt vùng miền, xuất phát điểm, từ những nhân sự cốt cán đến những nhân sự mới đều được công nhận năng lực, khuyến khích học hỏi, phát huy điểm mạnh và thúc đẩy tư duy khác biệt để phát triển nhân tài.`;
+const desc2 = `Phát triển không ngừng :
+Luôn nâng cao kỹ năng làm việc, không ngừng sáng tạo và chinh phục các mục tiêu to lớn hơn là những thách thức mà các thành viên TPG cần vượt qua. Để kiến tạo nên tương lai mơ ước, mỗi cá nhân đều cần thử nghiệm những điều mới, đưa ra thử thách và vượt giới hạn chính là công thức để đạt được những thành quả cao hơn.`;
+const desc3 = `Gắn kết và thấu hiểu
+TPG xây dựng một môi trường làm việc cởi mở, thân thiện, nhân viên được tự do đóng góp và tự do nêu ý kiến, đó là chìa khóa giúp mọi người hiểu nhau hơn. Nhân sự tại TPG thường xuyên có những hoạt động tập thể để tăng tính gắn kết và thấu hiểu; tham gia các hoạt động vì cộng đồng để tri ân những cơ hội và giá trị mà TPG đạt được, cũng như trân trọng hơn những gì mình đang có.`;
 const AboutUsTeamMember = () => {
   const refImageWrapper = useRef();
   const refMemberContent = useRef();
@@ -44,7 +46,7 @@ const AboutUsTeamMember = () => {
           </div>
         </div>
         <div className={styles['member-content']}>
-          <div className={styles['member-content__title']}>Đội ngũ nhân sự & Văn hóa doanh nghiệp</div>
+          <div className={styles['member-content__title']}>Văn hoá doanh nghiệp</div>
           <div
             className={styles['member-content__content']}
             ref={refMemberContent}

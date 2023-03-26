@@ -384,6 +384,32 @@ export const leaderIndustrial = [
   },
 ];
 
+export const humanResource = [
+  {
+    locale: 'vi',
+    title: 'Đội ngũ nhân sự ',
+    desc: `Mỗi cá nhân sẽ tạo nên tập thể, từng đóng góp nhỏ là tiền đề của những thành quả lớn. Tại TPG, chúng tôi trân trọng giá trị của từng cá nhân, từ lãnh đạo, quản lý cấp cao am hiểu kiến thức chuyên môn đến những người trẻ với nguồn năng lượng tích cực và ham học hỏi. Một tập thể luôn coi trọng lợi ích chung và hướng đến sự cải tiến sẽ tạo nên một doanh nghiệp phát triển vững mạnh. Và tất cả những giá trị, kết quả tích cực đó đều được hình thành từ việc coi trọng Văn hóa doanh nghiệp.`,
+    subDesc: [
+      { desc: `` },
+      { desc: `` },
+      { desc: `` },
+    ],
+    button: `Chi tiết`,
+  },
+  {
+    locale: 'en-US',
+    title: 'We are leader in industiral market',
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet, 
+    consequat egestas dictum posuere pellentesque fermentum.`,
+    subDesc: [
+      { desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.` },
+      { desc: `Metus, tristique faucibus sem sed aenean commodo velit.` },
+      { desc: `Enim varius pellentesque posuere mattis.` },
+    ],
+    button: `Detail`,
+  },
+];
+
 export const testimonial = [
   {
     locale: 'vi',
