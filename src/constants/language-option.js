@@ -278,6 +278,53 @@ export const sixWord = [
   },
 ];
 
+export const irradiationFlow = [
+  {
+    locale: 'vi',
+    title: 'Quy trình chiếu xạ',
+    sub: [
+      {
+        title: 'Nhập hàng',
+        desc: `Khách hàng vận chuyển sản phẩm cần chiếu xạ đến nhà máy chiếu xạ Toàn Phát. Sau khi hoàn thành thông tin thủ tục, sản phẩm được đưa vào phòng chờ, chuẩn bị xử lý.`,
+      },
+      {
+        title: 'Xử lý',
+        desc: `Băng chuyền đưa sản phẩm vào phòng chiếu, đảm bảo sản phẩm được chiếu đều các mặt và đưa sản phẩm ra ngoài sau khi đã chiếu đủ liều. Toàn bộ quá trình xử lý nhanh gọn và được thực hiện tự động hóa bằng máy móc với độ chính xác gần như tuyệt đối.`,
+      },
+      {
+        title: 'Sau xử lý',
+        desc: `Ở đầu ra của dây chuyền sau khi hàng hoá được chiếu xạ xong, nhân viên của TPG sẽ xếp sản phẩm lên pallet, các pallet hàng hóa sẽ được xe nâng điện chở ra khu vực phòng chờ.`,
+      },
+      {
+        title: 'Xuất hàng',
+        desc: `Ở giai đoạn này xe nâng điện sẽ chở các pallet sản phẩm chất ra xe. Khách hàng hoàn thành thủ tục chứng từ còn lại sau đó chở hàng hoá ra về, hoặc đăng ký sử dụng dịch vụ thuê kho lạnh lưu trữ của TPG nếu có nhu cầu.`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Provide Best Services Industries',
+    sub: [
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+    ],
+  },
+];
+
 export const trustedBy = [
   {
     locale: 'vi',
@@ -681,15 +728,19 @@ export const foodIrradiationSystem = [
   {
     locale: 'vi',
     title: 'Chiếu xạ',
-    desc: `TPI - Nhà máy duy nhất tại Việt Nam ứng dụng đầy đủ 3 công nghệ chiếu xạ:`,
+    desc: `TPG là một trong những đơn vị tiên phong ứng dụng cả 3 công nghệ chiếu xạ`,
     subDesc: [
-      { desc: `Dây chuyền chiếu xạ bằng nguồn CoBalt 60 sử dụng tia gamma.` },
-      {
-        desc: `Hệ thống máy chiếu xạ bằng chùm tia điện tử (E-Beam) sử dụng chùm
-              electron.`,
+      { desc: `Hệ thống chiếu xạ bằng nguồn Cobalt 60 sử dụng tia gamma.`,
       },
-      { desc: `Hệ thống máy chiếu xạ Bremsstrahlung (X-ray) sử dụng tia X.` },
+      {
+        desc: `Hệ thống máy chiếu xạ bằng chùm tia điện tử (E-Beam) sử dụng chùm electron.`,
+      },
+      { desc: `Hệ thống máy chiếu xạ Bremsstrahlung (X-ray) sử dụng tia X.`,
+      },
     ],
+    concludeDesc: `Đây là 3 công nghệ chiếu xạ tiên tiến nhất hiện nay nhằm đẩy nhanh tiến độ xử lý hàng hóa; nâng cao chất lượng dịch vụ, đáp ứng tối đa nhu cầu khách hàng; giảm thời gian chờ đợi và tiết kiệm chi phí tối ưu nhất. Đặc biệt, TPG là đơn vị tiên phong duy nhất hiện nay đã sản xuất, lắp đặt thành công phần mềm điều khiển, dây chuyền cơ khí vận hành phát triển bởi đội ngũ kỹ thuật công ty 100% người Việt Nam và được APHIS công nhận đủ điều kiện chiếu xạ trái cây tươi cho thị trường Hoa Kỳ.
+        Với sự kết hợp của cả ba công nghệ, cùng việc không ngừng mở rộng nghiên cứu, TPG có thể ứng dụng đa dạng hóa vào nhiều mặt hàng chiếu xạ và tiếp tục khẳng định vị thế trên thị trường. 
+        `,
   },
   {
     locale: 'en-US',
@@ -702,6 +753,7 @@ export const foodIrradiationSystem = [
       },
       { desc: `The Bremsstrahlung (X-ray) irradiator system uses X-rays.` },
     ],
+    concludeDesc: `Lorem ipsum`,
   },
 ];
 
@@ -711,19 +763,16 @@ export const productOfIrradiation = [
     title: 'Các sản phẩm được chiếu xạ tại TPI:',
     subDesc: [
       { desc: 'Trái cây tươi' },
-      { desc: 'Đồ thủ công mỹ nghệ' },
-      { desc: 'Gia vị' },
-      { desc: 'Cá tra đông lạnh' },
-      { desc: 'Thiết bị y tế' },
-      { desc: 'Đá trang sức' },
-      { desc: 'Thực phẩm - Nông sản' },
-      { desc: 'Tôm đông lạnh' },
-      { desc: 'Dược liệu, đông dược' },
-      { desc: 'Thủy hải sản đông lạnh' },
-      { desc: 'Hóa mỹ phẩm' },
-      { desc: 'Các mặt hàng khô khác' },
       { desc: 'Trái cây đông lạnh' },
+      { desc: 'Thủy sản đông lạnh' },
+      { desc: 'Thực phẩm chế biến' },
+      { desc: 'Thiết bị y tế' },
+      { desc: 'Đồ thủ công mỹ nghệ' },
       { desc: 'Sản phẩm bằng tre, gỗ' },
+      { desc: 'Hoá mỹ phẩm' },
+      { desc: 'Dược liệu, đông nam dược' },
+      { desc: 'Đá trang sức' },
+      { desc: 'Gia vị' },
       { desc: 'Thức ăn thú cưng' },
     ],
   },
@@ -731,20 +780,17 @@ export const productOfIrradiation = [
     locale: 'en-US',
     title: 'Products irradiated at TPI:',
     subDesc: [
-      { desc: 'Fresh fruit' },
-      { desc: 'Handicrafts' },
-      { desc: 'Spice' },
-      { desc: 'Frozen Pangasius' },
+      { desc: 'Fresh fruits' },
+      { desc: 'Frozen fruits' },
+      { desc: 'Frozen fish' },
+      { desc: 'Processed food' },
       { desc: 'Medical equipment' },
-      { desc: 'Jewelry stone' },
-      { desc: 'Food - Agricultural products' },
-      { desc: 'Frozen shrimp' },
-      { desc: 'Herbal medicine, oriental medicine' },
-      { desc: 'Frozen seafood' },
-      { desc: 'Cosmetics' },
-      { desc: 'Other dry goods' },
-      { desc: 'Frozen fruit' },
-      { desc: 'Products made of bamboo and wood' },
+      { desc: 'Hand-mades' },
+      { desc: 'Bamboo, Wood' },
+      { desc: 'Cosmetic' },
+      { desc: 'Medicine' },
+      { desc: 'Jewelries' },
+      { desc: 'Spices' },
       { desc: 'Pet food' },
     ],
   },

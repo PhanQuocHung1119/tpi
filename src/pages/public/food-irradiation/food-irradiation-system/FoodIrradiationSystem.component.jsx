@@ -5,7 +5,17 @@ import { foodIrradiationSystem } from '@constants/language-option';
 import { PioneeringTitle } from 'components/own/pioneering-title';
 import { useObserverItem } from 'components/hook/useObserverItem';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
-import system from '@assets/food-irradiation/food-irradiation-system.png';
+import pictureSrc1 from '@assets/food-irradiation/food-irradiation-system1.png';
+import pictureSrc2 from '@assets/food-irradiation/food-irradiation-system2.png';
+import pictureSrc3 from '@assets/food-irradiation/food-irradiation-system3.png';
+import { ref } from 'yup';
+
+const action = [
+  { source: pictureSrc1 },
+  { source: pictureSrc2 },
+  { source: pictureSrc3 },
+];
+
 const FoodIrradiationSystem = () => {
   const refContainer = useRef();
   const refLang = useRef(null);
@@ -25,7 +35,7 @@ const FoodIrradiationSystem = () => {
             <div className={styles['sub-content']} key={index}>
               <div className={styles['sub-content__image']}>
                 <Image
-                  src={system}
+                  src={action[index].source}
                   alt=''
                   width={383}
                   height={200}
@@ -38,6 +48,7 @@ const FoodIrradiationSystem = () => {
             </div>
           ))}
         </div>
+        <div className={styles['concludedesc']}>{refLang.current?.concludeDesc}</div>
       </div>
     </>
   );
