@@ -7,7 +7,7 @@ import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 import { LocationMapContent } from '@constants/language-option';
 
 const videoLocationInfo =
-  'https://ik.imagekit.io/damnedbrain/location_map_video.mp4?updatedAt=1679483180696';
+  'https://ik.imagekit.io/damnedbrain/location_map_video.mp4?updatedAt=1679899853195';
 
 const opts = {
     playerVars: {
