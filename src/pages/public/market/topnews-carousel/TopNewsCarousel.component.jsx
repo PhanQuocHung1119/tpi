@@ -51,7 +51,6 @@ function ArrowRight(props) {
 
 const TopNewsCarousel = ({ news }) => {
   const refSlider = useRef(null);
-  // const refContent = useRef(null);
 
   const settings = useMemo(
     () => ({
@@ -78,7 +77,6 @@ const TopNewsCarousel = ({ news }) => {
   );
 
   useObserverItem(refSlider, styles);
-  // useChooseLanguage(testimonial, refContent);
 
   return (
     <>
@@ -93,18 +91,6 @@ const TopNewsCarousel = ({ news }) => {
                   ''
                 );
               })}
-            {/* {Array.isArray(refContent.current?.comments) &&
-              refContent.current?.comments?.map((item, index) => {
-                return (
-                  <SubTopNewsCarousel
-                    key={index}
-                    name={item.name}
-                    title={item.title}
-                    avatar={clientAvatar[index].avatar}
-                    comment={item.comment}
-                  />
-                );
-              })} */}
           </Slider>
         </div>
       </div>

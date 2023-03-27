@@ -3,7 +3,7 @@ import { Market } from '@pages/public/market';
 import { createClient } from 'contentful';
 import ErrorPage from 'next/error';
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   try {
     const client = createClient({
       space: process.env.CONTENTFUL_SPACE_ID,
@@ -13,6 +13,7 @@ export async function getStaticProps() {
 
     const res = await client.getEntries({
       content_type: 'news',
+      locale: locale,
     });
 
     if (!res) {

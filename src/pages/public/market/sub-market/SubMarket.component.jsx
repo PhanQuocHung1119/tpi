@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { RoutePages } from '@constants/router';
 import { useObserverItem } from 'components/hook/useObserverItem';
 import { useRouter } from 'next/router';
+import NotAvailable from '@assets/background/image-not-available.jpg';
 
 const SubMarket = ({ news }) => {
   const { title, image, desc, slug, time, author, avatar, hightLight } =
@@ -20,7 +21,7 @@ const SubMarket = ({ news }) => {
     },
     [router]
   );
-  //if (hightLight) return;
+  // if (hightLight) return;
 
   let _desc = get(desc, ['content', 0, 'content', 0, 'value']);
   let _image = get(image, ['fields', 'file', 'url']);
