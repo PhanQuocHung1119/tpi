@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, locale }) {
   const res = await client.getEntries({
-    content_type: 'toanPhatMarketNews',
+    content_type: 'news',
     'fields.slug': params.slug,
     locale: locale,
   });
