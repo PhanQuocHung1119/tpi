@@ -1,0 +1,100 @@
+@import '/styles/main';
+
+.container {
+  //position: relative;  
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  //grid-template-columns: max-content;
+  width: 100%;
+  height: 100%;
+  max-width: 974px;
+  max-height: 547px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  user-select: none;
+  opacity: 0;
+  border-bottom: 1px solid #e3e6e9;
+  padding-top: 20px;
+  &.active-anim {
+    @include anim-opacity(0.7s, 0s);
+    @include anim-move-top(-30px, 1s, 0.5s);
+  }
+  .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: darkgreen;
+    margin-top: 32px;
+    //max-width: 450px;
+  }
+
+  .videoDesc {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 12px;
+    //max-width: 450px;
+  }
+
+  .video-image-wrapper {
+    position: relative;
+    @include flex-container(center, center);
+    width: 100%;
+    height: 100%;
+    max-width: 974px;
+    max-height: 547px;
+    .thumbnail {
+      position: relative;
+      cursor: pointer;
+      max-width: 974px;
+      max-height: 547px;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 974 / 547;
+      background: linear-gradient(0deg, #8ea6bd, #bed5ef, #8ea6bd);
+
+      &__icon {
+        &-play {
+          position: absolute;
+          & > :first-child {
+            left: 10%;
+          }
+          padding: 25px;
+          width: 105px;
+          height: 105px;
+          background: #bfbfbf;
+          border: 2px solid $Black-20;
+          border-radius: 100%;
+          z-index: 5;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          &:hover {
+            background: rgba(150, 150, 150, 0.8);
+          }
+          @include responsive-size(screen-xs) {
+            width: 60px;
+            height: 60px;
+            padding: 20px;
+          }
+          &.active-anim {
+            @include anim-opacity(0.5s, 0.8s);
+          }
+        }
+      }
+      &__video-image {
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: calc(300px * 100% / 974px);
+        height: calc(241px * 100% / 547px);
+      }
+    }
+  }
+}
