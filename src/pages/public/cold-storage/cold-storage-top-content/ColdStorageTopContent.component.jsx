@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import styles from './ColdStorageTopContent.module.scss';
 import { PioneeringTitle } from 'components/own/pioneering-title';
-import { NumberAndDesc } from 'components/own/number-and-desc';
+import { NumberTitleDesc } from 'components/own/number-title-desc';
 import { useObserverItem } from 'components/hook/useObserverItem';
 import { useChooseLanguage } from 'components/hook/useChooseLanguage';
 import { coldStorageTopContent } from '@constants/language-option';
@@ -28,7 +28,7 @@ const ColdStorageTopContent = () => {
         </div>
         <div className={styles['sub-content']} ref={refContent}>
           {refLang.current?.sub.map((item, index) => (
-            <NumberAndDesc key={index} number={index + 1} desc={item.desc} />
+            <NumberTitleDesc key={index} number={index + 1} title={item.title} desc={item.desc} />
           ))}
         </div>
       </div>
