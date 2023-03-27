@@ -34,9 +34,9 @@ const proImages = [
   { image: pro10 },
   { image: pro11 },
   { image: pro12 },
-  { image: pro13 },
+  /*{ image: pro13 },
   { image: pro14 },
-  { image: pro15 },
+  { image: pro15 },*/
 ];
 
 const ProductOfIrradiation = () => {

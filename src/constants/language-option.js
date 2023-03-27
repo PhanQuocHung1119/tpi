@@ -215,6 +215,116 @@ export const bestServices = [
   },
 ];
 
+export const sixWord = [
+  {
+    locale: 'vi',
+    title: '6 Giá Trị Cốt Lõi',
+    sub: [
+      {
+        title: 'TRỌNG',
+        desc: `TPG đề cao giá trị của sự tôn trọng trong mọi hoàn cảnh. Tôn trọng bản thân, đồng nghiệp, tập thể, đối tác và khách hàng, đó là kim chỉ nam cho sự phát triển bền vững và gắn kết mối quan hệ lâu dài. Hơn thế nữa, sự tự trọng cũng là một điều thiết yếu, từng cá nhân luôn biết coi trọng những phẩm chất tốt đẹp của bản thân, coi trọng danh dự, uy tín của tổ chức, hình thành nên một tập thể chính trực và luôn coi trọng lẽ phải. `,
+      },
+      {
+        title: 'TÍN',
+        desc: `TPG đặt chữ “Tín” làm giá trị chuẩn mực trong quá trình làm việc với khách hàng, đối tác. Từng mỗi dịch vụ cung cấp đều đem lại giá trị đích thực, minh bạch trong tất cả các giao dịch, chuyên nghiệp trong mọi quy trình để đảm bảo chất lượng, uy tín thương hiệu.`,
+      },
+      {
+        title: 'TÂM',
+        desc: `Với chúng tôi, hành động từ tâm là tham chiếu cho sự trường tồn của TPG. Đó là cái tâm và cái đức trong từng dịch vụ mang đến cho khách hàng, trong việc đối xử với CBCNV hay cả những hành động có ảnh hưởng đến sự phát triển của cộng đồng. Khi xuất phát từ những giá trị tốt đẹp, chúng tôi tin rằng đó là nền tảng vững chắc để vươn đến những tầm cao mới.`,
+      },
+      {
+        title: 'TRÍ',
+        desc: `TPG lấy trí làm sức mạnh cạnh tranh và nguồn năng lượng cho sự sáng tạo. Luôn khuyến khích toàn bộ CBCNV nghiên cứu, học hỏi, khai phá giá trị tiềm năng của mỗi người, từ đó ứng dụng công nghệ vào quản trị, vận hành, kỹ thuật để ngày một nâng cao các giá trị, chất lượng dịch vụ.`,
+      },
+      {
+        title: 'PHÁT',
+        desc: `TPG luôn đề cao tinh thần dám nghĩ dám làm của tập thể CBCNV trong công ty. Sự phát triển của mỗi cá nhân, không ngừng nỗ lực để vượt qua những thử thách là điều kiện thiết yếu tạo nên một tập thể vững mạnh, thành công và phát đạt.`,
+      },
+      {
+        title: 'ÍCH',
+        desc: ` TPG luôn tâm niệm lợi ích của khách hàng/đối tác/cộng đồng phải được đặt lên trên hết, chúng tôi lấy đó làm trọng tâm để phụng sự, cống hiến vì sự phát triển chung của xã hội. Ở khía cạnh khác, Ban lãnh đạo TPG luôn coi trọng lợi ích của từng thành viên đã đồng hành, gắn bó vì sự phát triển của tập thể. Khi mỗi cá nhân luôn giữ tinh thần cầu tiến, biết trau dồi nội lực và tích cực đóng góp, đó là giữ vững lợi ích của chính mình.`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Provide Best Services Industries',
+    sub: [
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+    ],
+  },
+];
+
+export const irradiationFlow = [
+  {
+    locale: 'vi',
+    title: 'Quy trình chiếu xạ',
+    sub: [
+      {
+        title: 'Nhập hàng',
+        desc: `Khách hàng vận chuyển sản phẩm cần chiếu xạ đến nhà máy chiếu xạ Toàn Phát. Sau khi hoàn thành thông tin thủ tục, sản phẩm được đưa vào phòng chờ, chuẩn bị xử lý.`,
+      },
+      {
+        title: 'Xử lý',
+        desc: `Băng chuyền đưa sản phẩm vào phòng chiếu, đảm bảo sản phẩm được chiếu đều các mặt và đưa sản phẩm ra ngoài sau khi đã chiếu đủ liều. Toàn bộ quá trình xử lý nhanh gọn và được thực hiện tự động hóa bằng máy móc với độ chính xác gần như tuyệt đối.`,
+      },
+      {
+        title: 'Sau xử lý',
+        desc: `Ở đầu ra của dây chuyền sau khi hàng hoá được chiếu xạ xong, nhân viên của TPG sẽ xếp sản phẩm lên pallet, các pallet hàng hóa sẽ được xe nâng điện chở ra khu vực phòng chờ.`,
+      },
+      {
+        title: 'Xuất hàng',
+        desc: `Ở giai đoạn này xe nâng điện sẽ chở các pallet sản phẩm chất ra xe. Khách hàng hoàn thành thủ tục chứng từ còn lại sau đó chở hàng hoá ra về, hoặc đăng ký sử dụng dịch vụ thuê kho lạnh lưu trữ của TPG nếu có nhu cầu.`,
+      },
+    ],
+  },
+  {
+    locale: 'en-US',
+    title: 'Provide Best Services Industries',
+    sub: [
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+      {
+        title: 'Lorem ipsum',
+        desc: ` Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt`,
+      },
+    ],
+  },
+];
+
 export const trustedBy = [
   {
     locale: 'vi',
@@ -304,6 +414,32 @@ export const leaderIndustrial = [
       { desc: `Sự đa dạng hòa hợp` },
       { desc: `Phát triển không ngừng` },
       { desc: `Gắn kết và thấu hiểu` },
+    ],
+    button: `Chi tiết`,
+  },
+  {
+    locale: 'en-US',
+    title: 'We are leader in industiral market',
+    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet, 
+    consequat egestas dictum posuere pellentesque fermentum.`,
+    subDesc: [
+      { desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.` },
+      { desc: `Metus, tristique faucibus sem sed aenean commodo velit.` },
+      { desc: `Enim varius pellentesque posuere mattis.` },
+    ],
+    button: `Detail`,
+  },
+];
+
+export const humanResource = [
+  {
+    locale: 'vi',
+    title: 'Đội ngũ nhân sự ',
+    desc: `Mỗi cá nhân sẽ tạo nên tập thể, từng đóng góp nhỏ là tiền đề của những thành quả lớn. Tại TPG, chúng tôi trân trọng giá trị của từng cá nhân, từ lãnh đạo, quản lý cấp cao am hiểu kiến thức chuyên môn đến những người trẻ với nguồn năng lượng tích cực và ham học hỏi. Một tập thể luôn coi trọng lợi ích chung và hướng đến sự cải tiến sẽ tạo nên một doanh nghiệp phát triển vững mạnh. Và tất cả những giá trị, kết quả tích cực đó đều được hình thành từ việc coi trọng Văn hóa doanh nghiệp.`,
+    subDesc: [
+      { desc: `` },
+      { desc: `` },
+      { desc: `` },
     ],
     button: `Chi tiết`,
   },
@@ -592,15 +728,19 @@ export const foodIrradiationSystem = [
   {
     locale: 'vi',
     title: 'Chiếu xạ',
-    desc: `TPI - Nhà máy duy nhất tại Việt Nam ứng dụng đầy đủ 3 công nghệ chiếu xạ:`,
+    desc: `TPG là một trong những đơn vị tiên phong ứng dụng cả 3 công nghệ chiếu xạ`,
     subDesc: [
-      { desc: `Dây chuyền chiếu xạ bằng nguồn CoBalt 60 sử dụng tia gamma.` },
-      {
-        desc: `Hệ thống máy chiếu xạ bằng chùm tia điện tử (E-Beam) sử dụng chùm
-              electron.`,
+      { desc: `Hệ thống chiếu xạ bằng nguồn Cobalt 60 sử dụng tia gamma.`,
       },
-      { desc: `Hệ thống máy chiếu xạ Bremsstrahlung (X-ray) sử dụng tia X.` },
+      {
+        desc: `Hệ thống máy chiếu xạ bằng chùm tia điện tử (E-Beam) sử dụng chùm electron.`,
+      },
+      { desc: `Hệ thống máy chiếu xạ Bremsstrahlung (X-ray) sử dụng tia X.`,
+      },
     ],
+    concludeDesc: `Đây là 3 công nghệ chiếu xạ tiên tiến nhất hiện nay nhằm đẩy nhanh tiến độ xử lý hàng hóa; nâng cao chất lượng dịch vụ, đáp ứng tối đa nhu cầu khách hàng; giảm thời gian chờ đợi và tiết kiệm chi phí tối ưu nhất. Đặc biệt, TPG là đơn vị tiên phong duy nhất hiện nay đã sản xuất, lắp đặt thành công phần mềm điều khiển, dây chuyền cơ khí vận hành phát triển bởi đội ngũ kỹ thuật công ty 100% người Việt Nam và được APHIS công nhận đủ điều kiện chiếu xạ trái cây tươi cho thị trường Hoa Kỳ.
+        Với sự kết hợp của cả ba công nghệ, cùng việc không ngừng mở rộng nghiên cứu, TPG có thể ứng dụng đa dạng hóa vào nhiều mặt hàng chiếu xạ và tiếp tục khẳng định vị thế trên thị trường. 
+        `,
   },
   {
     locale: 'en-US',
@@ -613,6 +753,7 @@ export const foodIrradiationSystem = [
       },
       { desc: `The Bremsstrahlung (X-ray) irradiator system uses X-rays.` },
     ],
+    concludeDesc: `Lorem ipsum`,
   },
 ];
 
@@ -622,19 +763,16 @@ export const productOfIrradiation = [
     title: 'Các sản phẩm được chiếu xạ tại TPI:',
     subDesc: [
       { desc: 'Trái cây tươi' },
-      { desc: 'Đồ thủ công mỹ nghệ' },
-      { desc: 'Gia vị' },
-      { desc: 'Cá tra đông lạnh' },
-      { desc: 'Thiết bị y tế' },
-      { desc: 'Đá trang sức' },
-      { desc: 'Thực phẩm - Nông sản' },
-      { desc: 'Tôm đông lạnh' },
-      { desc: 'Dược liệu, đông dược' },
-      { desc: 'Thủy hải sản đông lạnh' },
-      { desc: 'Hóa mỹ phẩm' },
-      { desc: 'Các mặt hàng khô khác' },
       { desc: 'Trái cây đông lạnh' },
+      { desc: 'Thủy sản đông lạnh' },
+      { desc: 'Thực phẩm chế biến' },
+      { desc: 'Thiết bị y tế' },
+      { desc: 'Đồ thủ công mỹ nghệ' },
       { desc: 'Sản phẩm bằng tre, gỗ' },
+      { desc: 'Hoá mỹ phẩm' },
+      { desc: 'Dược liệu, đông nam dược' },
+      { desc: 'Đá trang sức' },
+      { desc: 'Gia vị' },
       { desc: 'Thức ăn thú cưng' },
     ],
   },
@@ -642,20 +780,17 @@ export const productOfIrradiation = [
     locale: 'en-US',
     title: 'Products irradiated at TPI:',
     subDesc: [
-      { desc: 'Fresh fruit' },
-      { desc: 'Handicrafts' },
-      { desc: 'Spice' },
-      { desc: 'Frozen Pangasius' },
+      { desc: 'Fresh fruits' },
+      { desc: 'Frozen fruits' },
+      { desc: 'Frozen fish' },
+      { desc: 'Processed food' },
       { desc: 'Medical equipment' },
-      { desc: 'Jewelry stone' },
-      { desc: 'Food - Agricultural products' },
-      { desc: 'Frozen shrimp' },
-      { desc: 'Herbal medicine, oriental medicine' },
-      { desc: 'Frozen seafood' },
-      { desc: 'Cosmetics' },
-      { desc: 'Other dry goods' },
-      { desc: 'Frozen fruit' },
-      { desc: 'Products made of bamboo and wood' },
+      { desc: 'Hand-mades' },
+      { desc: 'Bamboo, Wood' },
+      { desc: 'Cosmetic' },
+      { desc: 'Medicine' },
+      { desc: 'Jewelries' },
+      { desc: 'Spices' },
       { desc: 'Pet food' },
     ],
   },
@@ -802,15 +937,40 @@ export const coldStorageTopContent = [
   {
     locale: 'vi',
     title: 'Kho lạnh lưu trữ',
-    desc: `Hệ thống kho lạnh với sức chứa đạt khoảng 10.000 tấn hàng hóa.
-Dịch vụ kho lạnh Toàn Phát mang lại nhiều giá trị cho các khách hàng:`,
+    desc: `Quy mô: 1.0 ha
+    Tổng vị trí: 12.000 pallet
+    Khả năng lưu trữ tối đa lên đến 12.000 tấn
+    Thời gian hoạt động: 24/7 
+    Nhiệt độ lưu trữ: -18 độ C (+/-3 độ C), có kho hạ độ: -35 độ C
+    `,
     sub: [
       {
-        desc: `Không tốn chi phí xây dựng, vận hành, quản lý kho, tiết kiệm chi phí đầu tư`,
+        title: `Vị trí cửa ngõ`,
+        desc: `Toạ lạc tại Lô A24-2, Đường Ngang 1, Khu công nghiệp Phú An Thạnh, xã An Thạnh, huyện Bến Lức, tỉnh Long An; Kho Lạnh Toàn Phát kết nối dễ dàng, nhanh chóng đến các trục đường huyết mạch, hệ thống cảng biển, cảng hàng không và các tỉnh thành lân cận. Nhờ đó giúp các doanh nghiệp thuận tiện và tiết kiệm trong việc vận chuyển hàng hóa.`,
       },
-      { desc: `Chủ động trong việc xuất nhập hàng xuyên suốt (24/7).` },
       {
-        desc: `Chủ động trong việc chiếu xạ hàng hóa đang lưu tại kho mà không tốn thêm phí vận chuyển phát sinh.`,
+        title: `Tiết kiệm chi phí`,
+        desc: `Sở hữu đồng thời kho lạnh lưu trữ và nhà máy chiếu xạ, TPG giúp các doanh nghiệp xuất khẩu hàng hóa giảm bớt chi phí vận chuyển. Đặc biệt luôn cam kết đồng hành về giá và mang đến những chính sách tối ưu nhất cho khách hàng.`,
+      },
+      {
+        title: `Hoạt động 24/7`,
+        desc: `Kho lạnh Toàn Phát hoạt động 24/7, dịch vụ tốc hành, đáp ứng tối đa nhu cầu lưu trữ và xuất hàng trong các thời điểm cần thiết của khách hàng.`,
+      },
+      {
+        title: `Trang thiết bị hiện đại, hệ thống quản lý thông minh`,
+        desc: `Với trang thiết bị hiện đại, ứng dụng công nghệ, kỹ thuật tiên tiến nhất trong điều khiển và quản lý; liên tục bảo dưỡng, nâng cấp hệ thống kho, Kho Lạnh Toàn Phát đảm bảo quá trình vận hành xử lý thông minh, chính xác, tinh gọn, đạt tiêu chuẩn.`,
+      },
+      {
+        title: `Cam kết đảm bảo chất lượng hàng hóa`,
+        desc: `Hàng hóa của doanh nghiệp khi lưu trữ và bảo quản tại Kho Lạnh Toàn Phát sẽ được đảm bảo an toàn tối đa nhờ hệ thống quản lý và quy trình vận hành một cách nghiêm ngặt.`,
+      },
+      {
+        title: `Gói thuê kho lạnh linh hoạt`,
+        desc: `Đề cao tiêu chí linh hoạt và tối ưu hóa cho doanh nghiệp, khách hàng có thể đăng ký gói thuê kho lạnh lưu trữ dựa trên nhu cầu thực tế. Có thể thuê theo thời gian ngắn hạn, trung hạn, dài hạn và tính theo trọng lượng hàng hóa thực tế hoặc tính theo số lượng vị trí pallet.`,
+      },
+      {
+        title: `Dịch vụ hỗ trợ`,
+        desc: `Kho Lạnh Toàn Phát hỗ trợ các dịch vụ đi kèm khác như: đóng gói, dán tem, thay bao bì, phân loại hàng hóa, quấn PE,… với mức phí cạnh tranh nhất.`,
       },
     ],
   },
@@ -821,13 +981,32 @@ Dịch vụ kho lạnh Toàn Phát mang lại nhiều giá trị cho các khách
 Toan Phat cold storage service brings many values to customers:`,
     sub: [
       {
-        desc: `No cost of construction, operation, warehouse management, saving investment costs`,
+        title: `Vị trí cửa ngõ`,
+        desc: `Toạ lạc tại Lô A24-2, Đường Ngang 1, Khu công nghiệp Phú An Thạnh, xã An Thạnh, huyện Bến Lức, tỉnh Long An; Kho Lạnh Toàn Phát kết nối dễ dàng, nhanh chóng đến các trục đường huyết mạch, hệ thống cảng biển, cảng hàng không và các tỉnh thành lân cận. Nhờ đó giúp các doanh nghiệp thuận tiện và tiết kiệm trong việc vận chuyển hàng hóa.`,
       },
       {
-        desc: `Be proactive in importing and exporting goods throughout (24/7).`,
+        title: `Tiết kiệm chi phí`,
+        desc: `Sở hữu đồng thời kho lạnh lưu trữ và nhà máy chiếu xạ, TPG giúp các doanh nghiệp xuất khẩu hàng hóa giảm bớt chi phí vận chuyển. Đặc biệt luôn cam kết đồng hành về giá và mang đến những chính sách tối ưu nhất cho khách hàng.`,
       },
       {
-        desc: `Be proactive in irradiating goods stored at the warehouse without additional shipping costs.`,
+        title: `Hoạt động 24/7`,
+        desc: `Kho lạnh Toàn Phát hoạt động 24/7, dịch vụ tốc hành, đáp ứng tối đa nhu cầu lưu trữ và xuất hàng trong các thời điểm cần thiết của khách hàng.`,
+      },
+      {
+        title: `Trang thiết bị hiện đại, hệ thống quản lý thông minh`,
+        desc: `Với trang thiết bị hiện đại, ứng dụng công nghệ, kỹ thuật tiên tiến nhất trong điều khiển và quản lý; liên tục bảo dưỡng, nâng cấp hệ thống kho, Kho Lạnh Toàn Phát đảm bảo quá trình vận hành xử lý thông minh, chính xác, tinh gọn, đạt tiêu chuẩn.`,
+      },
+      {
+        title: `Cam kết đảm bảo chất lượng hàng hóa`,
+        desc: `Hàng hóa của doanh nghiệp khi lưu trữ và bảo quản tại Kho Lạnh Toàn Phát sẽ được đảm bảo an toàn tối đa nhờ hệ thống quản lý và quy trình vận hành một cách nghiêm ngặt.`,
+      },
+      {
+        title: `Gói thuê kho lạnh linh hoạt`,
+        desc: `Đề cao tiêu chí linh hoạt và tối ưu hóa cho doanh nghiệp, khách hàng có thể đăng ký gói thuê kho lạnh lưu trữ dựa trên nhu cầu thực tế. Có thể thuê theo thời gian ngắn hạn, trung hạn, dài hạn và tính theo trọng lượng hàng hóa thực tế hoặc tính theo số lượng vị trí pallet.`,
+      },
+      {
+        title: `Dịch vụ hỗ trợ`,
+        desc: `Kho Lạnh Toàn Phát hỗ trợ các dịch vụ đi kèm khác như: đóng gói, dán tem, thay bao bì, phân loại hàng hóa, quấn PE,… với mức phí cạnh tranh nhất.`,
       },
     ],
   },
@@ -837,7 +1016,7 @@ export const LocationMapContent = [
   {
     locale: 'vi',
     title: 'Vị trí cửa ngõ',
-    desc: `Với vị trí nằm tại KCN An Phú Thạnh (Bến Lức – Long An), Kho Lạnh Toàn Phát kết nối dễ dàng, nhanh chóng đến các tuyến đường huyết mạch, hệ thống cảng, các tỉnh thành và khu vực lân cận. Nhờ đó giúp các doanh nghiệp thuận tiện, tiết kiệm trong việc vận chuyển, lưu trữ, bốc dỡ sản phẩm và hàng hóa.`,
+    desc: `Nhà máy Chiếu Xạ Toàn Phát và Kho Lạnh Toàn Phát được đặt tại Khu công nghiệp Phú An Thạnh (Bến Lức - Long An). Đây là vị trí vàng để kết nối đến các tuyến đường huyết mạch quốc gia, các “trục xương sống” trong hạ tầng giao thông của Đồng Bằng Sông Cửu Long. Đồng thời là tâm điểm kết nối đến hệ thống cảng sông, cảng biển và cảng hàng không quốc tế của khu vực. Lợi thế về vị trí sẽ giúp các doanh nghiệp tiết kiệm được chi phí lớn trong lộ trình vận chuyển hàng hoá đến cơ sở chiếu xạ, hay từ kho lạnh lưu trữ đến hệ thống cảng để xuất khẩu Nông - Thuỷ sản ra nước ngoài.`,
     sub: [
       {
         desc: `Ngay nút giao Cao tốc Trung Lương - Bến Lức , Cách Quốc lộ 1A: 3km`,
@@ -860,6 +1039,9 @@ export const LocationMapContent = [
       },
       {
         desc: `Cách trung tâm TP. HCM: 36km`,
+      },
+      {
+        desc: `Tương lai gần kết nối trực tiếp đến cao tốc Bến Lức - Long Thành`,
       },
     ],
   },
@@ -899,11 +1081,13 @@ export const contactAConsultant = [
       title: `Liên hệ trực tiếp`,
       sub: [
         {
-          title: `Nhà Máy Chiếu Xạ Toàn Phát.`,
+          title: `Chiếu Xạ`,
           desc: [
-            `Hotline 24/7: 0272 3786 888`,
+            `Công ty TNHH Chiếu Xạ Toàn Phát`,
+            `Địa chỉ: Lô A24-1, Đường Ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Huyện Bến Lức, Tỉnh Long An.`,
+            `MST: 1101846577`,
+            `Hotline: 093 1000 001`,
             `Email: info@tpirr.vn`,
-            `Địa chỉ: Lô A24-1 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`,
           ],
           button1: facebookButton,
           link1: item1_link1,
@@ -911,11 +1095,13 @@ export const contactAConsultant = [
           link2: item1_link2,
         },
         {
-          title: `Kho Lạnh Toàn Phát`,
+          title: `Kho Lạnh`,
           desc: [
-            `Hotline 24/7: 092 191 69 99`,
+            `Công ty TNHH Toàn Phát - Kho Vận `,
+            `Địa chỉ: Lô A24-2, Đường Ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Huyện Bến Lức, Tỉnh Long An.`,
+            `MST: 1101966433`,
+            `Hotline: 092 191 6999`,
             `Email: tiepnhan@tprw.vn`,
-            `Địa chỉ: Lô A24-2 Đường ngang 1, Khu Công Nghiệp Phú An Thạnh, Xã An Thạnh, Ben Luc, Vietnam`,
           ],
           button1: facebookButton,
           link1: item2_link1,

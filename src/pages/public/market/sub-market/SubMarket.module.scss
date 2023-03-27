@@ -9,7 +9,7 @@
   height: max-content;
   width: 100%;
   border: 1px solid #ececec;
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
   transition: box-shadow 0.3s;
   box-shadow: 0 5px 10px rgba(36, 36, 36, 0.12);
@@ -83,7 +83,7 @@
     }
     .desc {
       width: 100%;
-      height: max-content;
+      max-height: max-content;
       max-height: 70px;
       display: -webkit-box;
       text-overflow: ellipsis;

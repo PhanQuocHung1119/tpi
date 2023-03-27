@@ -23,7 +23,7 @@ const SubMethodIrradiation = () => {
           <div className={styles['content-left__title']}>
             {refLang.current?.title}
           </div>
-          <div className={styles['content-left__step']} ref={refContent}>
+          {/*<div className={styles['content-left__step']} ref={refContent}>
             {refLang.current?.sub.map((item, index) => (
               <SubMethodStep
                 key={index}
@@ -33,7 +33,8 @@ const SubMethodIrradiation = () => {
                 desc={item.desc}
               />
             ))}
-          </div>
+          </div>*/}
+            
         </div>
         <div className={styles['content-right']}>
           <div className={styles['content-right__image']}>

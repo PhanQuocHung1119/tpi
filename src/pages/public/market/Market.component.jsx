@@ -14,7 +14,7 @@ const Market = ({ news }) => {
         <TopNewsCarousel news={news} />
 
         <div className={styles['wrapper']}>
-          {news.map((item, idx) => (
+          {news?.map((item, idx) => (
             <SubMarket key={idx} news={item} />
           ))}
         </div>

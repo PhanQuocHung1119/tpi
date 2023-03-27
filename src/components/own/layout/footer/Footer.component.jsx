@@ -4,6 +4,7 @@ import Image from 'next/image';
 import ToanPhat from '@assets/header/ToanPhat-Icon.svg';
 import socialYoutube from '@assets/icons/social-icon-youtube.png';
 import socialFacebook from '@assets/icons/social-icon-facebook.png';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -33,6 +34,7 @@ const Footer = () => {
             </div>
             <div className={styles['content-mid-social']}>
               <div className={styles['content-mid-social__social-icon']}>
+              <Link href='https://www.facebook.com/kholanhtoanphat/' passHref>
                 <Image
                   src={socialFacebook}
                   alt=''
@@ -42,8 +44,10 @@ const Footer = () => {
                   objectFit='contain'
                   quality={100}
                 />
+                </Link>
               </div>
               <div className={styles['content-mid-social__social-icon']}>
+              <Link href='https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA' passHref>
                 <Image
                   src={socialYoutube}
                   alt=''
@@ -53,6 +57,7 @@ const Footer = () => {
                   objectFit='contain'
                   quality={100}
                 />
+                </Link>
               </div>
             </div>
           </div>

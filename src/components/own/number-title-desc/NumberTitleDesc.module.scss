@@ -1,0 +1,48 @@
+@import '/styles/main';
+
+.number {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  //grid-template-columns: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 280px;
+  height: max-content;
+  @include responsive-size(screen-m) {
+    max-width: none;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+  }
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    min-width: 81px;
+    min-height: 121px;
+    margin-right: 10px;
+    color: rgba(137, 137, 137, 0.3);
+    opacity: 0.8;
+    @include setting-font('Josefin Sans', normal, 400, 64px, 120%);
+    @include responsive-size(screen-m) {
+      min-height: 115px;
+      height: 115px;
+    }
+  }
+  &__desc {
+    height: max-content;
+    width: 100%;
+    //max-width: 200px;
+    padding-right: 20px;
+    @include setting-font('Josefin Sans', normal, 500, 14px, 200%);
+  }
+  &__title {
+    height: max-content;
+    max-width: 100%;
+    //max-width: 285px;
+    color: darkgreen;
+    @include setting-font('Josefin Sans', normal, 500, 20px, 200%);
+  }
+}

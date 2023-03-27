@@ -4,10 +4,13 @@ import { Breadcrumb } from 'components/own/breadcrumb';
 import { AboutUsTop } from './about-us-top';
 import { AboutUsTopAdd } from './about-us-top-add';
 import { AboutUsTeamMember } from './about-us-team-member';
-import { MissionAndVaule } from './mission-and-vaule';
-import { NewsBlock } from 'components/own/news-block';
+import { CoreValue } from './core-value';
+// import { NewsBlock } from 'components/own/news-block';
 import { breadcrumb } from '@constants/language-option';
 import { TimelineTPG } from './Timeline-TPG';
+import { SixWord } from './six-word';
+import { FutureGoal } from './future-goal';
+import { HumanResource } from './HumanResource';
 
 const AboutUs = () => {
   return (
@@ -17,7 +20,10 @@ const AboutUs = () => {
         <AboutUsTop />
         <TimelineTPG />
         <AboutUsTopAdd />
-        <MissionAndVaule />
+        <CoreValue />
+        <SixWord />
+        <FutureGoal />
+        <HumanResource />
         <AboutUsTeamMember />
       </div>
     </>

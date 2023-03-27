@@ -45,8 +45,8 @@
   position: relative;
   width: 100%;
   max-width: 1440px;
-  height: 680px;
-  max-height: calc(680px / 1200px * 100vw);
+  height: 400px;
+  max-height: calc(400px / 1200px * 100vw);
 
   & > :nth-child(2) {
     overflow: visible;
@@ -94,11 +94,11 @@
 }
 
 .setting-dots {
-  position: absolute;
+  position: absolute; 
   display: flex !important;
   justify-content: center;
   align-items: center;
-  bottom: 8px;
+  bottom: -5px;
   padding: 0;
   width: 100%;
   max-width: 1440px;
@@ -115,7 +115,7 @@
     height: max-content;
     margin: auto 6px;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 80%;
     justify-content: center;
     align-items: center;
     button {
@@ -125,7 +125,7 @@
       height: 10px;
       border: 1px solid #c7c9d9;
       border-radius: 50%;
-      background: transparent;
+      background: rgb(185, 185, 185);
     }
   }
 }

@@ -1,0 +1,70 @@
+@import '/styles/main';
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+  height: max-content;
+
+  @include responsive-size(screen-m) {
+    margin: 24px auto;
+    max-width: 375px;
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 279px;
+    width: 100%;
+    height: max-content;
+    margin-right: 20px;
+    @include responsive-size(screen-m) {
+      max-width: 375px;
+    }
+    & > div {
+      margin-bottom: 24px;
+    }
+    & > :nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+    &__icon-arrow-right {
+      display: block;
+      position: relative;
+      width: 64px;
+      height: 64px;
+    }
+    &__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 120%;
+    }
+    &__desc {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+  .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 119px;
+    height: 204px;
+    right: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 204px;
+    line-height: 204px;
+    color: #2e2e2e;
+    opacity: 0.08;
+  }
+}

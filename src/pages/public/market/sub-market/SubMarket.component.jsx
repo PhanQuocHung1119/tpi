@@ -20,7 +20,7 @@ const SubMarket = ({ news }) => {
     },
     [router]
   );
-  if (hightLight) return;
+  //if (hightLight) return;
 
   let _desc = get(desc, ['content', 0, 'content', 0, 'value']);
   let _image = get(image, ['fields', 'file', 'url']);

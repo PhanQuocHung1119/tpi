@@ -28,6 +28,12 @@
       height: 115px;
     }
   }
+  &__title {
+    height: max-content;
+    width: 100%;
+    max-width: 285px;
+    @include setting-font('Josefin Sans', normal, 500, 20px, 200%);
+  }
   &__desc {
     height: max-content;
     width: 100%;

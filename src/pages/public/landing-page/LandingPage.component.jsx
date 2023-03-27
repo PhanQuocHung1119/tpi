@@ -3,10 +3,8 @@ import styles from './LandingPage.module.scss';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { RoutePages } from '@constants/router';
-import ToanPhat from '@assets/header/ToanPhat-Icon.svg';
+import ToanPhat from '@assets/header/ToanPhat-Mobile-Icon.svg';
 // import YouTube from 'react-youtube';
-
-const urlVideo = 'https://theagency.vn/wp-content/uploads/2017/07/home.mp4';
 
 const videoInfo = {
   id: 'toan-phat-landing-page',
@@ -14,7 +12,7 @@ const videoInfo = {
 };
 
 const urlVideoDrive =
-  'https://ik.imagekit.io/jpppzmlzpq/TPI.mp4?updatedAt=1679052324129';
+  'https://ik.imagekit.io/damnedbrain/introweb.mp4?updatedAt=1679900504660';
 
 const LandingPage = () => {
   const router = useRouter();
@@ -87,11 +85,11 @@ const LandingPage = () => {
           <div
             className={styles['btn-wrapper__btn']}
             onClick={() => chooseLanguageAndRedirect('vi')}
-          >{`VN`}</div>
-          <div
+          >{`ENTER`}</div>
+          {/*<div
             className={styles['btn-wrapper__btn']}
             onClick={() => chooseLanguageAndRedirect('en-US')}
-          >{`ENG`}</div>
+      >{`ENG`}</div>*/}
         </div>
       </div>
     </>
