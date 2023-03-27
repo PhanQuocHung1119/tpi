@@ -88,7 +88,7 @@ const TopNewsCarousel = ({ news }) => {
             {Array.isArray(news) &&
               news.map((item, index) => {
                 return item?.fields?.hightLight ? (
-                  <SubTopNewsCarousel key={item.fields.id} news={item} />
+                  <SubTopNewsCarousel key={index} news={item} />
                 ) : (
                   ''
                 );

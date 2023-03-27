@@ -1,4 +1,3 @@
-import { RouteAPI } from '@constants/Api.constants';
 import { Layout } from '@my-components';
 import { Market } from '@pages/public/market';
 import { createClient } from 'contentful';
@@ -12,14 +11,15 @@ export async function getStaticProps() {
       accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
     });
 
-    const res = await client.getEntries({ content_type: 'news' });
+    const res = await client.getEntries({
+      content_type: 'news',
+    });
 
     if (!res) {
       return {
         notFound: true,
       };
     }
-
     return {
       props: { news: res.items },
     };
@@ -31,7 +31,6 @@ export async function getStaticProps() {
 
 export default function News({ news }) {
   // if (!news) return <ErrorPage statusCode={statusCode} />;
-
   return (
     <Layout>
       <Market news={news} />

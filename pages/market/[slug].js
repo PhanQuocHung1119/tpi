@@ -11,29 +11,33 @@ const client = createClient({
 
 export async function getStaticPaths() {
   const res = await client.getEntries({ content_type: 'news' });
-  const paths = res.items.map((item) => {
-    return {
+  let paths = [];
+  res.items.map((item) => {
+    paths.push({
       params: {
         slug: item.fields.slug,
-        locale: 'en-US',
       },
+      locale: 'vi',
+    });
+    paths.push({
       params: {
         slug: item.fields.slug,
-        locale: 'vi',
       },
-    };
+      locale: 'en-US',
+    });
   });
 
   return {
     paths,
-    fallback: true,
+    fallback: 'blocking',
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
   const res = await client.getEntries({
     content_type: 'news',
     'fields.slug': params.slug,
+    locale: locale,
   });
 
   if (!res) {
