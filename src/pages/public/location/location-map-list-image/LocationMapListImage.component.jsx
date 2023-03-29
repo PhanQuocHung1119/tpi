@@ -22,6 +22,7 @@ const LocationMapListImage = () => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            loading='lazy'
           />
         </div>
         <div className={styles['sub-image-wrapper']}>
@@ -34,6 +35,7 @@ const LocationMapListImage = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
           <div className={styles['sub-image']}>
@@ -45,6 +47,7 @@ const LocationMapListImage = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
           <div className={styles['sub-image']}>
@@ -56,6 +59,7 @@ const LocationMapListImage = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
         </div>

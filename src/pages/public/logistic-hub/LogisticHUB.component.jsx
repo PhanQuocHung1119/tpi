@@ -19,6 +19,7 @@ const LogisticHUB = () => {
             layout='fill'
             objectFit='fill'
             quality={100}
+            loading='lazy'
           />
         </div>
         <div className={styles['text']}>
@@ -30,6 +31,7 @@ const LogisticHUB = () => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            loading='lazy'
           />
         </div>
       </div>

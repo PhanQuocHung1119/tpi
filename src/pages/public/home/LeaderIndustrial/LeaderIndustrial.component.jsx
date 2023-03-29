@@ -28,6 +28,7 @@ const LeaderIndustrial = () => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            loading='lazy'
           />
         </div>
         <div className={styles['content']} ref={refContent}>
@@ -56,6 +57,7 @@ const LeaderIndustrial = () => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
           </div>

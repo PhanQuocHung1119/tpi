@@ -19,6 +19,7 @@ const SubNews = ({ image, title, desc, readMore }) => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            loading='lazy'
           />
         </div>
         <div className={styles['title']}>{title}</div>

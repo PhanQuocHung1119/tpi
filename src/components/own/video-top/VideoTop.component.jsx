@@ -37,6 +37,7 @@ const VideoTop = () => {
                 height={105}
                 layout='responsive'
                 objectFit='contain'
+                loading='lazy'
               />
             </div>
             <div className={styles['thumbnail__video-image']}>
@@ -48,6 +49,7 @@ const VideoTop = () => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
           </div>

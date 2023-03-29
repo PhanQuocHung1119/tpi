@@ -88,6 +88,7 @@ const SubTopNewsCarousel = ({ news }) => {
             layout='responsive'
             objectFit='cover'
             quality={100}
+            loading='lazy'
           />
         </div>
         <div className={styles['client-wrapper']}>
@@ -107,6 +108,7 @@ const SubTopNewsCarousel = ({ news }) => {
                   layout='responsive'
                   objectFit='contain'
                   quality={100}
+                  loading='lazy'
                 />
               </div>
               <div className={styles['author__name']}>{author}</div>

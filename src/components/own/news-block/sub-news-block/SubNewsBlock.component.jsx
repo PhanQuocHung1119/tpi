@@ -20,6 +20,7 @@ const SubNewsBlock = ({ image, time, title, desc }) => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            loading='lazy'
           />
         </div>
         <div className={styles['content-wrapper']}>
@@ -33,6 +34,7 @@ const SubNewsBlock = ({ image, time, title, desc }) => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
             {time}

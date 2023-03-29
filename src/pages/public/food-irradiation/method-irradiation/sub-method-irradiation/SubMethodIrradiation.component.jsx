@@ -34,7 +34,6 @@ const SubMethodIrradiation = () => {
               />
             ))}
           </div>*/}
-            
         </div>
         <div className={styles['content-right']}>
           <div className={styles['content-right__image']}>
@@ -46,6 +45,7 @@ const SubMethodIrradiation = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
           <div

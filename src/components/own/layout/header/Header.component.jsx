@@ -100,6 +100,7 @@ const Header = () => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
             <div className={styles['icon-toan-phat__icon-mobile']}>
@@ -111,6 +112,7 @@ const Header = () => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
           </div>
@@ -168,6 +170,7 @@ const Header = () => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
             <div className={styles['language__caret-down']}></div>
@@ -207,6 +210,7 @@ const Header = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
           <div
@@ -221,6 +225,7 @@ const Header = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
         </div>

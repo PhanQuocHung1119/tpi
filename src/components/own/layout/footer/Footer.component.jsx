@@ -18,7 +18,9 @@ const Footer = () => {
             <div className={styles['content__sub']}>
               Hotline 24/7: 0272 3786 888
             </div>
-            <div className={styles['content__sub']}>Email: info@tpirr.vn - tiepnhan@tpirr.vn </div>
+            <div className={styles['content__sub']}>
+              Email: info@tpirr.vn - tiepnhan@tpirr.vn{' '}
+            </div>
           </div>
           <div className={styles['content-mid']}>
             <div className={styles['content-mid__icon-toan-phat']}>
@@ -30,33 +32,39 @@ const Footer = () => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
             <div className={styles['content-mid-social']}>
               <div className={styles['content-mid-social__social-icon']}>
-              <Link href='https://www.facebook.com/kholanhtoanphat/' passHref>
-                <Image
-                  src={socialFacebook}
-                  alt=''
-                  width={20}
-                  height={20}
-                  layout='responsive'
-                  objectFit='contain'
-                  quality={100}
-                />
+                <Link href='https://www.facebook.com/kholanhtoanphat/' passHref>
+                  <Image
+                    src={socialFacebook}
+                    alt=''
+                    width={20}
+                    height={20}
+                    layout='responsive'
+                    objectFit='contain'
+                    quality={100}
+                    loading='lazy'
+                  />
                 </Link>
               </div>
               <div className={styles['content-mid-social__social-icon']}>
-              <Link href='https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA' passHref>
-                <Image
-                  src={socialYoutube}
-                  alt=''
-                  width={20}
-                  height={20}
-                  layout='responsive'
-                  objectFit='contain'
-                  quality={100}
-                />
+                <Link
+                  href='https://www.youtube.com/channel/UCJoEaA2uVz0YXs2iWCanQOA'
+                  passHref
+                >
+                  <Image
+                    src={socialYoutube}
+                    alt=''
+                    width={20}
+                    height={20}
+                    layout='responsive'
+                    objectFit='contain'
+                    quality={100}
+                    loading='lazy'
+                  />
                 </Link>
               </div>
             </div>

@@ -80,6 +80,7 @@ const MarketDetail = ({ news }) => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
             <div className={styles['author__name']}>{author}</div>
@@ -94,6 +95,7 @@ const MarketDetail = ({ news }) => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
           <div className={styles['time']}>{convertTime(time)}</div>

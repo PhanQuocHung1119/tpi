@@ -19,7 +19,7 @@ const HumanResource = () => {
   return (
     <>
       <div className={styles['container']} ref={refContainer}>
-      <div className={styles['content']} ref={refContent}>
+        <div className={styles['content']} ref={refContent}>
           <div className={styles['content__title']}>
             {refLanguage.current?.title}
           </div>
@@ -58,9 +58,9 @@ const HumanResource = () => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            loading='lazy'
           />
         </div>
-        
       </div>
     </>
   );

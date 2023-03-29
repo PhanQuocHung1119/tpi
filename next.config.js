@@ -40,7 +40,7 @@ module.exports = {
     gtmId: process.env.REACT_APP_GTM_ID,
   },
   images: {
-    domains: ['images.ctfassets.net'],
+    domains: ['images.ctfassets.net', 'res.cloudinary.com'],
     formats: ['image/webp'],
   },
 

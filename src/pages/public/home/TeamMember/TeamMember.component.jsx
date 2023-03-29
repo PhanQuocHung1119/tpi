@@ -81,6 +81,7 @@ const TeamMember = () => {
                     layout='responsive'
                     objectFit='contain'
                     quality={100}
+                    loading='lazy'
                   />
                 </div>
                 {/*<div className={styles['member__desc']}> //Bo chuc danh

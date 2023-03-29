@@ -37,6 +37,7 @@ const VideoDescTitle = ({ videoInfo, title, desc, videoID }) => {
                 height={105}
                 layout='responsive'
                 objectFit='contain'
+                loading='lazy'
               />
             </div>
             <div className={styles['thumbnail__video-image']}>
@@ -48,15 +49,14 @@ const VideoDescTitle = ({ videoInfo, title, desc, videoID }) => {
                 layout='responsive'
                 objectFit='contain'
                 quality={100}
+                loading='lazy'
               />
             </div>
           </div>
         </div>
         <div>
-    
-            <div class={styles['title']}>{title}</div>
-            <div class={styles['videoDesc']}>{desc}</div>
-
+          <div className={styles['title']}>{title}</div>
+          <div className={styles['videoDesc']}>{desc}</div>
         </div>
       </div>
     </>

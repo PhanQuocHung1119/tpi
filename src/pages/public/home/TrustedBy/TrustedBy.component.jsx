@@ -18,13 +18,7 @@ import icon_10 from '@assets/trusted-by/trusted-by-10.png';
 import icon_11 from '@assets/trusted-by/trusted-by-11.png';
 import icon_12 from '@assets/trusted-by/trusted-by-12.png';
 
-const icons = [
-  icon_1,
-  icon_2,
-  icon_3,
-  icon_4,
-  
-];
+const icons = [icon_1, icon_2, icon_3, icon_4];
 const TrustedBy = () => {
   const refContentWrapper = useRef();
   const refTitle = useRef();
@@ -48,6 +42,7 @@ const TrustedBy = () => {
                   layout='responsive'
                   objectFit='contain'
                   quality={100}
+                  loading='lazy'
                 />
               </div>
             </div>

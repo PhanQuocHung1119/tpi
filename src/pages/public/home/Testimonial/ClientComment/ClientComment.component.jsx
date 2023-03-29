@@ -22,6 +22,7 @@ const ClientComment = ({ name, title, avatar, comment }) => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            loading='lazy'
           />
         </div>
         <div className={styles['icon-star']}>
@@ -38,6 +39,7 @@ const ClientComment = ({ name, title, avatar, comment }) => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
           <div className={styles['client']}>

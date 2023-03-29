@@ -7,9 +7,9 @@ import { Testimonial } from './Testimonial';
 import { OurProject } from './OurProject';
 import { News } from './News';
 import { Question } from './Question';
-import { LocationVideo } from 'components/own/location-video'
+import { LocationVideo } from 'components/own/location-video';
 
-const Home = () => {
+const Home = ({ images }) => {
   return (
     <>
       <Introduce />
@@ -20,7 +20,7 @@ const Home = () => {
       <LeaderIndustrial />
       <TrustedBy />
       <Testimonial />
-      <OurProject />
+      <OurProject images={images} />
     </>
   );
 };

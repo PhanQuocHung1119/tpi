@@ -42,13 +42,16 @@ const FoodIrradiationSystem = () => {
                   layout='responsive'
                   objectFit='contain'
                   quality={100}
+                  loading='lazy'
                 />
               </div>
               <div className={styles['sub-content__desc']}>{item?.desc}</div>
             </div>
           ))}
         </div>
-        <div className={styles['concludedesc']}>{refLang.current?.concludeDesc}</div>
+        <div className={styles['concludedesc']}>
+          {refLang.current?.concludeDesc}
+        </div>
       </div>
     </>
   );

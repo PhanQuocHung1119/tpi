@@ -15,6 +15,7 @@ const NumberIcon = ({ number = number_1 }) => {
           layout='responsive'
           objectFit='contain'
           quality={100}
+          loading='lazy'
         />
       </div>
     </>

@@ -17,6 +17,7 @@ const ReadMoreBtn = ({ readMore = 'Read More' }) => {
             layout='responsive'
             objectFit='contain'
             quality={100}
+            loading='lazy'
           />
         </div>
       </div>

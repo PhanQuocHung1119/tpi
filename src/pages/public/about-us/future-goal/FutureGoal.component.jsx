@@ -8,8 +8,7 @@ import { NumberAndDesc } from 'components/own/number-and-desc';
 import { NumberGeneralInfo } from 'components/own/number-general-info';
 
 const title1 = `Phát triển kinh doanh`;
-const desc1 =
-  `Chúng tôi liên tục cập nhật công nghệ, cải tiến kỹ thuật, đầu tư trang thiết bị hiện đại trong cả dịch vụ chiếu xạ, kho lạnh lưu trữ và vận chuyển. Luôn coi trọng việc nghiên cứu, ứng dụng công nghệ nhằm đáp ứng yêu cầu khắt khe của thị trường, đồng thời tiếp nhận, lắng nghe phản hồi của khách hàng để nâng cao chất lượng dịch vụ, góp phần thúc đẩy hoạt động xuất khẩu hàng hóa, khẳng định giá trị Nông sản - Thuỷ sản Việt Nam và sự phát triển của TPG.`;
+const desc1 = `Chúng tôi liên tục cập nhật công nghệ, cải tiến kỹ thuật, đầu tư trang thiết bị hiện đại trong cả dịch vụ chiếu xạ, kho lạnh lưu trữ và vận chuyển. Luôn coi trọng việc nghiên cứu, ứng dụng công nghệ nhằm đáp ứng yêu cầu khắt khe của thị trường, đồng thời tiếp nhận, lắng nghe phản hồi của khách hàng để nâng cao chất lượng dịch vụ, góp phần thúc đẩy hoạt động xuất khẩu hàng hóa, khẳng định giá trị Nông sản - Thuỷ sản Việt Nam và sự phát triển của TPG.`;
 const title2 = `Phát triển nguồn nhân lực`;
 const desc2 = `Đội ngũ nhân sự là tài sản quý giá nhất của doanh nghiệp, chúng tôi chú trọng việc bồi dưỡng, đào tạo nên những nhân sự ưu tú, không ngừng tạo động lực, thúc đẩy nguồn nhân lực phát triển, hướng đến xây dựng môi trường làm việc năng động, sáng tạo, chuyên nghiệp và có nhiều cơ hội thăng tiến.`;
 const title3 = `Phát triển cộng đồng & xã hội`;
@@ -33,6 +32,7 @@ const FutureGoal = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
           <div className={styles['member-img']}>
@@ -44,18 +44,27 @@ const FutureGoal = () => {
               layout='responsive'
               objectFit='contain'
               quality={100}
+              loading='lazy'
             />
           </div>
         </div>
         <div className={styles['member-content']}>
-          <div className={styles['member-content__title']}>Mục tiêu phát triển</div>
+          <div className={styles['member-content__title']}>
+            Mục tiêu phát triển
+          </div>
           <div
             className={styles['member-content__content']}
             ref={refMemberContent}
           >
-            <div className={styles['member-content__content___child']}><NumberGeneralInfo title={title1} desc={desc1} /></div>
-            <div className={styles['member-content__content___child']}><NumberGeneralInfo title={title2} desc={desc2} /></div>
-            <div className={styles['member-content__content___child']}><NumberGeneralInfo title={title3} desc={desc3} /></div>
+            <div className={styles['member-content__content___child']}>
+              <NumberGeneralInfo title={title1} desc={desc1} />
+            </div>
+            <div className={styles['member-content__content___child']}>
+              <NumberGeneralInfo title={title2} desc={desc2} />
+            </div>
+            <div className={styles['member-content__content___child']}>
+              <NumberGeneralInfo title={title3} desc={desc3} />
+            </div>
           </div>
         </div>
       </div>
