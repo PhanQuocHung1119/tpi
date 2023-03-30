@@ -34,10 +34,10 @@ module.exports = {
   },
   publicRuntimeConfig: {
     // Will be available on both server and client
-    apiEndpoint: process.env.REACT_APP_API_ENDPOINT,
+    // apiEndpoint: process.env.REACT_APP_API_ENDPOINT,
     rootDomains: process.env.REACT_APP_ROOT_DOMAIN,
-    apiUploadImage: process.env.REACT_APP_API_UPLOAD_IMG,
-    gtmId: process.env.REACT_APP_GTM_ID,
+    // apiUploadImage: process.env.REACT_APP_API_UPLOAD_IMG,
+    // gtmId: process.env.REACT_APP_GTM_ID,
   },
   images: {
     domains: ['images.ctfassets.net', 'res.cloudinary.com'],
